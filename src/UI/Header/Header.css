@@ -1,0 +1,25 @@
+.header-container{
+    height: 150px;
+    background-color: #BBF0D41A;
+    padding: 0;
+}
+
+.logo{
+    width: 30%;
+}
+
+.nav-item .nav-link{
+    color: #2B3566;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.participate-now{
+    border: 1px solid #2B3566;
+    border-radius: 30px;
+    padding: 0px 25px;
+}
+
+.left-gutter, .navbar-brand{
+    background-color: white;
+}
