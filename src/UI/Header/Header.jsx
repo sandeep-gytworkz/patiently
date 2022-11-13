@@ -3,12 +3,24 @@ import Logo from "../../../src/assets/images/logo.png";
 import "./Header.css";
 
 
-const Header = () => {
+const Header = ({hideRight}) => {
+  if(hideRight){
+    return(
+      <nav class="navbar navbar-expand-lg p-0">
+        <div class="container header-container">
+          <a class="navbar-brand col-5 h-100 m-0 pt-5" href="/#">
+            <img src={Logo} alt="logo" className="logo" />
+          </a>
+        </div>
+      </nav>
+    )
+  }
+  
   return (
     <nav class="navbar navbar-expand-lg p-0">
       <div class="container-fluid header-container">
         <div className="col-1 left-gutter h-100 d-inline-block"></div>
-        <a class="navbar-brand col-5 h-100 m-0 pt-5" href="#">
+        <a class="navbar-brand col-5 h-100 m-0 pt-5" href="/#">
           <img src={Logo} alt="logo" className="logo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,16 +32,16 @@ const Header = () => {
               <a class="nav-link" aria-current="page" href="/about">About</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#">Data Security</a>
+              <a class="nav-link" href="/#">Data Security</a>
             </li>
           </ul>
 
           <ul class="navbar-nav d-flex">
             <li class="nav-item px-3">
-              <a class="nav-link" aria-current="page" href="#">Login</a>
+              <a class="nav-link" aria-current="page" href="/#">Login</a>
             </li>
             <li class="nav-item participate-now">
-              <a class="nav-link" href="#">Participate Now</a>
+              <a class="nav-link" href="/participate-now">Participate Now</a>
             </li>
           </ul>
           {/* <form class="d-flex" role="search">

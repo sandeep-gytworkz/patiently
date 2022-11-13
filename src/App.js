@@ -1,24 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Homepage from "./components/HomePage/HomePage";
-import BackgroundCard from "./UI/Card/BackgroundCard";
 import Card from "./UI/Card/Card";
-import Header from "./UI/Header/Header";
+import Participate from "./components/Participate/Participate";
+// import BackgroundCard from "./UI/Card/BackgroundCard";
+
 
 
 function App() {
-  const [appState, setAppState] = useState(false);
-  const onParticipation = (element) => {
-    setAppState(element);
-  };
   return (
     <>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Homepage />}/>
-          <Route exact path="/" element={<Card />}/>
+          <Route exact path="/about" element={<Card />}/>
+          <Route exact path="/participate-now" element={<Participate />}/>
         </Routes>
       </BrowserRouter>
       {/* <BackgroundCard /> */}

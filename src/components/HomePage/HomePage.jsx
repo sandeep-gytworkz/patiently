@@ -3,8 +3,6 @@ import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
 import "./HomePage.css";
 import homeImg from "../../assets/images/homeImg.png";
-import LeftContainer from "./LeftContainer/LeftContainer";
-import RightContainer from "./RightContainer/RightContainer";
 
 const Homepage = () => {
   return (

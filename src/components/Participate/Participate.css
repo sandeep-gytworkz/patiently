@@ -1,0 +1,21 @@
+.participate-now-page{
+    background-color: #BBF0D41A;
+}
+
+.content-area{
+    height: 100%;
+}
+
+.content-slide{
+    background-color: white;
+    box-shadow: 0px 4px 10px lightgrey;
+    height: 70%;
+}
+
+.btn-group .btn{
+    background-color: transparent;
+    border: none;
+    color:lightgrey;
+}
+
+.btn-group .btn.active{ color: black }
