@@ -1,9 +1,8 @@
 import React from "react";
 import Footer from "../Footer/Footer";
 import Logo from "../../assets/images/logo.png";
-import Card from "./Card";
 
-const BackgroundCard = () => {
+const BackgroundCard = (props) => {
   return (
     <div
       className="d-flex flex-column"
@@ -16,7 +15,7 @@ const BackgroundCard = () => {
         <img src={Logo} alt="logo" />
       </div>
       <div style={{ backgroundColor: "green", height: "75%" }}>
-        <Card />
+        {props.children}
       </div>
       <Footer />
     </div>
