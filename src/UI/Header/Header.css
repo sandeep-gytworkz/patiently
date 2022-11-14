@@ -1,25 +1,26 @@
-.header-container{
-    height: 150px;
-    background-color: #BBF0D41A;
-    padding: 0;
+.header-container {
+  height: 120px;
+  background-color: #bbf0d41a;
+  padding: 0;
 }
 
-.logo{
-    width: 30%;
+.logo {
+  width: 30%;
 }
 
-.nav-item .nav-link{
-    color: #2B3566;
-    font-size: 20px;
-    font-weight: 500;
+.nav-item .nav-link {
+  color: #2b3566;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.participate-now{
-    border: 1px solid #2B3566;
-    border-radius: 30px;
-    padding: 0px 25px;
+.participate-now {
+  border: 1px solid #2b3566;
+  border-radius: 30px;
+  padding: 0px 25px;
 }
 
-.left-gutter, .navbar-brand{
-    background-color: white;
+.left-gutter,
+.navbar-brand {
+  background-color: white;
 }
