@@ -6,9 +6,10 @@ import { Link } from "react-router-dom";
 const Header = ({ hideRight }) => {
   if (hideRight) {
     return (
-      <nav className="navbar navbar-expand-lg p-0">
-        <div className="container header-container">
-          <a className="navbar-brand col-5 h-100 m-0 pt-5" href="/#">
+      <nav class="navbar navbar-expand-lg p-0 full-header">
+        <div class="container-fluid">
+          <div className="col-1 left-gutter h-100 d-inline-block"></div>
+          <a class="navbar-brand col-11 h-100 m-0 pt-5" href="/#">
             <img src={Logo} alt="logo" className="logo" />
           </a>
         </div>
