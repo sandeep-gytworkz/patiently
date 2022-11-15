@@ -1,6 +1,6 @@
 import React from "react";
 
-const PageThree = () => {
+const PageThree = ({ changeSlide }) => {
   return (
     <div className="d-flex flex-column m-5">
       <h2>QUESTION 1 OF 4</h2>
@@ -18,7 +18,13 @@ const PageThree = () => {
       <div className="d-flex flex-row">
         <a href="#">Cancel</a>
         <a href="#">Break</a>
-        <button type="button" class="btn btn-success">
+        <button
+          type="button"
+          class="btn btn-success"
+          onClick={() => {
+            changeSlide(3);
+          }}
+        >
           Next Question
         </button>
       </div>

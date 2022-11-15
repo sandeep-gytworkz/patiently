@@ -1,6 +1,6 @@
 import React from "react";
 
-const Slide4 = () => {
+const Slide4 = ({ changeSlide }) => {
   return (
     <div style={{ margin: "2%", width: "98%" }}>
       <h2>UPLOAD RECORD</h2>
@@ -37,7 +37,13 @@ const Slide4 = () => {
       >
         <a href="#">Cancel</a>
         <a href="#">Back</a>
-        <button>Next</button>
+        <button
+          onClick={() => {
+            changeSlide(4);
+          }}
+        >
+          Next
+        </button>
       </div>
     </div>
   );
