@@ -1,7 +1,17 @@
 .header-container {
   height: 120px;
+  background-color: white;
+  padding: 0;
+}
+
+.full-header{
+  height: 120px;
   background-color: #bbf0d41a;
   padding: 0;
+}
+
+.full-header .logo{
+  width: 14%;
 }
 
 .logo {
@@ -20,7 +30,6 @@
   padding: 0px 25px;
 }
 
-.left-gutter,
-.navbar-brand {
-  background-color: white;
+.right-gutter, .right-header{
+  background-color: #bbf0d41a;
 }
