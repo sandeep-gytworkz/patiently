@@ -3,10 +3,12 @@ import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
 import "./Participate.css";
 import Slide1 from "./Slides/Slide1";
-import Slide2 from "./Slides/Slide2";
 import Slide3 from "./Slides/Slide3";
 import Slide4 from "./Slides/Slide4";
 import Slide5 from "./Slides/Slide5";
+import Slide6 from "./Slides/Slide6";
+import Slide7 from "./Slides/Slide7";
+import Slide8 from "./Slides/Slide8";
 
 const Participate = () => {
   const [slide, setSlide] = useState(1);
@@ -43,16 +45,9 @@ const Participate = () => {
               role="group"
               aria-label="First group"
             >
-              {/* btn btn-secondary active */}
               <button
                 type="button"
                 className={`btn btn-secondary ${slide === 1 ? "active" : ""}`}
-              >
-                &#11044;
-              </button>
-              <button
-                type="button"
-                className={`btn btn-secondary ${slide === 2 ? "active" : ""}`}
               >
                 &#11044;
               </button>
@@ -64,7 +59,13 @@ const Participate = () => {
               </button>
               <button
                 type="button"
-                className={`btn btn-secondary ${slide === 4 ? "active" : ""}`}
+                className={`btn btn-secondary ${slide === 7 ? "active" : ""}`}
+              >
+                &#11044;
+              </button>
+              <button
+                type="button"
+                className={`btn btn-secondary ${slide === 8 ? "active" : ""}`}
               >
                 &#11044;
               </button>
@@ -79,14 +80,15 @@ const Participate = () => {
             className="d-flex flex-row"
           >
             {slide === 1 && <Slide1 changeSlide={slideChangeHandler} />}
-            {/* <Slide2 /> */}
-            {slide === 2 && <Slide3 changeSlide={slideChangeHandler} />}
-            {slide === 3 && <Slide4 changeSlide={slideChangeHandler} />}
-            {slide === 4 && <Slide5 changeSlide={slideChangeHandler} />}
+            {slide === 3 && <Slide3 changeSlide={slideChangeHandler} />}
+            {slide === 4 && <Slide4 changeSlide={slideChangeHandler} />}
+            {slide === 5 && <Slide5 changeSlide={slideChangeHandler} />}
+            {slide === 6 && <Slide6 changeSlide={slideChangeHandler} />}
+            {slide === 7 && <Slide7 changeSlide={slideChangeHandler} />}
+            {slide === 8 && <Slide8 changeSlide={slideChangeHandler} />}
           </div>
         </div>
       </div>
-      <div></div>
       <div style={{ height: "5%" }}>
         <Footer />
       </div>

@@ -1,9 +1,27 @@
-.left-half{
-    background-color: white;
-    height: 100%;
+.homePage-container {
+  width: 100vw;
+  height: 100vh;
 }
 
-.right-half{
-    background-color: #BBF0D41A;
-    height: 100%;
+.left-half {
+  background-color: white;
+  height: 100%;
+}
+
+.right-half {
+  background-color: #bbf0d41a;
+  height: 100%;
+}
+.heading-highlight {
+  color: #eb726b;
+  text-decoration: underline;
+  text-decoration-color: #acf2d2;
+  text-decoration-thickness: 2px;
+}
+.sub-heading {
+  color: #484646;
+  font-weight: 400;
+  max-width: 600px;
+  width: 100%;
+  margin: 40px 0;
 }

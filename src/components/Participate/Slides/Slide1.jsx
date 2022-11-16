@@ -27,37 +27,48 @@ const Slide1 = ({ changeSlide }) => {
             >
               <div className="d-flex flex-row ">
                 <div className="mb-3 p-2  ">
-                  <label for="firstName" className="form-label">
+                  <label htmlFor="firstName" className="form-label">
                     First Name
                   </label>
-                  <input type="text" className="form-control" id="firstName" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="firstName"
+                    placeholder="Enter first name"
+                  />
                 </div>
                 <div className="mb-3 p-2 ">
-                  <label for="lastName" className="form-label">
+                  <label htmlFor="lastName" className="form-label">
                     Last Name
                   </label>
-                  <input type="text" className="form-control" id="inputEmail" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="lastName"
+                    placeholder="Enter last name"
+                  />
                 </div>
               </div>
               <div className="d-flex flex-row p-2">
                 <div className="mb-3 p-2">
-                  <label for="inputEmail" className="form-label">
+                  <label htmlFor="inputEmail" className="form-label">
                     Email address
                   </label>
                   <input
                     type="email"
                     className="form-control"
                     id="inputEmail"
+                    placeholder="Enter email ID"
                   />
                 </div>
                 <div className="mb-3 p-2">
-                  <label for="inputPassword" className="form-label">
+                  <label htmlFor="contactNumber" className="form-label">
                     Contact Number
                   </label>
                   <input
                     type="number"
                     className="form-control"
-                    id="inputPassword"
+                    id="contactNumber"
                   />
                 </div>
               </div>
@@ -67,7 +78,7 @@ const Slide1 = ({ changeSlide }) => {
                   className="form-check-input"
                   id="check"
                 />
-                <label className="form-check-label" for="check">
+                <label className="form-check-label" htmlFor="check">
                   I Agree, I have read and agree to the Terms
                 </label>
               </div>

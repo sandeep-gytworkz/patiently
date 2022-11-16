@@ -17,8 +17,6 @@ function App() {
           <Route exact path="/participate-now" element={<Participate />} />
         </Routes>
       </BrowserRouter>
-
-      {/* <Participate /> */}
     </>
   );
 }

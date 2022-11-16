@@ -1,10 +1,10 @@
 import React from "react";
 
-const Slide5 = ({ changeSlide }) => {
+const Slide6 = ({ changeSlide }) => {
   return (
     <div className="d-flex flex-column m-5">
-      <h2>QUESTION 3 OF 4</h2>
-      <h3>Have you ever been treated in an emergency room ?</h3>
+      <h2>QUESTION 4 OF 4</h2>
+      <h3>Have you ever been denied medical insurance ?</h3>
       <div style={{ paddingBottom: "90px" }}>
         <div
           className="d-flex flex-row m-3"
@@ -34,7 +34,7 @@ const Slide5 = ({ changeSlide }) => {
           type="button"
           className="btn btn-primary"
           onClick={() => {
-            changeSlide(6);
+            changeSlide(7);
           }}
         >
           Next Question
@@ -44,4 +44,4 @@ const Slide5 = ({ changeSlide }) => {
   );
 };
 
-export default Slide5;
+export default Slide6;

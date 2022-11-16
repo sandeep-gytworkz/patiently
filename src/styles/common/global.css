@@ -1,0 +1,30 @@
+.color-primary {
+  color: #2b3566;
+}
+
+.button-magic-mint {
+  background-color: #acf2d2;
+  color: #2b3566;
+  border: none;
+}
+
+.button-layout {
+  border-radius: 100px;
+  padding: 8px 20px;
+  font-weight: 500;
+}
+.button-contained {
+  border-radius: 100px;
+  padding: 5px;
+  background-color: #2d3663;
+  color: white;
+}
+
+.button-outlined {
+  color: #2b3566;
+  border: 1px solid #2d3663;
+}
+
+.fs-18 {
+  font-size: 18px;
+}

@@ -43,8 +43,9 @@ const Slide2 = ({ changeSlide }) => {
           </a>
           <button
             onClick={() => {
-              changeSlide(2);
+              changeSlide(3);
             }}
+            className="btn btn-primary"
           >
             Continue to Questions
           </button>

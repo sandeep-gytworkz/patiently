@@ -1,28 +1,41 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const PageThree = ({ changeSlide }) => {
+const Slide3 = (props) => {
   return (
     <div className="d-flex flex-column m-5">
       <h2>QUESTION 1 OF 4</h2>
-      <h2>Please Select the age group that applies to you</h2>
-      <div style={{ height: "60%" }}>
-        <div className="d-flex flex-row m-2">
-          <button type="button" class="btn btn-outline-secondary">
+      <h3>Please Select the age group that applies to you</h3>
+      <div style={{ paddingBottom: "90px" }}>
+        <div
+          className="d-flex flex-row m-3"
+          style={{ justifyContent: "space-between" }}
+        >
+          <button
+            type="button"
+            className="btn btn-outline-secondary btn-lg px-5"
+          >
             18 to 64
           </button>
-          <button type="button" class="btn btn-outline-secondary">
+          <button
+            type="button"
+            className="btn btn-outline-secondary btn-lg px-5"
+          >
             65 or Older
           </button>
         </div>
       </div>
-      <div className="d-flex flex-row">
-        <a href="#">Cancel</a>
-        <a href="#">Break</a>
+      <div
+        className="d-flex flex-row"
+        style={{ justifyContent: "space-between" }}
+      >
+        <Link to="#">Cancel</Link>
+        <Link to="#">Break</Link>
         <button
           type="button"
-          class="btn btn-success"
+          className="btn btn-primary"
           onClick={() => {
-            changeSlide(3);
+            props.changeSlide(4);
           }}
         >
           Next Question
@@ -32,4 +45,4 @@ const PageThree = ({ changeSlide }) => {
   );
 };
 
-export default PageThree;
+export default Slide3;
