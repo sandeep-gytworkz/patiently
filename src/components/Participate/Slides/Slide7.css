@@ -1,0 +1,31 @@
+.file-upload-label {
+  border: 1px dashed black;
+  background-color: #f7f7f7;
+  padding: 10px 0px;
+  border-radius: 8px;
+}
+
+.file-upload-label-main {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-input {
+  border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  outline: none;
+  max-width: 300px;
+  width: 100%;
+  padding: 5px 2px;
+}
+
+.data-protection-para {
+  color: #707070;
+}
+.a-tag {
+  text-decoration: none;
+  font-weight: bold;
+}

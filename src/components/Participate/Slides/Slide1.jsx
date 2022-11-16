@@ -26,7 +26,7 @@ const Slide1 = ({ changeSlide }) => {
               }}
             >
               <div className="d-flex flex-row ">
-                <div className="mb-3 p-2  ">
+                <div className="mb-3 p-2 col-5  ">
                   <label htmlFor="firstName" className="form-label">
                     First Name
                   </label>
@@ -37,7 +37,7 @@ const Slide1 = ({ changeSlide }) => {
                     placeholder="Enter first name"
                   />
                 </div>
-                <div className="mb-3 p-2 ">
+                <div className="mb-3 p-2 col-5  ">
                   <label htmlFor="lastName" className="form-label">
                     Last Name
                   </label>
@@ -49,8 +49,8 @@ const Slide1 = ({ changeSlide }) => {
                   />
                 </div>
               </div>
-              <div className="d-flex flex-row p-2">
-                <div className="mb-3 p-2">
+              <div className="d-flex flex-row p-2  ">
+                <div className="mb-3 p-2 col-5">
                   <label htmlFor="inputEmail" className="form-label">
                     Email address
                   </label>
@@ -61,7 +61,7 @@ const Slide1 = ({ changeSlide }) => {
                     placeholder="Enter email ID"
                   />
                 </div>
-                <div className="mb-3 p-2">
+                <div className="mb-3 p-2 col-5 ">
                   <label htmlFor="contactNumber" className="form-label">
                     Contact Number
                   </label>
