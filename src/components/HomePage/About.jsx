@@ -8,7 +8,18 @@ const About = () => {
     <BackgroundCard>
       <WhiteCard>
         <div className="col-8 ">
-          <p className="color-primary fs-24">This is about us !</p>
+          <div className="col-12 pt-5 ps-5">
+            <h1 className="color-primary">
+              Desire to improve
+              <br />
+              <span className="heading-highlight ">medical care</span> for future
+              <br /> generations
+            </h1>
+            <h3 className="sub-heading">
+              Clinical trials offer hope for many people and an opportunity to
+              help researchers find better treatments for others in the future.
+            </h3>
+          </div>
         </div>
       </WhiteCard>
     </BackgroundCard>

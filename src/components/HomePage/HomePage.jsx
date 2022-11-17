@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
 import "./HomePage.css";
@@ -7,7 +7,19 @@ import "../../styles/common/global.css";
 import arrow from "../../assets/images/arrow.svg";
 
 const Homepage = () => {
-  const [cookieState, setCookieState] = useState(true);
+  const [cookieState, setCookieState] = useState(false);
+
+  const setCookie = ()=>{
+    setCookieState(true)
+    localStorage.setItem("cookieSet", "true");
+  }
+
+  useEffect(()=>{
+    let cookieSet = localStorage.getItem("cookieSet");
+    if(cookieSet){
+      setCookieState(true)
+    }
+  },[])
 
   return (
     <div className="d-flex flex-column homePage-container">
@@ -31,15 +43,15 @@ const Homepage = () => {
             Clinical trials offer hope for many people and an opportunity to
             help researchers find better treatments for others in the future.
           </h3>
-          <button className="button-layout fs-18 button-magic-mint ">
+          <a className="btn btn-info button-layout fs-18 button-magic-mint" href="/about">
             Learn More <img src={arrow} alt="arrow" width={18} height={21} />
-          </button>
+          </a>
         </div>
       </div>
       <div style={{ height: "5%" }}>
         <Footer />
       </div>
-      {cookieState && (
+      {!cookieState && (
         <div className=" cookies-banner">
           <div className="  cookies-banner-main d-flex  flex-row align-items-center justify-content-between">
             <div>
@@ -54,13 +66,13 @@ const Homepage = () => {
               </p>
             </div>
             <div>
-              <button className="button-layout button-outlined fs-16 me-2">
+              {/* <button className="button-layout button-outlined fs-16 me-2">
                 Manage
-              </button>
+              </button> */}
               <button
                 className="button-layout button-outlined fs-16 me-2"
                 onClick={() => {
-                  setCookieState(false);
+                  setCookie(false);
                 }}
               >
                 Reject All
@@ -68,7 +80,7 @@ const Homepage = () => {
               <button
                 className="button-layout button-contained fs-16"
                 onClick={() => {
-                  setCookieState(false);
+                  setCookie(true);
                 }}
               >
                 Accept All

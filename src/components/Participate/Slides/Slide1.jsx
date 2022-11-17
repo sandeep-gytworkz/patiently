@@ -18,75 +18,76 @@ const Slide1 = ({ changeSlide }) => {
             />
           </div>
           <div className="col-7">
-            <h3 className="color-primary fs-24">
+            <h2 className="color-primary fs-24 px-2 py-4">
               Register your account with us
-            </h3>
+            </h2>
             <form
               onSubmit={() => {
                 setIsRegister(false);
               }}
-              className="mt-2 d-flex flex-column align-items-center"
+              className="mt-2 d-flex flex-column col-12"
             >
-              <div className="d-flex flex-row justify-content-evenly ">
-                <div className="mb-3 p-2 col-5  ">
+              <div className="d-flex flex-row justify-content-evenly col-11">
+                <div className="mb-3 p-2 col-6 ">
                   <label
                     htmlFor="firstName"
-                    className="form-label fs-16 color-primary fw-bold"
+                    className="form-label fs-6 color-primary"
                   >
                     First Name
                   </label>
                   <input
                     type="text"
-                    className="form-control px-5"
+                    className="form-control"
                     id="firstName"
                     placeholder="Enter first name "
                   />
                 </div>
-                <div className="mb-3 p-2 col-5  ">
+                <div className="mb-3 p-2 col-6 ">
                   <label
                     htmlFor="lastName"
-                    className="form-label fs-16 color-primary fw-bold"
+                    className="form-label fs-6 color-primary"
                   >
                     Last Name
                   </label>
                   <input
                     type="text"
-                    className="form-control px-5"
+                    className="form-control"
                     id="lastName"
                     placeholder="Enter last name"
                   />
                 </div>
               </div>
-              <div className="d-flex flex-row justify-content-evenly  ">
-                <div className="mb-3 p-2 col-5">
+              <div className="d-flex flex-row justify-content-evenly  col-11">
+                <div className="mb-3 p-2 col-6 ">
                   <label
                     htmlFor="inputEmail"
-                    className="form-label fs-16 color-primary fw-bold"
+                    className="form-label fs-6 color-primary"
                   >
                     Email address
                   </label>
                   <input
                     type="email"
-                    className="form-control px-5"
+                    className="form-control"
                     id="inputEmail"
                     placeholder="Enter email ID"
                   />
                 </div>
-                <div className="mb-3 p-2 col-5 ">
+                <div className="mb-3 p-2 col-6 ">
                   <label
                     htmlFor="contactNumber"
-                    className="form-label fs-16 color-primary fw-bold"
+                    className="form-label fs-6 color-primary"
                   >
                     Contact Number
                   </label>
                   <input
                     type="text"
-                    className="form-control px-5"
+                    className="form-control"
                     id="contactNumber"
+                    placeholder="Enter phone number"
                   />
                 </div>
               </div>
-              <div className=" col-10 form-check justify-content-between mb-5 ">
+              <div className=" col-10 form-check justify-content-between mb-5 mx-2">
                 <input
                   type="checkbox"
                   className="form-check-input"
@@ -96,7 +97,7 @@ const Slide1 = ({ changeSlide }) => {
                   I Agree, I have read and agree to the Terms
                 </label>
               </div>
-              <div className="d-flex flex-row ">
+              <div className="d-flex flex-row px-2">
                 <button
                   type="submit"
                   className="button-layout button-contained me-3"
@@ -104,10 +105,10 @@ const Slide1 = ({ changeSlide }) => {
                   Continue to register
                 </button>
                 <div className=" ms-3">
-                  <p className="mb-0">
-                    Already user?
-                    <a className="a-tag " href="#">
-                      Login
+                  <p className="mb-0 py-2">
+                    Already user? 
+                    <a className="a-tag " href="/login">
+                     &nbsp; Login
                     </a>
                   </p>
                 </div>
