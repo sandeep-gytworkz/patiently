@@ -11,7 +11,7 @@ import Participate from "./components/Participate/Participate";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route exact path="/about" element={<About />} />
