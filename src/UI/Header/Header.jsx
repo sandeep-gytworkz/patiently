@@ -47,7 +47,7 @@ const Header = ({ hideRight }) => {
               </Link>
             </li>
             <li className="nav-item px-3 ">
-              <Link className="nav-link" to="/#">
+              <Link className="nav-link" to="/data-security">
                 Data Security
               </Link>
             </li>

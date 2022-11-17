@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
 import "./HomePage.css";
@@ -7,6 +7,8 @@ import "../../styles/common/global.css";
 import arrow from "../../assets/images/arrow.svg";
 
 const Homepage = () => {
+  const [cookieState, setCookieState] = useState(true);
+
   return (
     <div className="d-flex flex-column homePage-container">
       <Header />
@@ -37,32 +39,44 @@ const Homepage = () => {
       <div style={{ height: "5%" }}>
         <Footer />
       </div>
-      <div className=" cookies-banner">
-        <div className="  cookies-banner-main d-flex  flex-row align-items-center justify-content-between">
-          <div>
-            <p>We value your privacy</p>
-            <p>
-              We use cookies to enhance your browsing experience, serve
-              personalized ads or content, and analyze our traffic.
-            </p>
-            <p>
-              By clicking “Accept All”, you consent to our use of cookies. Read
-              More
-            </p>
-          </div>
-          <div>
-            <button className="button-layout button-outlined fs-16 me-2">
-              Manage
-            </button>
-            <button className="button-layout button-outlined fs-16 me-2">
-              Reject All
-            </button>
-            <button className="button-layout button-contained fs-16">
-              Accept All
-            </button>
+      {cookieState && (
+        <div className=" cookies-banner">
+          <div className="  cookies-banner-main d-flex  flex-row align-items-center justify-content-between">
+            <div>
+              <p>We value your privacy</p>
+              <p>
+                We use cookies to enhance your browsing experience, serve
+                personalized ads or content, and analyze our traffic.
+              </p>
+              <p>
+                By clicking “Accept All”, you consent to our use of cookies.
+                Read More
+              </p>
+            </div>
+            <div>
+              <button className="button-layout button-outlined fs-16 me-2">
+                Manage
+              </button>
+              <button
+                className="button-layout button-outlined fs-16 me-2"
+                onClick={() => {
+                  setCookieState(false);
+                }}
+              >
+                Reject All
+              </button>
+              <button
+                className="button-layout button-contained fs-16"
+                onClick={() => {
+                  setCookieState(false);
+                }}
+              >
+                Accept All
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

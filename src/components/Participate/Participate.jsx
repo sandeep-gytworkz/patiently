@@ -53,7 +53,11 @@ const Participate = () => {
               </button>
               <button
                 type="button"
-                className={`btn btn-secondary ${slide === 3 ? "active" : ""}`}
+                className={`btn btn-secondary ${
+                  slide === 3 || slide === 4 || slide === 5 || slide === 6
+                    ? "active"
+                    : ""
+                }`}
               >
                 &#11044;
               </button>

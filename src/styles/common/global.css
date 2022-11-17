@@ -2,6 +2,10 @@
   color: #2b3566;
 }
 
+.color-dark-grey {
+  color: #707070;
+}
+
 .button-magic-mint {
   background-color: #acf2d2;
   color: #2b3566;
@@ -10,7 +14,7 @@
 
 .button-layout {
   border-radius: 100px;
-  padding: 8px 20px;
+  padding: 0.5rem 4rem;
   font-weight: 500;
 }
 .button-contained {
@@ -37,4 +41,12 @@
 
 .fs-14 {
   font-size: 14px;
+  font-family: Helvetica;
+  font-weight: 600;
+}
+
+.a-tag {
+  color: #2b3566;
+  text-decoration: none;
+  font-size: 16px;
 }

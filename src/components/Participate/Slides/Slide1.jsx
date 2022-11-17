@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Slide2 from "./Slide2";
 import homeImg from "../../../assets/images/homeImg.png";
+import "../../../styles/common/global.css";
 
 const Slide1 = ({ changeSlide }) => {
   const [isRegister, setIsRegister] = useState(true);
@@ -9,70 +10,83 @@ const Slide1 = ({ changeSlide }) => {
     <>
       {isRegister ? (
         <>
-          <div style={{ height: "100%", width: "40%" }}>
+          <div className="col-5">
             <img
               src={homeImg}
               alt="home page logo"
-              style={{ height: "70%", marginTop: "15%", marginLeft: "15%" }}
+              style={{ height: "100%" }}
             />
           </div>
-          <div style={{ height: "100%", width: "60%" }}>
-            <h3 style={{ padding: "0.75rem" }}>
+          <div className="col-7">
+            <h3 className="color-primary fs-24">
               Register your account with us
             </h3>
             <form
               onSubmit={() => {
                 setIsRegister(false);
               }}
+              className="mt-2 d-flex flex-column align-items-center"
             >
-              <div className="d-flex flex-row ">
+              <div className="d-flex flex-row justify-content-evenly ">
                 <div className="mb-3 p-2 col-5  ">
-                  <label htmlFor="firstName" className="form-label">
+                  <label
+                    htmlFor="firstName"
+                    className="form-label fs-16 color-primary fw-bold"
+                  >
                     First Name
                   </label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control px-5"
                     id="firstName"
-                    placeholder="Enter first name"
+                    placeholder="Enter first name "
                   />
                 </div>
                 <div className="mb-3 p-2 col-5  ">
-                  <label htmlFor="lastName" className="form-label">
+                  <label
+                    htmlFor="lastName"
+                    className="form-label fs-16 color-primary fw-bold"
+                  >
                     Last Name
                   </label>
                   <input
                     type="text"
-                    className="form-control"
+                    className="form-control px-5"
                     id="lastName"
                     placeholder="Enter last name"
                   />
                 </div>
               </div>
-              <div className="d-flex flex-row p-2  ">
+              <div className="d-flex flex-row justify-content-evenly  ">
                 <div className="mb-3 p-2 col-5">
-                  <label htmlFor="inputEmail" className="form-label">
+                  <label
+                    htmlFor="inputEmail"
+                    className="form-label fs-16 color-primary fw-bold"
+                  >
                     Email address
                   </label>
                   <input
                     type="email"
-                    className="form-control"
+                    className="form-control px-5"
                     id="inputEmail"
                     placeholder="Enter email ID"
                   />
                 </div>
                 <div className="mb-3 p-2 col-5 ">
-                  <label htmlFor="contactNumber" className="form-label">
+                  <label
+                    htmlFor="contactNumber"
+                    className="form-label fs-16 color-primary fw-bold"
+                  >
                     Contact Number
                   </label>
                   <input
-                    type="number"
-                    className="form-control"
+                    type="text"
+                    className="form-control px-5"
                     id="contactNumber"
                   />
                 </div>
               </div>
-              <div className="ms-3 mb-3 form-check">
+              <div className=" col-10 form-check justify-content-between mb-5 ">
                 <input
                   type="checkbox"
                   className="form-check-input"
@@ -82,13 +96,21 @@ const Slide1 = ({ changeSlide }) => {
                   I Agree, I have read and agree to the Terms
                 </label>
               </div>
-              <div className="ms-3 d-flex flex-row">
-                <button type="submit" className="btn btn-primary btn-lg ">
+              <div className="d-flex flex-row ">
+                <button
+                  type="submit"
+                  className="button-layout button-contained me-3"
+                >
                   Continue to register
                 </button>
-                <p style={{ marginLeft: "10%" }}>
-                  Already user ? <a href="#">Login</a>
-                </p>
+                <div className=" ms-3">
+                  <p className="mb-0">
+                    Already user?
+                    <a className="a-tag " href="#">
+                      Login
+                    </a>
+                  </p>
+                </div>
               </div>
             </form>
           </div>

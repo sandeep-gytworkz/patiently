@@ -37,15 +37,15 @@ const Slide2 = ({ changeSlide }) => {
             }}
           />
         </div>
-        <div className="d-flex flex-row mt-5 ">
-          <a href="#" className="me-5">
+        <div className="d-flex flex-row mt-5 align-items-center">
+          <a href="#" className="me-5 a-tag">
             Cancel
           </a>
           <button
             onClick={() => {
               changeSlide(3);
             }}
-            className="btn btn-primary"
+            className="button-layout button-contained"
           >
             Continue to Questions
           </button>

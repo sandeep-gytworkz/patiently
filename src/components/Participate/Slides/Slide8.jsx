@@ -1,4 +1,5 @@
 import React from "react";
+import "../../../styles/common/global.css";
 
 import checkListImg from "../../../assets/images/checkListImg.png";
 const Slide8 = () => {
@@ -12,14 +13,22 @@ const Slide8 = () => {
         />
       </div>
       <div className="col-6">
-        <div style={{ paddingBottom: "10rem" }}>
-          <h2>Thanks John</h2>
-          <p>
+        <div className="py-5">
+          <h2 className="color-primary fs-24 pb-3">Thanks John</h2>
+          <p className="color-dark-grey fs-16 col-8">
             See a summary of the information you share and the data saved in
-            your patient.ly profile.
+            your{" "}
+            <span>
+              <a className="a-tag"> patient.ly profile</a>
+            </span>
+            .
           </p>
         </div>
-        <button className="btn btn-primary">Go to your profile</button>
+        <div className="pt-5">
+          <button className="button-magic-mint button-layout ">
+            Go to your profile
+          </button>
+        </div>
       </div>
     </div>
   );
