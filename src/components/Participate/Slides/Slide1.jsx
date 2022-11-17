@@ -25,10 +25,10 @@ const Slide1 = ({ changeSlide }) => {
               onSubmit={() => {
                 setIsRegister(false);
               }}
-              className="mt-2 d-flex flex-column align-items-center"
+              className="mt-2 d-flex flex-column "
             >
-              <div className="d-flex flex-row justify-content-evenly ">
-                <div className="mb-3 p-2 col-5  ">
+              <div className="d-flex flex-row justify-content-start ">
+                <div className="mb-3 p-2 col-6  ">
                   <label
                     htmlFor="firstName"
                     className="form-label fs-16 color-primary fw-bold"
@@ -42,7 +42,7 @@ const Slide1 = ({ changeSlide }) => {
                     placeholder="Enter first name "
                   />
                 </div>
-                <div className="mb-3 p-2 col-5  ">
+                <div className="mb-3 p-2 col-6  ">
                   <label
                     htmlFor="lastName"
                     className="form-label fs-16 color-primary fw-bold"
@@ -57,8 +57,8 @@ const Slide1 = ({ changeSlide }) => {
                   />
                 </div>
               </div>
-              <div className="d-flex flex-row justify-content-evenly  ">
-                <div className="mb-3 p-2 col-5">
+              <div className="d-flex flex-row justify-content-start ">
+                <div className="mb-3 p-2 col-6">
                   <label
                     htmlFor="inputEmail"
                     className="form-label fs-16 color-primary fw-bold"
@@ -72,7 +72,7 @@ const Slide1 = ({ changeSlide }) => {
                     placeholder="Enter email ID"
                   />
                 </div>
-                <div className="mb-3 p-2 col-5 ">
+                <div className="mb-3 p-2 col-6 ">
                   <label
                     htmlFor="contactNumber"
                     className="form-label fs-16 color-primary fw-bold"
@@ -86,25 +86,25 @@ const Slide1 = ({ changeSlide }) => {
                   />
                 </div>
               </div>
-              <div className=" col-10 form-check justify-content-between mb-5 ">
+              <div className="  form-check d-flex flex-row justify-content-start mb-5   ">
                 <input
                   type="checkbox"
-                  className="form-check-input"
+                  className="form-check-input "
                   id="check"
                 />
                 <label className="form-check-label" htmlFor="check">
                   I Agree, I have read and agree to the Terms
                 </label>
               </div>
-              <div className="d-flex flex-row ">
+              <div className="d-flex flex-row justify-content-start ">
                 <button
                   type="submit"
                   className="button-layout button-contained me-3"
                 >
                   Continue to register
                 </button>
-                <div className=" ms-3">
-                  <p className="mb-0">
+                <div className=" ms-3 d-flex align-items-center">
+                  <p>
                     Already user?
                     <a className="a-tag " href="#">
                       Login
