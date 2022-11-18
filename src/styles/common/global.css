@@ -28,9 +28,19 @@
   background-color: transparent;
 }
 
+.button-outlined-q {
+  color: #48b27e;
+  border: 1px solid #48b27e;
+  background-color: transparent;
+}
+
 .button-virtual {
   background-color: transparent;
   border: none;
+}
+
+.button-virtual:hover {
+  color: rgb(71, 134, 244);
 }
 
 .fs-18 {
@@ -60,17 +70,14 @@
   text-decoration: none;
   font-size: 16px;
 }
-.a-tag:hover {
-  color: #2b3566;
-}
 
 .btn-check:checked + .radio-button {
-  background-color: #2d3663;
+  background-color: #48b27e;
   color: white;
 }
 
 .btn-check + .radio-button:hover {
-  background-color: #2d3663;
+  background-color: #acf2d2;
   color: white;
 }
 

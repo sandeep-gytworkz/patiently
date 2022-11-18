@@ -10,14 +10,10 @@ const Slide2 = ({ changeSlide }) => {
   };
   return (
     <>
-      <div style={{ width: "50%" }}>
-        <img
-          src={homeImg}
-          alt="home image"
-          style={{ width: "100%", maxWidth: "400px" }}
-        />
+      <div className="col-6">
+        <img src={homeImg} alt="home image" className="h-100" />
       </div>
-      <div style={{ width: "50%" }}>
+      <div className="col-6">
         <h4>Two Factor Authentication</h4>
         <p>
           Hi John, You have received 6 digit code in your provided email/contact

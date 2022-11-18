@@ -20,7 +20,7 @@ const Slide4 = ({ changeSlide }) => {
               autocomplete="off"
             />
             <label
-              class="button-layout button-outlined radio-button"
+              class="button-layout button-outlined-q radio-button"
               for="option1"
             >
               Male
@@ -34,7 +34,7 @@ const Slide4 = ({ changeSlide }) => {
               autocomplete="off"
             />
             <label
-              class="button-layout button-outlined radio-button"
+              class="button-layout button-outlined-q radio-button"
               for="option2"
             >
               Female

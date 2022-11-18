@@ -20,7 +20,7 @@ const Slide3 = (props) => {
               autocomplete="off"
             />
             <label
-              class="button-layout button-outlined radio-button"
+              class="button-layout button-outlined-q radio-button"
               for="option1"
             >
               18 to 64
@@ -34,7 +34,7 @@ const Slide3 = (props) => {
               autocomplete="off"
             />
             <label
-              class="button-layout button-outlined radio-button"
+              class="button-layout button-outlined-q radio-button"
               for="option2"
             >
               65 or Older

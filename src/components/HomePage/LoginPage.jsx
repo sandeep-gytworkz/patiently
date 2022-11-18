@@ -40,12 +40,12 @@ const LoginPage = () => {
               >
                 Login
               </button>
-              <Link
-                className="button-contained button-layout link-class"
-                to="/participate-now"
-              >
-                Register
-              </Link>
+              <div className="d-flex flex-row  align-items-center">
+                <p className="mb-0 py-2">New user?</p>
+                <Link to="/participate-now" className="a-tag">
+                  &nbsp; Register here
+                </Link>
+              </div>
             </div>
           </div>
         </form>

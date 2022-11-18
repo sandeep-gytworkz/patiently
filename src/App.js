@@ -7,6 +7,7 @@ import Homepage from "./components/HomePage/HomePage";
 import LoginPage from "./components/HomePage/LoginPage";
 
 import Participate from "./components/Participate/Participate";
+import Slide9 from "./components/Participate/Slides/Slide9";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/login" element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
+      {/* <Slide9 /> */}
     </>
   );
 }

@@ -19,7 +19,7 @@ const Slide5 = ({ changeSlide }) => {
               autocomplete="off"
             />
             <label
-              class="button-layout button-outlined radio-button"
+              class="button-layout button-outlined-q radio-button"
               for="option1"
             >
               Yes
@@ -33,7 +33,7 @@ const Slide5 = ({ changeSlide }) => {
               autocomplete="off"
             />
             <label
-              class="button-layout button-outlined radio-button"
+              class="button-layout button-outlined-q radio-button"
               for="option2"
             >
               No
