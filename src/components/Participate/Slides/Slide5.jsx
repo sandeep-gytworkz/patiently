@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Slide5 = ({ changeSlide }) => {
   return (
@@ -40,15 +41,20 @@ const Slide5 = ({ changeSlide }) => {
           </div>
         </div>
         <div className="d-flex flex-row pt-5 justify-content-between align-items-center">
-          <a href="#" className="a-tag">
+          <Link to="/" className="a-tag">
             Cancel
-          </a>
-          <a href="#" className="a-tag">
-            Break
-          </a>
+          </Link>
+          <button
+            className="a-tag button-virtual"
+            onClick={() => {
+              changeSlide(4);
+            }}
+          >
+            Back
+          </button>
           <button
             type="button"
-            className="button-layout button-contained"
+            className="button-layout button-magic-mint"
             onClick={() => {
               changeSlide(6);
             }}

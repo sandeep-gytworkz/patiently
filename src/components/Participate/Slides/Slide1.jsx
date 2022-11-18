@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Slide2 from "./Slide2";
 import homeImg from "../../../assets/images/homeImg.png";
 import "../../../styles/common/global.css";
+import { Link } from "react-router-dom";
+import TermsModal from "../../../UI/Modal/TermsModal";
 
 const Slide1 = ({ changeSlide }) => {
   const [isRegister, setIsRegister] = useState(true);
@@ -37,9 +39,10 @@ const Slide1 = ({ changeSlide }) => {
                   </label>
                   <input
                     type="text"
-                    className="form-control px-5"
+                    className="form-control px-5 input-class"
                     id="firstName"
                     placeholder="Enter first name "
+                    required
                   />
                 </div>
                 <div className="mb-3 p-2 col-6  ">
@@ -51,9 +54,10 @@ const Slide1 = ({ changeSlide }) => {
                   </label>
                   <input
                     type="text"
-                    className="form-control px-5"
+                    className="form-control px-5 input-class"
                     id="lastName"
                     placeholder="Enter last name"
+                    required
                   />
                 </div>
               </div>
@@ -67,9 +71,10 @@ const Slide1 = ({ changeSlide }) => {
                   </label>
                   <input
                     type="email"
-                    className="form-control px-5"
+                    className="form-control px-5 input-class"
                     id="inputEmail"
                     placeholder="Enter email ID"
+                    required
                   />
                 </div>
                 <div className="mb-3 p-2 col-6 ">
@@ -81,34 +86,37 @@ const Slide1 = ({ changeSlide }) => {
                   </label>
                   <input
                     type="text"
-                    className="form-control px-5"
+                    className="form-control px-5 input-class"
                     id="contactNumber"
+                    required
                   />
                 </div>
               </div>
               <div className="  form-check d-flex flex-row justify-content-start mb-5   ">
                 <input
                   type="checkbox"
-                  className="form-check-input "
+                  className="form-check-input  "
                   id="check"
+                  required
                 />
                 <label className="form-check-label" htmlFor="check">
                   I Agree, I have read and agree to the Terms
                 </label>
               </div>
               <div className="d-flex flex-row justify-content-start ">
+                <TermsModal />
                 <button
                   type="submit"
-                  className="button-layout button-contained me-3"
+                  className="button-layout button-magic-mint me-3"
                 >
                   Continue to register
                 </button>
                 <div className=" ms-3 d-flex align-items-center">
                   <p>
-                    Already user?
-                    <a className="a-tag " href="#">
+                    Already user?{" "}
+                    <Link className="a-tag " to="/login">
                       Login
-                    </a>
+                    </Link>
                   </p>
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../../styles/common/global.css";
+import { Link } from "react-router-dom";
 
 const Slide6 = ({ changeSlide }) => {
   return (
@@ -41,15 +42,20 @@ const Slide6 = ({ changeSlide }) => {
           </div>
         </div>
         <div className="d-flex flex-row pt-5 justify-content-between align-items-center">
-          <a href="#" className="a-tag">
+          <Link href="/" className="a-tag">
             Cancel
-          </a>
-          <a href="#" className="a-tag">
-            Break
-          </a>
+          </Link>
+          <button
+            className="a-tag button-virtual"
+            onClick={() => {
+              changeSlide(4);
+            }}
+          >
+            Back
+          </button>
           <button
             type="button"
-            className="button-layout button-contained"
+            className="button-layout button-magic-mint"
             onClick={() => {
               changeSlide(7);
             }}

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import OtpInput from "react-otp-input";
 import homeImg from "../../../assets/images/homeImg.png";
+import { Link } from "react-router-dom";
+
 const Slide2 = ({ changeSlide }) => {
   const [otp, setOtp] = useState("");
   const handleOtpChange = (number) => {
@@ -38,14 +40,14 @@ const Slide2 = ({ changeSlide }) => {
           />
         </div>
         <div className="d-flex flex-row mt-5 align-items-center">
-          <a href="#" className="me-5 a-tag">
+          <Link to="/" className="me-5 a-tag">
             Cancel
-          </a>
+          </Link>
           <button
             onClick={() => {
               changeSlide(3);
             }}
-            className="button-layout button-contained"
+            className="button-layout button-magic-mint"
           >
             Continue to Questions
           </button>

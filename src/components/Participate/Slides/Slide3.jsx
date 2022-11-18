@@ -42,15 +42,13 @@ const Slide3 = (props) => {
           </div>
         </div>
         <div className="d-flex flex-row justify-content-between align-items-center col-12 pt-5">
-          <Link to="#" className="a-tag">
+          <Link to="/" className="a-tag">
             Cancel
           </Link>
-          <Link to="#" className="a-tag">
-            Break
-          </Link>
+
           <button
             type="button"
-            className="button-layout button-contained"
+            className="button-layout button-magic-mint"
             onClick={() => {
               props.changeSlide(4);
             }}
