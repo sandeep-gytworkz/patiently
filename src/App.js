@@ -19,9 +19,9 @@ function App() {
           <Route exact path="/participate-now" element={<Participate />} />
           <Route exact path="/data-security" element={<DataSecurity />} />
           <Route exact path="/login" element={<LoginPage />} />
+          <Route exact path="/view-profile" element={<Slide9 />} />
         </Routes>
       </BrowserRouter>
-      {/* <Slide9 /> */}
     </>
   );
 }
