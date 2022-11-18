@@ -5,21 +5,22 @@ import "./HomePage.css";
 import homeImg from "../../assets/images/homeImg.png";
 import "../../styles/common/global.css";
 import arrow from "../../assets/images/arrow.svg";
+import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const [cookieState, setCookieState] = useState(false);
 
-  const setCookie = ()=>{
-    setCookieState(true)
+  const setCookie = () => {
+    setCookieState(true);
     localStorage.setItem("cookieSet", "true");
-  }
+  };
 
-  useEffect(()=>{
+  useEffect(() => {
     let cookieSet = localStorage.getItem("cookieSet");
-    if(cookieSet){
-      setCookieState(true)
+    if (cookieSet) {
+      setCookieState(true);
     }
-  },[])
+  }, []);
 
   return (
     <div className="d-flex flex-column homePage-container">
@@ -43,9 +44,12 @@ const Homepage = () => {
             Clinical trials offer hope for many people and an opportunity to
             help researchers find better treatments for others in the future.
           </h3>
-          <a className="btn btn-info button-layout fs-18 button-magic-mint" href="/about">
+          <Link
+            className="btn btn-info learn-more-button"
+            to="/participate-now"
+          >
             Learn More <img src={arrow} alt="arrow" width={18} height={21} />
-          </a>
+          </Link>
         </div>
       </div>
       <div style={{ height: "5%" }}>
