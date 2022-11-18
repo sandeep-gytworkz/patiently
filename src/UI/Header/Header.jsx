@@ -22,7 +22,7 @@ const Header = ({ hideRight }) => {
     <nav className="navbar navbar-expand-lg p-0">
       <div className="container-fluid header-container">
         <div className="col-1 left-gutter h-100 d-inline-block"></div>
-        <Link className="navbar-brand col-5 h-100 m-0 pt-5" to="/#">
+        <Link className="navbar-brand col-5 h-100 m-0 pt-5" to="./#">
           <img src={Logo} alt="logo" className="logo" />
         </Link>
         <button
