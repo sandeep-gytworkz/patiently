@@ -17,7 +17,7 @@
   padding: 0.5rem 3rem;
   font-weight: 500;
 }
-.button-contained {
+.button-contained, .button-contained:hover {
   background-color: #2d3663;
   color: white;
 }

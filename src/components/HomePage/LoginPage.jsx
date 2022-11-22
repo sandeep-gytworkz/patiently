@@ -34,12 +34,9 @@ const LoginPage = () => {
               />
             </div>
             <div className="py-3 px-2  d-flex justify-content-between">
-              <button
-                type="submit"
-                className="button-contained button-layout me-2"
-              >
+              <Link className="btn button-contained button-layout me-2" aria-current="page" to="/view-profile">
                 Login
-              </button>
+              </Link>
               <div className="d-flex flex-row  align-items-center">
                 <p className="mb-0 py-2">New user?</p>
                 <Link to="/participate-now" className="a-tag">

@@ -77,7 +77,7 @@ const Slide9 = () => {
       </div>
       <div className="d-flex flex-row col-12 px-5">
         <div className="col-2 record-container me-5 ">
-          <p>John's Record</p>
+          <p className="col-12 text-center my-5">No Records</p>
         </div>
         <div className="col-2 file-uploader">
           <FileUploader
