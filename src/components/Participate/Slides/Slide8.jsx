@@ -12,7 +12,7 @@ const Slide8 = () => {
           <img
             src={checkListImg}
             alt="check list image"
-            style={{ width: "70%", height: "90%", margin: "5%" }}
+            style={{ height: "90%", margin: "5%" }}
           />
         </div>
         <div className="col-6">

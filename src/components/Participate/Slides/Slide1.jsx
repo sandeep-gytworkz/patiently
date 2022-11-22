@@ -8,6 +8,7 @@ import TermsModal from "../../../UI/modals/TermsModal";
 const Slide1 = ({ changeSlide }) => {
   const [isRegister, setIsRegister] = useState(true);
   const [termsState, setTermsState] = useState(false);
+  const [passwordValue, setPasswordValue] = useState();
   const passwordGenerator = () => {
     var generator = require("generate-password-browser");
 
@@ -16,7 +17,8 @@ const Slide1 = ({ changeSlide }) => {
       numbers: true,
     });
 
-    console.log(password);
+    // console.log(password);
+    setPasswordValue(password);
   };
 
   return (
@@ -35,7 +37,8 @@ const Slide1 = ({ changeSlide }) => {
               Register your account with us
             </h2>
             <form
-              onSubmit={() => {
+              onSubmit={(event) => {
+                event.preventDefault();
                 setIsRegister(false);
               }}
               className="mt-1 d-flex flex-column col-12"
@@ -54,6 +57,7 @@ const Slide1 = ({ changeSlide }) => {
                     id="firstName"
                     placeholder="Enter first name "
                     required
+                    name="firstName"
                   />
                 </div>
                 <div className="mb-1 p-2 col-6 ">
@@ -112,37 +116,40 @@ const Slide1 = ({ changeSlide }) => {
                     Password
                   </label>
                   <input
-                    type="password"
+                    type="text"
                     className="form-control"
                     id="password"
                     placeholder="Enter password"
                     required
+                    value={passwordValue}
+                    onChange={(event) => {
+                      setPasswordValue(event.target.value);
+                    }}
                   />
                 </div>
                 <div className="mb-1 p-2 col-6 d-flex align-items-end">
-                  <button className="button-a-tag" onClick={passwordGenerator}>
+                  <button
+                    className="a-tag"
+                    type="button"
+                    onClick={passwordGenerator}
+                  >
                     Generate Password
                   </button>
                 </div>
               </div>
               <div className=" col-10 form-check justify-content-between mb-1 mx-2">
-                {termsState ? (
-                  <input
-                    type="checkbox"
-                    className="form-check-input  "
-                    id="check"
-                    required
-                    checked
-                  />
-                ) : (
-                  <input
-                    type="checkbox"
-                    className="form-check-input"
-                    id="check"
-                    required
-                    disabled
-                  />
-                )}
+                <input
+                  type="checkbox"
+                  className="form-check-input  "
+                  id="check"
+                  required
+                  checked={termsState}
+                  onChange={() => {
+                    setTermsState(!termsState);
+                  }}
+                  disabled={!termsState}
+                />
+
                 <label className="form-check-label">
                   I Agree, I have read and agree to the &nbsp;
                 </label>
