@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/patiently/static/css/main.bb814de3.css",
-    "main.js": "/patiently/static/js/main.07f4c0be.js",
+    "main.css": "/patiently/static/css/main.8695b6e7.css",
+    "main.js": "/patiently/static/js/main.0371f7d2.js",
     "static/js/787.83acb4b8.chunk.js": "/patiently/static/js/787.83acb4b8.chunk.js",
     "static/media/homeImg.png": "/patiently/static/media/homeImg.dae009bfe0b787a70e25.png",
     "static/media/checkListImg.png": "/patiently/static/media/checkListImg.709f04b83c12e00dccb7.png",
     "static/media/logo.png": "/patiently/static/media/logo.ce007e0db15b88c4e94b.png",
     "index.html": "/patiently/index.html",
     "static/media/arrow.svg": "/patiently/static/media/arrow.8e3b81fb97d3d3aba584472b7736abdf.svg",
-    "main.bb814de3.css.map": "/patiently/static/css/main.bb814de3.css.map",
-    "main.07f4c0be.js.map": "/patiently/static/js/main.07f4c0be.js.map",
+    "main.8695b6e7.css.map": "/patiently/static/css/main.8695b6e7.css.map",
+    "main.0371f7d2.js.map": "/patiently/static/js/main.0371f7d2.js.map",
     "787.83acb4b8.chunk.js.map": "/patiently/static/js/787.83acb4b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb814de3.css",
-    "static/js/main.07f4c0be.js"
+    "static/css/main.8695b6e7.css",
+    "static/js/main.0371f7d2.js"
   ]
 }
