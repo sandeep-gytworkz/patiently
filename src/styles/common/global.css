@@ -28,6 +28,17 @@
   background-color: transparent;
 }
 
+.button-a-tag {
+  color: #2b3566;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+}
+
+.button-a-tag:hover {
+  color: rgb(71, 134, 244);
+}
+
 .button-outlined-q {
   color: #48b27e;
   border: 1px solid #48b27e;
