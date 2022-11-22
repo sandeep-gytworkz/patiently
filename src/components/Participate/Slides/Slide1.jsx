@@ -3,9 +3,21 @@ import Slide2 from "./Slide2";
 import homeImg from "../../../assets/images/homeImg.png";
 import "../../../styles/common/global.css";
 import { Link } from "react-router-dom";
+import TermsModal from "../../../UI/modals/TermsModal";
 
 const Slide1 = ({ changeSlide }) => {
   const [isRegister, setIsRegister] = useState(true);
+  const [termsState, setTermsState] = useState(false);
+  const passwordGenerator = () => {
+    var generator = require("generate-password-browser");
+
+    var password = generator.generate({
+      length: 10,
+      numbers: true,
+    });
+
+    console.log(password);
+  };
 
   return (
     <>
@@ -19,17 +31,17 @@ const Slide1 = ({ changeSlide }) => {
             />
           </div>
           <div className="col-7">
-            <h2 className="color-primary fs-24 px-2 py-4">
+            <h2 className="color-primary fs-24 px-2 ">
               Register your account with us
             </h2>
             <form
               onSubmit={() => {
                 setIsRegister(false);
               }}
-              className="mt-2 d-flex flex-column col-12"
+              className="mt-1 d-flex flex-column col-12"
             >
               <div className="d-flex flex-row justify-content-evenly col-11">
-                <div className="mb-3 p-2 col-6 ">
+                <div className="mb-1 p-2 col-6 ">
                   <label
                     htmlFor="firstName"
                     className="form-label fs-6 color-primary"
@@ -44,7 +56,7 @@ const Slide1 = ({ changeSlide }) => {
                     required
                   />
                 </div>
-                <div className="mb-3 p-2 col-6 ">
+                <div className="mb-1 p-2 col-6 ">
                   <label
                     htmlFor="lastName"
                     className="form-label fs-6 color-primary"
@@ -61,7 +73,7 @@ const Slide1 = ({ changeSlide }) => {
                 </div>
               </div>
               <div className="d-flex flex-row justify-content-evenly  col-11">
-                <div className="mb-3 p-2 col-6 ">
+                <div className="mb-1 p-2 col-6 ">
                   <label
                     htmlFor="inputEmail"
                     className="form-label fs-6 color-primary"
@@ -76,7 +88,7 @@ const Slide1 = ({ changeSlide }) => {
                     required
                   />
                 </div>
-                <div className="mb-3 p-2 col-6 ">
+                <div className="mb-1 p-2 col-6 ">
                   <label
                     htmlFor="contactNumber"
                     className="form-label fs-6 color-primary"
@@ -91,16 +103,62 @@ const Slide1 = ({ changeSlide }) => {
                   />
                 </div>
               </div>
-              <div className=" col-10 form-check justify-content-between mb-3 mx-2">
-                <input
-                  type="checkbox"
-                  className="form-check-input  "
-                  id="check"
-                  required
-                />
-                <label className="form-check-label" htmlFor="check">
-                  I Agree, I have read and agree to the Terms
+              <div className="d-flex flex-row justify-content-evenly col-11">
+                <div className="mb-1 p-2 col-6 ">
+                  <label
+                    htmlFor="password"
+                    className="form-label fs-6 color-primary"
+                  >
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="password"
+                    placeholder="Enter password"
+                    required
+                  />
+                </div>
+                <div className="mb-1 p-2 col-6 d-flex align-items-end">
+                  <button className="button-a-tag" onClick={passwordGenerator}>
+                    Generate Password
+                  </button>
+                </div>
+              </div>
+              <div className=" col-10 form-check justify-content-between mb-1 mx-2">
+                {termsState ? (
+                  <input
+                    type="checkbox"
+                    className="form-check-input  "
+                    id="check"
+                    required
+                    checked
+                  />
+                ) : (
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="check"
+                    required
+                    disabled
+                  />
+                )}
+                <label className="form-check-label">
+                  I Agree, I have read and agree to the &nbsp;
                 </label>
+
+                <TermsModal
+                  stateChanger={() => {
+                    setTermsState(true);
+                  }}
+                />
+                <a
+                  className="color-primary fs-12 a-tag"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalLong"
+                >
+                  Terms
+                </a>
               </div>
               <div className="d-flex flex-row px-2">
                 <button

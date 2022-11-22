@@ -27,7 +27,7 @@ const LoginPage = () => {
                 Enter Password
               </label>
               <input
-                type="text"
+                type="password"
                 placeholder="Enter Password"
                 id="password"
                 className="form-control input-class p-2"
@@ -40,7 +40,7 @@ const LoginPage = () => {
               <div className="d-flex flex-row  align-items-center">
                 <p className="mb-0 py-2">New user?</p>
                 <Link to="/participate-now" className="a-tag">
-                  &nbsp; Register here
+                  &nbsp; Register
                 </Link>
               </div>
             </div>
