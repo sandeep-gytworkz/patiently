@@ -129,7 +129,7 @@ const Slide1 = ({ changeSlide }) => {
                 </div>
                 <div className="mb-1 p-2 col-6 d-flex align-items-end">
                   <button
-                    className="a-tag"
+                    className="button-a-tag"
                     type="button"
                     onClick={passwordGenerator}
                   >
