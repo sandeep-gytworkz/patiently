@@ -137,7 +137,7 @@ const Slide1 = ({ changeSlide }) => {
                   </button>
                 </div>
               </div>
-              <div className=" col-10 form-check justify-content-between mb-1 mx-2">
+              <div className=" col-10 form-check justify-content-between mb-4 mx-2">
                 <input
                   type="checkbox"
                   className="form-check-input  "

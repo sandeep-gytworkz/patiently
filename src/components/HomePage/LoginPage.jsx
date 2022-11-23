@@ -3,12 +3,17 @@ import BackgroundCard from "../../UI/common-cards/BackgroundCard";
 import WhiteCard from "../../UI/common-cards/WhiteCard";
 import "../../styles/common/global.css";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
+  const onSubmitHandler = () => {
+    navigate("/view-profile");
+  };
   return (
     <BackgroundCard>
       <WhiteCard>
-        <form>
+        <form onSubmit={onSubmitHandler}>
           <div className="d-flex flex-column align-items-center">
             <div className="p-3 d-flex flex-column col-8">
               <label htmlFor="email" className="fs-14 color-primary">
@@ -34,9 +39,12 @@ const LoginPage = () => {
               />
             </div>
             <div className="py-3 px-2  d-flex justify-content-between">
-              <Link className="btn button-contained button-layout me-2" aria-current="page" to="/view-profile">
+              <button
+                className="btn button-contained button-layout me-2"
+                aria-current="page"
+              >
                 Login
-              </Link>
+              </button>
               <div className="d-flex flex-row  align-items-center">
                 <p className="mb-0 py-2">New user?</p>
                 <Link to="/participate-now" className="a-tag">
