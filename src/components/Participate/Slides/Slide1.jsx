@@ -1,14 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useReducer } from "react";
 import Slide2 from "./Slide2";
 import homeImg from "../../../assets/images/homeImg.png";
 import "../../../styles/common/global.css";
 import { Link } from "react-router-dom";
 import TermsModal from "../../../UI/modals/TermsModal";
+import { registrationReducer, initRegState } from "../Reducers/Participate";
 
 const Slide1 = ({ changeSlide }) => {
   const [isRegister, setIsRegister] = useState(true);
   const [termsState, setTermsState] = useState(false);
-  const [passwordValue, setPasswordValue] = useState();
+  const [passwordValue, setPasswordValue] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+
+  const [registrationData, dispatch] = useReducer(registrationReducer, initRegState);
+
   const passwordGenerator = () => {
     var generator = require("generate-password-browser");
 
@@ -20,6 +29,17 @@ const Slide1 = ({ changeSlide }) => {
     // console.log(password);
     setPasswordValue(password);
   };
+
+  const submitRegistration = ()=>{
+    let regData = {
+      firstName: firstName,
+      lastName: lastName,
+      phoneNumber: phoneNumber,
+      email: email
+    };
+    dispatch({type: "REGISTRATION_COMPLETE", data: regData});
+    // setIsRegister(false);
+  }
 
   return (
     <>
@@ -39,11 +59,11 @@ const Slide1 = ({ changeSlide }) => {
             <form
               onSubmit={(event) => {
                 event.preventDefault();
-                setIsRegister(false);
+                submitRegistration();
               }}
               className="mt-1 d-flex flex-column col-12"
             >
-              <div className="d-flex flex-row justify-content-evenly col-11">
+              <div className="d-flex flex-row justify-content-start col-11">
                 <div className="mb-1 p-2 col-6 ">
                   <label
                     htmlFor="firstName"
@@ -58,6 +78,8 @@ const Slide1 = ({ changeSlide }) => {
                     placeholder="Enter first name "
                     required
                     name="firstName"
+                    value={firstName}
+                    onChange={e => setFirstName(e.target.value)}
                   />
                 </div>
                 <div className="mb-1 p-2 col-6 ">
@@ -73,10 +95,12 @@ const Slide1 = ({ changeSlide }) => {
                     id="lastName"
                     placeholder="Enter last name"
                     required
+                    value={lastName}
+                    onChange={e => setLastName(e.target.value)}
                   />
                 </div>
               </div>
-              <div className="d-flex flex-row justify-content-evenly  col-11">
+              <div className="d-flex flex-row justify-content-start  col-11">
                 <div className="mb-1 p-2 col-6 ">
                   <label
                     htmlFor="inputEmail"
@@ -90,6 +114,8 @@ const Slide1 = ({ changeSlide }) => {
                     id="inputEmail"
                     placeholder="Enter email ID"
                     required
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="mb-1 p-2 col-6 ">
@@ -104,10 +130,12 @@ const Slide1 = ({ changeSlide }) => {
                     className="form-control"
                     id="contactNumber"
                     placeholder="Enter phone number"
+                    value={phoneNumber}
+                    onChange={e => setPhoneNumber(e.target.value)}
                   />
                 </div>
               </div>
-              <div className="d-flex flex-row justify-content-evenly col-11">
+              <div className="d-flex flex-row justify-content-start col-11">
                 <div className="mb-1 p-2 col-6 ">
                   <label
                     htmlFor="password"
@@ -122,19 +150,32 @@ const Slide1 = ({ changeSlide }) => {
                     placeholder="Enter password"
                     required
                     value={passwordValue}
-                    onChange={(event) => {
-                      setPasswordValue(event.target.value);
-                    }}
+                    onChange={e => setPasswordValue(e.target.value)}
                   />
-                </div>
-                <div className="mb-1 p-2 col-6 d-flex align-items-end">
                   <button
-                    className="button-a-tag"
+                    className="button-a-tag p-0 link-success"
                     type="button"
                     onClick={passwordGenerator}
                   >
                     Generate Password
                   </button>
+                </div>
+                <div className="mb-1 p-2 col-6">
+                  <label
+                    htmlFor="password"
+                    className="form-label fs-6 color-primary"
+                  >
+                    Confirm Password
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="password"
+                    placeholder="Re-enter password"
+                    required
+                    value={confirmPassword}
+                    onChange={e => setConfirmPassword(e.target.value)}
+                  />
                 </div>
               </div>
               <div className=" col-10 form-check justify-content-between mb-4 mx-2">
