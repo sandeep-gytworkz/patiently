@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import AdminBackgroundCard from "./components/Admin-UI/AdminBackgroundCard";
 import About from "./components/HomePage/About";
 import DataSecurity from "./components/HomePage/DataSecurity";
 import Homepage from "./components/HomePage/HomePage";
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/view-profile" element={<Slide9 />} />
         </Routes>
       </BrowserRouter>
+      {/* <AdminBackgroundCard /> */}
     </>
   );
 }

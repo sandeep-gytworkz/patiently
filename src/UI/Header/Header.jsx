@@ -42,12 +42,12 @@ const Header = ({ hideRight }) => {
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item px-3">
-              <Link className="nav-link" aria-current="page" to="/about">
+              <Link className="nav-link " aria-current="page" to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item px-3 ">
-              <Link className="nav-link" to="/data-security">
+              <Link className="nav-link " to="/data-security">
                 Data Security
               </Link>
             </li>
@@ -55,7 +55,7 @@ const Header = ({ hideRight }) => {
 
           <ul className="navbar-nav d-flex">
             <li className="nav-item px-3">
-              <Link className="nav-link" aria-current="page" to="/login">
+              <Link className="nav-link " aria-current="page" to="/login">
                 Login
               </Link>
             </li>
