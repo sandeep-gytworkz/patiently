@@ -11,14 +11,14 @@ const TermsModal = (props) => {
         style={{ display: "none" }}
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-lg">
+        <div className="modal-dialog modal-lg modal-dialog-scrollable">
           <div className="modal-content">
             <div className="modal-header">
               <h6 className="modal-title" id="exampleModalLongTitle">
                 TERMS OF SERVICE AGREEMENT
               </h6>
             </div>
-            <div className="modal-body" style={{ minHeight: "1500px" }}>
+            <div className="modal-body">
               <h6>LAST REVISION: 22-November-2022</h6>
               <p>
                 PLEASE READ THIS TERMS OF SERVICE AGREEMENT CAREFULLY. BY USING
@@ -347,9 +347,16 @@ const TermsModal = (props) => {
                 type="button"
                 className="btn btn-secondary"
                 data-bs-dismiss="modal"
+              >
+                Reject
+              </button>
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
                 onClick={props.stateChanger}
               >
-                Done
+                Accept
               </button>
             </div>
           </div>

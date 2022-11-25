@@ -1,5 +1,5 @@
 import React from "react";
-import personImg from "../../assets/images/personImg.png";
+import personImg from "../../../assets/images/personImg.png";
 import "./AdminNavBar.css";
 
 const AdminNavBar = (props) => {

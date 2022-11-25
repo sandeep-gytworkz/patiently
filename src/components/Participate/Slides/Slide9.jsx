@@ -4,10 +4,12 @@ import "./slide9.css";
 import { Link } from "react-router-dom";
 import personImg from "../../../assets/images/personImg.png";
 import { FileUploader } from "react-drag-drop-files";
+
 const fileTypes = ["JPG", "PNG", "GIF"];
 
 const Slide9 = () => {
   const [file, setFile] = useState(null);
+
   const handleChange = (file) => {
     setFile(file);
   };

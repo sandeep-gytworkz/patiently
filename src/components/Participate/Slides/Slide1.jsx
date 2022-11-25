@@ -1,5 +1,4 @@
 import React, { useState, useReducer } from "react";
-import Slide2 from "./Slide2";
 import homeImg from "../../../assets/images/homeImg.png";
 import "../../../styles/common/global.css";
 import { Link } from "react-router-dom";
@@ -7,7 +6,6 @@ import TermsModal from "../../../UI/modals/TermsModal";
 import { registrationReducer, initRegState } from "../Reducers/Participate";
 
 const Slide1 = ({ changeSlide }) => {
-  const [isRegister, setIsRegister] = useState(true);
   const [termsState, setTermsState] = useState(false);
   const [passwordValue, setPasswordValue] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -159,7 +157,7 @@ const Slide1 = ({ changeSlide }) => {
             </div>
             <div className="mb-1 p-2 col-6">
               <label
-                htmlFor="password"
+                htmlFor="confirmPassword"
                 className="form-label fs-6 color-primary"
               >
                 Confirm Password
@@ -167,7 +165,7 @@ const Slide1 = ({ changeSlide }) => {
               <input
                 type="text"
                 className="form-control"
-                id="password"
+                id="confirmPassword"
                 placeholder="Re-enter password"
                 required
                 value={confirmPassword}

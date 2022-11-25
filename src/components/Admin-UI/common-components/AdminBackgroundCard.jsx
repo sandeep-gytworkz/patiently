@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AdminNavBar from "./AdminNavBar";
 import "./AdminBackgroundCard.css";
 
-const AdminBackgroundCard = () => {
+const AdminBackgroundCard = (props) => {
   // let btn = document.querySelector("#btn");
   // let AdminBackgroundCard = document.querySelector(".AdminBackgroundCard");
   // let searchBtn = document.querySelector(".bx-search");
@@ -82,7 +82,7 @@ const AdminBackgroundCard = () => {
       <div className="home_content">
         <AdminNavBar onClick={btnOnClickHandler} />
         <div className="p-3">
-          <div className="text">Dashboard</div>
+          {/* <div className="text">Dashboard</div>
           <p>
             Nullam vulputate ultrices tellus et bibendum. Integer iaculis
             pharetra ligula, eget condimentum nunc malesuada nec. Nullam eu
@@ -146,7 +146,8 @@ const AdminBackgroundCard = () => {
             mi ut vestibulum. Suspendisse a turpis id nisi faucibus efficitur.
             Sed ipsum urna, ultricies eget justo vitae, hendrerit malesuada
             mauris. Donec a turpis malesuada, euismod massa id, ultrices ex.
-          </p>
+          </p> */}
+          {props.children}
         </div>
       </div>
     </>
