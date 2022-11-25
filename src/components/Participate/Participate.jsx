@@ -9,6 +9,7 @@ import Slide5 from "./Slides/Slide5";
 import Slide6 from "./Slides/Slide6";
 import Slide7 from "./Slides/Slide7";
 import Slide8 from "./Slides/Slide8";
+import Slide2 from "./Slides/Slide2";
 
 const Participate = () => {
   const [slide, setSlide] = useState(1);
@@ -84,6 +85,7 @@ const Participate = () => {
             className="d-flex flex-row"
           >
             {slide === 1 && <Slide1 changeSlide={slideChangeHandler} />}
+            {slide === 2 && <Slide2 changeSlide={slideChangeHandler} />}
             {slide === 3 && <Slide3 changeSlide={slideChangeHandler} />}
             {slide === 4 && <Slide4 changeSlide={slideChangeHandler} />}
             {slide === 5 && <Slide5 changeSlide={slideChangeHandler} />}
