@@ -21,3 +21,7 @@
 .btn-group .btn.active {
   color: black;
 }
+.middle-container {
+  height: 65%;
+  background-color: #fafcfc;
+}
