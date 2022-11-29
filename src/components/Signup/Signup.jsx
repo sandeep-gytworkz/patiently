@@ -23,7 +23,7 @@ const Signup = ({ changeSlide }) => {
   );
 
   const passwordGenerator = (e) => {
-    if(!e.target.checked){
+    if (!e.target.checked) {
       setPasswordValue("");
       return;
     }
@@ -53,12 +53,10 @@ const Signup = ({ changeSlide }) => {
   return (
     <div className="d-flex flex-column homePage-container">
       <Header />
-      <div class="container-fluid text-left">
-        <div class="row content-section">
+      <div className="container-fluid text-left">
+        <div className="row content-section">
           <div className="col-sm-12 col-md-5 offset-md-1 p-5">
-            <h2 className="color-primary fs-24 px-2 ">
-              SIGN UP
-            </h2>
+            <h2 className="color-primary fs-24 px-2 ">SIGN UP</h2>
             <form
               onSubmit={(event) => {
                 event.preventDefault();
@@ -170,7 +168,8 @@ const Signup = ({ changeSlide }) => {
                   className="form-check-input  "
                   id="check"
                   required
-                  checked={termsState}
+                  // checked={termsState}
+                  checked
                   onChange={() => {
                     setTermsState(!termsState);
                   }}
@@ -200,7 +199,7 @@ const Signup = ({ changeSlide }) => {
                   type="submit"
                   className="button-layout button-magic-mint me-3 col-10"
                 >
-                  Sign Up 
+                  Sign Up
                 </button>
                 <div className="text-center col-10">
                   <p className="mb-0 py-2">
@@ -215,7 +214,7 @@ const Signup = ({ changeSlide }) => {
           </div>
 
           <div className="col-sm-12 col-md-6 right-half p-5">
-            <img src={homeImg} class="img-fluid p-5" alt="home page logo"/>
+            <img src={homeImg} className="img-fluid p-5" alt="home page logo" />
           </div>
         </div>
       </div>

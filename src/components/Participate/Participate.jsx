@@ -1,15 +1,16 @@
 import React, { useState } from "react";
-import Header from "../../UI/Header/Header";
-import Footer from "../../UI/Footer/Footer";
+
 import "./Participate.css";
-import Slide1 from "./Slides/Slide1";
-import Slide3 from "./Slides/Slide3";
-import Slide4 from "./Slides/Slide4";
-import Slide5 from "./Slides/Slide5";
+
 import Slide6 from "./Slides/Slide6";
 import Slide7 from "./Slides/Slide7";
 import Slide8 from "./Slides/Slide8";
-import Slide2 from "./Slides/Slide2";
+
+import Signup from "../Signup/Signup";
+import TwoFactorAuth from "./Slides/TwoFactorAuth";
+import Questions from "./Slides/Questions";
+import Question1 from "./Slides/Question1";
+import Question2 from "./Slides/Question2";
 
 const Participate = () => {
   const [slide, setSlide] = useState(1);
@@ -17,88 +18,75 @@ const Participate = () => {
     setSlide(number);
   };
   return (
-    <div
-      className="d-flex flex-column participate-now-page"
-      style={{ width: "100vw", height: "100vh" }}
-    >
-      <Header hideRight={true} />
+    <>
+      {(slide === 1 || slide === 2) && (
+        <div>
+          {slide === 1 && <Signup changeSlide={slideChangeHandler} />}
+          {slide === 2 && <TwoFactorAuth changeSlide={slideChangeHandler} />}
+        </div>
+      )}
       <div
-        className="d-flex "
-        style={{ height: "80%", backgroundColor: "#F8FEFB" }}
+        className="d-flex flex-column"
+        style={{ width: "100vw", height: "100vh", backgroundColor: "#FAFCFC" }}
       >
-        <div
-          className="content-area col-10 offset-sm-1 d-flex flex-column"
-          style={{ backgroundColor: "#FFFFFF" }}
-        >
-          <div
-            className="btn-toolbar justify-content-between"
-            role="toolbar"
-            aria-label="Toolbar with button groups"
-            style={{
-              backgroundColor: "#F8FEFB",
+        <div className="px-5 py-3">
+          <h5>Patiently</h5>
+        </div>
 
-              paddingBottom: "10px",
-            }}
-          >
-            <h3 className="text-center col-12 pt-3">Basic Info</h3>
-            <div
-              className="btn-group mx-auto"
-              role="group"
-              aria-label="First group"
-            >
-              <button
-                type="button"
-                className={`btn btn-secondary ${slide === 1 ? "active" : ""}`}
-              >
-                &#11044;
-              </button>
-              <button
-                type="button"
-                className={`btn btn-secondary ${
-                  slide === 3 || slide === 4 || slide === 5 || slide === 6
-                    ? "active"
-                    : ""
-                }`}
-              >
-                &#11044;
-              </button>
-              <button
-                type="button"
-                className={`btn btn-secondary ${slide === 7 ? "active" : ""}`}
-              >
-                &#11044;
-              </button>
-              <button
-                type="button"
-                className={`btn btn-secondary ${slide === 8 ? "active" : ""}`}
-              >
-                &#11044;
-              </button>
-            </div>
-          </div>
+        <div
+          className="btn-toolbar justify-content-between"
+          role="toolbar"
+          aria-label="Toolbar with button groups"
+          style={{
+            paddingBottom: "10px",
+          }}
+        >
+          <h3 className="text-center col-12 pt-3">Questions</h3>
           <div
-            style={{
-              height: "81%",
-              boxShadow: "0px 3px 6px #00000029",
-              padding: "30px 12px",
-            }}
-            className="d-flex flex-row"
+            className="btn-group mx-auto"
+            role="group"
+            aria-label="First group"
           >
-            {slide === 1 && <Slide1 changeSlide={slideChangeHandler} />}
-            {slide === 2 && <Slide2 changeSlide={slideChangeHandler} />}
-            {slide === 3 && <Slide3 changeSlide={slideChangeHandler} />}
-            {slide === 4 && <Slide4 changeSlide={slideChangeHandler} />}
-            {slide === 5 && <Slide5 changeSlide={slideChangeHandler} />}
-            {slide === 6 && <Slide6 changeSlide={slideChangeHandler} />}
-            {slide === 7 && <Slide7 changeSlide={slideChangeHandler} />}
-            {slide === 8 && <Slide8 changeSlide={slideChangeHandler} />}
+            <button
+              type="button"
+              className={`btn btn-secondary ${slide === 1 ? "active" : ""}`}
+            >
+              &#11044;
+            </button>
+            <button
+              type="button"
+              className={`btn btn-secondary ${
+                slide === 3 || slide === 4 || slide === 5 || slide === 6
+                  ? "active"
+                  : ""
+              }`}
+            >
+              &#11044;
+            </button>
+            <button
+              type="button"
+              className={`btn btn-secondary ${slide === 7 ? "active" : ""}`}
+            >
+              &#11044;
+            </button>
+            <button
+              type="button"
+              className={`btn btn-secondary ${slide === 8 ? "active" : ""}`}
+            >
+              &#11044;
+            </button>
           </div>
         </div>
+        <div className="d-flex flex-row col-12 justify-content-center middle-container">
+          {slide === 3 && <Questions changeSlide={slideChangeHandler} />}
+          {slide === 4 && <Question1 changeSlide={slideChangeHandler} />}
+          {slide === 5 && <Question2 changeSlide={slideChangeHandler} />}
+          {slide === 6 && <Slide6 changeSlide={slideChangeHandler} />}
+          {slide === 7 && <Slide7 changeSlide={slideChangeHandler} />}
+          {slide === 8 && <Slide8 changeSlide={slideChangeHandler} />}
+        </div>
       </div>
-      <div style={{ height: "5%" }}>
-        <Footer />
-      </div>
-    </div>
+    </>
   );
 };
 
