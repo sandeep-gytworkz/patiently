@@ -1,5 +1,6 @@
 import React from "react";
 import WhiteCard from "../../../UI/common-cards/WhiteCard";
+import { Link } from "react-router-dom";
 
 const Questions = (props) => {
   return (
@@ -13,7 +14,9 @@ const Questions = (props) => {
         </p>
       </div>
       <div className="d-flex flex-row">
-        <button className="mx-2 button-outlined button-layout">Cancel</button>
+        <Link to="/" className="button-layout button-outlined mx-2 a-tag-btn">
+          Cancel
+        </Link>
         <button
           className="mx-2 button-orange button-layout"
           onClick={() => {

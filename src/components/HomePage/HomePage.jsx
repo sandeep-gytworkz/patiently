@@ -43,7 +43,7 @@ const Homepage = () => {
               Clinical trials offer hope for many people and an opportunity to
               help researchers find better treatments for others in the future.
             </h5>
-            <Link className="btn btn-info learn-more-button mx-5" to="/signup">
+            <Link className="btn btn-info learn-more-button mx-5" to="/participate-now">
               Learn More{" "}
               <img
                 src={arrow}

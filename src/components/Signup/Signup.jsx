@@ -126,7 +126,6 @@ const Signup = ({ changeSlide }) => {
                       type="checkbox"
                       className="form-check-input  "
                       id="check"
-                      required
                       onChange={passwordGenerator}
                     />
                     &nbsp;
@@ -140,7 +139,6 @@ const Signup = ({ changeSlide }) => {
                   className="form-control"
                   id="password"
                   placeholder="Enter password"
-                  required
                   value={passwordValue}
                   onChange={(e) => setPasswordValue(e.target.value)}
                 />
@@ -168,8 +166,7 @@ const Signup = ({ changeSlide }) => {
                   className="form-check-input  "
                   id="check"
                   required
-                  // checked={termsState}
-                  checked
+                  checked={termsState}
                   onChange={() => {
                     setTermsState(!termsState);
                   }}
@@ -197,7 +194,7 @@ const Signup = ({ changeSlide }) => {
               <div className="d-flex flex-column px-2">
                 <button
                   type="submit"
-                  className="button-layout button-magic-mint me-3 col-10"
+                  className="button-layout button-primary me-3 col-10"
                 >
                   Sign Up
                 </button>
