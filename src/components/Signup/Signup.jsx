@@ -190,6 +190,7 @@ const Signup = ({ changeSlide }) => {
                   className="color-primary fs-12 a-tag"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModalLong"
+                  href="#"
                 >
                   Terms
                 </a>

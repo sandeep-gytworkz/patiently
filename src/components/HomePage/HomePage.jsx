@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
 import ContactUs from "../../UI/ContactUs/ContactUs";
+import AboutUs from "../../UI/AboutUs/AboutUs";
 import "./HomePage.css";
 import homeImg from "../../assets/images/homeImg.png";
 import "../../styles/common/global.css";
@@ -11,7 +12,7 @@ import { Link } from "react-router-dom";
 const Homepage = () => {
   const [cookieState, setCookieState] = useState(false);
   const [showContactUs, toggleContactUs] = useState(false);
-  const [showPrivacyPolicy, togglePrivacyPolicy] = useState(false);
+  const [showAboutUs, toggleAboutUs] = useState(false);
 
   const setCookie = () => {
     setCookieState(true);
@@ -27,7 +28,7 @@ const Homepage = () => {
 
   return (
     <div className="d-flex flex-column homePage-container">
-      <Header />
+      <Header toggleAboutUs={()=>{toggleAboutUs(!showAboutUs)}}/>
       <div class="container-fluid text-left">
         <div class="row content-section">
           <div class="col-sm-12 col-md-6 ps-5 pt-5">
@@ -60,6 +61,11 @@ const Homepage = () => {
             &&
             <ContactUs showContactUs={showContactUs} toggleContactUs={()=>toggleContactUs(!showContactUs)} />
           }
+          {
+            showAboutUs
+            &&
+            <AboutUs showAboutUs={showAboutUs} toggleAboutUs={()=>toggleAboutUs(!showAboutUs)} />
+          }
           
         </div>
         {/* <div class="row">
@@ -67,7 +73,7 @@ const Homepage = () => {
           <div class="col-sm-12 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
         </div> */}
       </div>
-      <Footer toggleContactUs={()=>{console.log("-----");toggleContactUs(!showContactUs);}} togglePrivacyPolicy={togglePrivacyPolicy}/>
+      <Footer toggleContactUs={()=>{toggleContactUs(!showContactUs);}} />
       {!cookieState && (
         <div className=" cookies-banner">
           <div className="  cookies-banner-main d-flex  flex-row align-items-center justify-content-between">

@@ -1,11 +1,21 @@
 .content-section{
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .color-primary {
   color: #2B2B2B;
   font-weight: 600;
   font-size: 54px;
+}
+
+.button-primary{
+  background-color: #EE6639 !important;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 100px;
+  padding: 0.5rem 3rem;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .color-dark-grey {
@@ -123,4 +133,15 @@ input.form-control{
 input.form-control:focus{
   box-shadow: none;
   border: 1px solid #459A99
+}
+
+.close-icon{
+  position: absolute;
+  top: 45px;
+  right: 45px;
+}
+
+.page-header{
+  font-size: 40px;
+  font-weight: 600;
 }
