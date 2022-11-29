@@ -1,0 +1,26 @@
+.modal-header{
+    background-color: #017979;
+    color: white;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.modal-header p{
+    font-size: 12px;
+}
+
+.btn{
+    border-radius: 25px;
+}
+
+.btn.btn-decline{
+    border: 1px solid #EE6639;
+    color: #EE6639;
+    background-color: white;
+}
+
+.btn.btn-accept.active{
+    background-color: #EE6639;
+    color: white;
+    border: 1px solid #EE6639;
+}

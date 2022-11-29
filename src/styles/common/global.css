@@ -1,5 +1,11 @@
+.content-section{
+  height: 100vh;
+}
+
 .color-primary {
-  color: #2b3566;
+  color: #2B2B2B;
+  font-weight: 600;
+  font-size: 54px;
 }
 
 .color-dark-grey {
@@ -108,4 +114,13 @@
   border: 1px solid #b0b0b0;
   border-radius: 8px;
   background-color: transparent;
+}
+
+input.form-control{
+  border-radius: 25px;
+}
+
+input.form-control:focus{
+  box-shadow: none;
+  border: 1px solid #459A99
 }

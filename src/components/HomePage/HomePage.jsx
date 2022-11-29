@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
+import ContactUs from "../../UI/ContactUs/ContactUs";
 import "./HomePage.css";
 import homeImg from "../../assets/images/homeImg.png";
 import "../../styles/common/global.css";
@@ -9,6 +10,8 @@ import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const [cookieState, setCookieState] = useState(false);
+  const [showContactUs, toggleContactUs] = useState(false);
+  const [showPrivacyPolicy, togglePrivacyPolicy] = useState(false);
 
   const setCookie = () => {
     setCookieState(true);
@@ -25,36 +28,46 @@ const Homepage = () => {
   return (
     <div className="d-flex flex-column homePage-container">
       <Header />
-      <div className="d-flex flex-row" style={{ height: "78%" }}>
-        <div className="col-6 p-5">
-          <img
-            src={homeImg}
-            alt="home page logo"
-            className="col-10 offset-sm-1"
-          />
+      <div class="container-fluid text-left">
+        <div class="row content-section">
+          <div class="col-sm-12 col-md-6 ps-5 pt-5">
+            <h1 className="color-primary px-5 pt-5">
+              Desire to improve
+              <br />
+              <span className="heading-highlight ">medical care</span> for future
+              <br /> generations
+            </h1>
+            <h5 className="sub-heading ps-5">
+              Clinical trials offer hope for many people and an opportunity to
+              help researchers find better treatments for others in the future.
+            </h5>
+            <Link
+              className="btn btn-info learn-more-button mx-5"
+              to="/signup"
+            >
+              Learn More <img src={arrow} alt="arrow" width={18} height={21} className="ms-3" />
+            </Link>
+          </div>
+          <div class="col-sm-12 col-md-6 right-half p-5">
+            <img
+              src={homeImg}
+              alt="home page logo"
+              className="col-10"
+            />
+          </div>
+          {
+            showContactUs
+            &&
+            <ContactUs showContactUs={showContactUs} toggleContactUs={()=>toggleContactUs(!showContactUs)} />
+          }
+          
         </div>
-        <div className="right-half col-6 pt-5 ps-5">
-          <h1 className="color-primary">
-            Desire to improve
-            <br />
-            <span className="heading-highlight ">medical care</span> for future
-            <br /> generations
-          </h1>
-          <h3 className="sub-heading">
-            Clinical trials offer hope for many people and an opportunity to
-            help researchers find better treatments for others in the future.
-          </h3>
-          <Link
-            className="btn btn-info learn-more-button"
-            to="/participate-now"
-          >
-            Learn More <img src={arrow} alt="arrow" width={18} height={21} />
-          </Link>
-        </div>
+        {/* <div class="row">
+          <div class="col-sm-12 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+          <div class="col-sm-12 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+        </div> */}
       </div>
-      <div style={{ height: "5%" }}>
-        <Footer />
-      </div>
+      <Footer toggleContactUs={()=>{console.log("-----");toggleContactUs(!showContactUs);}} togglePrivacyPolicy={togglePrivacyPolicy}/>
       {!cookieState && (
         <div className=" cookies-banner">
           <div className="  cookies-banner-main d-flex  flex-row align-items-center justify-content-between">
@@ -93,6 +106,7 @@ const Homepage = () => {
           </div>
         </div>
       )}
+      {/* <PrivacyPolicy showPrivacyPolicy={showPrivacyPolicy} togglePrivacyPolicy={togglePrivacyPolicy} /> */}
     </div>
   );
 };

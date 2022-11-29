@@ -9,21 +9,19 @@
 }
 
 .right-half {
-  background-color: #bbf0d41a;
+  background-color: #F7FFFF;
   height: 100%;
 }
 .heading-highlight {
-  color: #eb726b;
-  text-decoration: underline;
-  text-decoration-color: #acf2d2;
-  text-decoration-thickness: 2px;
+  color: #029C9A;
 }
 .sub-heading {
-  color: #484646;
+  color: #6C6C6C;
   font-weight: 400;
   max-width: 600px;
   width: 100%;
   margin: 40px 0;
+  font-size: 22px;
 }
 
 .cookies-banner {
@@ -48,9 +46,9 @@
   box-shadow: 0px 3px 6px #00000029;
   padding: 20px;
 }
-.learn-more-button {
-  background-color: #acf2d2 !important;
-  color: #2b3566;
+.learn-more-button, .learn-more-button:hover {
+  background-color: #EE6639 !important;
+  color: #FFFFFF;
   border: none;
   border-radius: 100px;
   padding: 0.5rem 3rem;

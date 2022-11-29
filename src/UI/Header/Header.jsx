@@ -20,9 +20,9 @@ const Header = ({ hideRight }) => {
 
   return (
     <nav className="navbar navbar-expand-lg p-0">
-      <div className="container-fluid header-container">
-        <div className="col-1 left-gutter h-100 d-inline-block"></div>
-        <Link className="navbar-brand col-5 h-100 m-0 pt-5" to="./#">
+      <div className="container-fluid header-container px-5">
+        {/* <div className="col-1 left-gutter h-100 d-inline-block"></div> */}
+        <Link className="navbar-brand col-6 h-100 m-0 pt-5 ps-5" to="./#">
           <img src={Logo} alt="logo" className="logo" />
         </Link>
         <button
@@ -37,7 +37,7 @@ const Header = ({ hideRight }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse right-header h-100 m-0 pt-5"
+          className="collapse navbar-collapse right-header h-100 m-0 pt-5 col-6"
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -66,7 +66,7 @@ const Header = ({ hideRight }) => {
             </li>
           </ul>
         </div>
-        <div className="col-1 right-gutter h-100 d-inline-block"></div>
+        {/* <div className="col-1 right-gutter h-100 d-inline-block"></div> */}
       </div>
     </nav>
   );

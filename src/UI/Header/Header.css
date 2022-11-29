@@ -19,18 +19,22 @@
 }
 
 .nav-item .nav-link {
-  color: #2b3566;
+  color: #2B2B2B;
   font-size: 20px;
   font-weight: 500;
 }
 
 .participate-now {
-  border: 1px solid #2b3566;
   border-radius: 30px;
   padding: 0px 25px;
+  background-color: #EE6639;
+}
+
+.participate-now .nav-link{
+  color: white
 }
 
 .right-gutter,
 .right-header {
-  background-color: #bbf0d41a;
+  background-color: #F7FFFF;
 }
