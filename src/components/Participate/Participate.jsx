@@ -11,6 +11,7 @@ import TwoFactorAuth from "./Slides/TwoFactorAuth";
 import Questions from "./Slides/Questions";
 import Question1 from "./Slides/Question1";
 import Question2 from "./Slides/Question2";
+import Question3 from "./Slides/Question3";
 
 const Participate = () => {
   const [slide, setSlide] = useState(1);
@@ -81,7 +82,7 @@ const Participate = () => {
           {slide === 3 && <Questions changeSlide={slideChangeHandler} />}
           {slide === 4 && <Question1 changeSlide={slideChangeHandler} />}
           {slide === 5 && <Question2 changeSlide={slideChangeHandler} />}
-          {slide === 6 && <Slide6 changeSlide={slideChangeHandler} />}
+          {slide === 6 && <Question3 changeSlide={slideChangeHandler} />}
           {slide === 7 && <Slide7 changeSlide={slideChangeHandler} />}
           {slide === 8 && <Slide8 changeSlide={slideChangeHandler} />}
         </div>
