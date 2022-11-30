@@ -4,7 +4,7 @@ import "./Participate.css";
 
 import Header from "../../UI/Header/Header";
 import Signup from "../Signup/Signup";
-import TwoFactorAuth from "./Slides/TwoFactorAuth";
+import VerifyOtp from "./Slides/VerifyOtp";
 import Questions from "./Slides/Questions";
 import Question1 from "./Slides/Question1";
 import Question2 from "./Slides/Question2";
@@ -23,7 +23,13 @@ const Participate = () => {
       {slide === 1 || slide === 2 ? (
         <div>
           {slide === 1 && <Signup changeSlide={slideChangeHandler} />}
-          {slide === 2 && <TwoFactorAuth changeSlide={slideChangeHandler} />}
+          {slide === 2 && (
+            <VerifyOtp
+              changeSlide={() => {
+                slideChangeHandler(3);
+              }}
+            />
+          )}
         </div>
       ) : (
         <div

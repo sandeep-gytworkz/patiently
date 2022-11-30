@@ -5,15 +5,13 @@ import "../../styles/common/global.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const LoginPage = () => {
+const ResetPassword = () => {
   const navigate = useNavigate();
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    navigate("/view-profile");
+    navigate("/login");
   };
-  const forgotPasswordHandler = () => {
-    navigate("/verify-otp");
-  };
+
   return (
     <>
       <div className="d-flex flex-column homePage-container">
@@ -24,17 +22,16 @@ const LoginPage = () => {
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
                   <div className="p-3 d-flex flex-column col-8">
-                    <h5>Login</h5>
+                    <h5>Reset Password</h5>
                     <p className="fs-14">
-                      Log in with details that you entered during your
-                      registration
+                      Enter new password to reset your login password
                     </p>
                     <label htmlFor="email" className="fs-14 color-primary">
-                      Email*
+                      Password*
                     </label>
                     <input
-                      type="email"
-                      placeholder="mail@website.com"
+                      type="text"
+                      placeholder="Minimum 8 characters"
                       id="email"
                       className=" form-control p-2 input-class"
                     />
@@ -42,57 +39,30 @@ const LoginPage = () => {
 
                   <div className="p-3 d-flex flex-column col-8">
                     <label htmlFor="password" className="fs-14 color-primary">
-                      Password*
+                      Re-enter Password*
                     </label>
                     <input
-                      type="password"
+                      type="text"
                       placeholder="Minimum 8 characters"
                       id="password"
                       className="form-control input-class p-2"
                     />
                   </div>
-                  <div className="py-2 col-8 d-flex flex-row justify-content-between">
-                    <div className="form-check">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                      />
-                      <label
-                        className="form-check-label fs-14"
-                        htmlFor="flexCheckChecked"
-                      >
-                        Remember me
-                      </label>
-                    </div>
-                    <div>
-                      <button
-                        className="button-a-tag fs-14"
-                        onClick={forgotPasswordHandler}
-                      >
-                        Forgot Password?
-                      </button>
-                    </div>
-                  </div>
-                  <div className="py-1 col-8  ">
+
+                  <div className="py-3 col-8 d-flex flex-row justify-content-evenly ">
+                    <Link
+                      className=" button-layout button-outlined a-tag-btn "
+                      aria-current="page"
+                      to="/"
+                    >
+                      Cancel
+                    </Link>
                     <button
-                      className="button-orange button-layout w-100"
+                      className="button-orange button-layout "
                       aria-current="page"
                     >
-                      Login
+                      Reset Password
                     </button>
-                  </div>
-                  <div>
-                    <div className="d-flex flex-row  align-items-center">
-                      <p className="mb-0 py-2 fs-14">Not Registered?</p>
-                      <Link
-                        to="/participate-now fs-14"
-                        className="button-a-tag"
-                      >
-                        &nbsp; Create an Account
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </form>
@@ -111,4 +81,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default ResetPassword;
