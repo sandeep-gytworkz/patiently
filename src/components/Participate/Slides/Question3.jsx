@@ -1,18 +1,18 @@
 import React from "react";
-import "../../../styles/common/global.css";
 import { Link } from "react-router-dom";
 import WhiteCard from "../../../UI/common-cards/WhiteCard";
+import "./Question3.css";
 
-const Question2 = (props) => {
+const Question3 = (props) => {
   return (
     <WhiteCard>
       <div>
-        <h2 className="color-primary fs-24 fw-bold mb-2">QUESTION 2 </h2>
+        <h2 className="color-primary fs-24 fw-bold mb-2">QUESTION 3 </h2>
       </div>
-      <div className="px-5">
-        <p className="fs-24 ">
-          Have you/your child/your parent been diagnosed with Celiac Disease by
-          a physician or qualified medical provider?
+      <div>
+        <p className="fs-24">
+          Have you participated in a Celiac Disease clinical drug trial in the
+          last 5 years?
         </p>
       </div>
       <div className="d-flex flex-row my-3 justify-content-between ">
@@ -47,6 +47,35 @@ const Question2 = (props) => {
           </label>
         </div>
       </div>
+      <div className="dropdown d-flex flex-column col-8">
+        <label htmlFor="dropdownMenuButton1">Select celiac disease </label>
+        <button
+          className="button-dropdown dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Select
+        </button>
+        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a className="dropdown-item" href="#">
+              Action
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Another action
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Something else here
+            </a>
+          </li>
+        </ul>
+      </div>
 
       <div className="d-flex flex-row justify-content-center align-items-center col-12 pt-5">
         <Link to="/" className="button-layout button-outlined mx-2 a-tag-btn">
@@ -56,7 +85,7 @@ const Question2 = (props) => {
           type="button"
           className="button-layout button-outlined mx-2"
           onClick={() => {
-            props.changeSlide(4);
+            props.changeSlide(5);
           }}
         >
           Back
@@ -66,7 +95,7 @@ const Question2 = (props) => {
           type="button"
           className="button-layout button-orange mx-2"
           onClick={() => {
-            props.changeSlide(6);
+            props.changeSlide(7);
           }}
         >
           Next
@@ -76,4 +105,4 @@ const Question2 = (props) => {
   );
 };
 
-export default Question2;
+export default Question3;

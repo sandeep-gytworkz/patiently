@@ -10,7 +10,10 @@ const Header = ({ hideRight, toggleAboutUs }) => {
       <nav className="navbar navbar-expand-lg p-0">
         <div className="container-fluid header-container px-5">
           {/* <div className="col-1 left-gutter h-100 d-inline-block"></div> */}
-          <Link className="navbar-brand col-lg-12 col-xs-10 h-100 m-0 p-sm-4 pt-sm-5" to="/">
+          <Link
+            className="navbar-brand col-lg-12 col-xs-10 h-100 m-0 p-sm-4 pt-sm-5"
+            to="/"
+          >
             <img src={Logo} alt="logo" className="logo" height={40} />
             <span className="brand-name">Patiently</span>
           </Link>
@@ -24,7 +27,10 @@ const Header = ({ hideRight, toggleAboutUs }) => {
     <nav className="navbar navbar-expand-lg p-0">
       <div className="container-fluid header-container px-5">
         {/* <div className="col-1 left-gutter h-100 d-inline-block"></div> */}
-        <Link className="navbar-brand col-lg-6 col-xs-10 h-100 m-0 p-sm-4 pt-sm-5" to="/">
+        <Link
+          className="navbar-brand col-lg-6 col-xs-10 h-100 m-0 p-sm-4 pt-sm-5"
+          to="/"
+        >
           <img src={Logo} alt="logo" className="logo" height={40} />
           <span className="brand-name">Patiently</span>
         </Link>
@@ -47,7 +53,9 @@ const Header = ({ hideRight, toggleAboutUs }) => {
             <li className="nav-item px-3">
               <a
                 className="nav-link"
-                onClick={()=>{toggleAboutUs()}}
+                onClick={() => {
+                  toggleAboutUs();
+                }}
               >
                 About
               </a>
