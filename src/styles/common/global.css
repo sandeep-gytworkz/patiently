@@ -8,6 +8,13 @@
   font-size: 54px;
 }
 
+
+
+.form-label{
+  font-size: 12px;
+  font-weight: 400;
+}
+
 .button-primary{
   background-color: #EE6639 !important;
   color: #FFFFFF;

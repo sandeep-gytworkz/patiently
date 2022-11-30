@@ -6,7 +6,7 @@ const Questions = (props) => {
   return (
     <WhiteCard>
       <div>
-        <h1>Hi first name, we’re so glad you’re here!</h1>
+        <h1>Hi first name, we're so glad you're here!</h1>
       </div>
       <div>
         <p>

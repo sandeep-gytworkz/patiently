@@ -25,6 +25,8 @@ const Slide1 = ({ changeSlide }) => {
     var password = generator.generate({
       length: 10,
       numbers: true,
+      symbols: true,
+      exclude: "{,},`,~,[,],|,/,:,\",(,),<,>,%,^,;,=,-,+,?"
     });
 
     // console.log(password);

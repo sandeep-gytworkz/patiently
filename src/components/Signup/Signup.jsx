@@ -32,6 +32,8 @@ const Signup = ({ changeSlide }) => {
     var password = generator.generate({
       length: 10,
       numbers: true,
+      symbols: true,
+      exclude: "{,},`,~,[,],|,/,:,\",(,),<,>,%,^,;,=,-,+,?"
     });
     console.log(e.target.checked);
 
