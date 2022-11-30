@@ -1,18 +1,23 @@
 import React from "react";
-import Logo from "../../../src/assets/images/logo.png";
+import Logo from "../../../src/assets/images/logo1.png";
 import "./Header.css";
 import { Link } from "react-router-dom";
 import "../../styles/common/global.css";
 
-const Header = ({ hideRight }) => {
+const Header = ({ hideRight, toggleAboutUs }) => {
   if (hideRight) {
     return (
-      <nav className="navbar navbar-expand-lg p-0 full-header">
-        <div className="container-fluid">
-          <div className="col-1 left-gutter h-100 d-inline-block"></div>
-          <a className="navbar-brand col-11 h-100 m-0 pt-5" href="./#">
-            <img src={Logo} alt="logo" className="logo" />
-          </a>
+      <nav className="navbar navbar-expand-lg p-0">
+        <div className="container-fluid header-container px-5">
+          {/* <div className="col-1 left-gutter h-100 d-inline-block"></div> */}
+          <Link
+            className="navbar-brand col-lg-12 col-xs-10 h-100 m-0 p-sm-4 pt-sm-5"
+            to="/"
+          >
+            <img src={Logo} alt="logo" className="logo" height={40} />
+            <span className="brand-name">Patiently</span>
+          </Link>
+          {/* <div className="col-1 right-gutter h-100 d-inline-block"></div> */}
         </div>
       </nav>
     );
@@ -22,8 +27,12 @@ const Header = ({ hideRight }) => {
     <nav className="navbar navbar-expand-lg p-0">
       <div className="container-fluid header-container px-5">
         {/* <div className="col-1 left-gutter h-100 d-inline-block"></div> */}
-        <Link className="navbar-brand col-6 h-100 m-0 pt-5 ps-5" to="/">
-          <img src={Logo} alt="logo" className="logo" />
+        <Link
+          className="navbar-brand col-lg-6 col-xs-10 h-100 m-0 p-sm-4 pt-sm-5"
+          to="/"
+        >
+          <img src={Logo} alt="logo" className="logo" height={40} />
+          <span className="brand-name">Patiently</span>
         </Link>
         <button
           className="navbar-toggler"
@@ -37,23 +46,25 @@ const Header = ({ hideRight }) => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse right-header h-100 m-0 pt-5 col-6"
+          className="collapse navbar-collapse justify-content-end right-header h-100 m-0 pt-5 col-6"
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav d-flex">
             <li className="nav-item px-3">
-              <Link className="nav-link " aria-current="page" to="/about">
+              <a
+                className="nav-link"
+                onClick={() => {
+                  toggleAboutUs();
+                }}
+              >
                 About
-              </Link>
+              </a>
             </li>
             <li className="nav-item px-3 ">
               <Link className="nav-link " to="/data-security">
                 Data Security
               </Link>
             </li>
-          </ul>
-
-          <ul className="navbar-nav d-flex">
             <li className="nav-item px-3">
               <Link className="nav-link " aria-current="page" to="/login">
                 Login

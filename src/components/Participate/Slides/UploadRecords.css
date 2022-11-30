@@ -15,11 +15,11 @@
 
 .title-input {
   border: 1px solid #b0b0b0;
-  border-radius: 8px;
+  border-radius: 100px;
   outline: none;
   max-width: 300px;
   width: 100%;
-  padding: 5px 2px;
+  padding: 5px 10px;
 }
 
 .data-protection-para {

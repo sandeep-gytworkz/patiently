@@ -46,7 +46,7 @@ const TwoFactorAuth = ({ changeSlide }) => {
                   onClick={() => {
                     changeSlide(3);
                   }}
-                  className="button-layout button-magic-mint"
+                  className="button-layout button-primary"
                 >
                   Continue to Questions
                 </button>

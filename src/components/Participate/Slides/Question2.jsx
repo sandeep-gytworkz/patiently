@@ -9,8 +9,8 @@ const Question2 = (props) => {
       <div>
         <h2 className="color-primary fs-24 fw-bold mb-2">QUESTION 2 </h2>
       </div>
-      <div>
-        <p className="fs-24">
+      <div className="px-5">
+        <p className="fs-24 ">
           Have you/your child/your parent been diagnosed with Celiac Disease by
           a physician or qualified medical provider?
         </p>

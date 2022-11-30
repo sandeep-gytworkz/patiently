@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import WhiteCard from "../../../UI/common-cards/WhiteCard";
-import "./Question3.css";
 
-const Question3 = (props) => {
+const Question4 = (props) => {
   return (
     <WhiteCard>
       <div>
-        <h2 className="color-primary fs-24 fw-bold mb-2">QUESTION 3 </h2>
+        <h2 className="color-primary fs-24 fw-bold mb-2">QUESTION 4 </h2>
       </div>
-      <div>
-        <p className="fs-24">
-          Have you participated in a Celiac Disease clinical drug trial in the
-          last 5 years?
+      <div className="px-5">
+        <p className="fs-24 ">
+          We may need to contact you if we have questions about your medical
+          records. Would you prefer to be contacted by email or phone?
         </p>
       </div>
       <div className="d-flex flex-row my-3 justify-content-between ">
@@ -28,7 +27,7 @@ const Question3 = (props) => {
             className="form-check-label radio-btn-label "
             htmlFor="inlineRadio1"
           >
-            Yes
+            Email
           </label>
         </div>
         <div className="form-check form-check-inline d-flex flex-row align-items-center mx-4">
@@ -43,38 +42,9 @@ const Question3 = (props) => {
             className="form-check-label radio-btn-label"
             htmlFor="inlineRadio2"
           >
-            No
+            Phone
           </label>
         </div>
-      </div>
-      <div className="dropdown d-flex flex-column col-8">
-        <label htmlFor="dropdownMenuButton1">Select celiac disease </label>
-        <button
-          className="button-dropdown dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton1"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Select
-        </button>
-        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li>
-            <a className="dropdown-item" href="#">
-              Action
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">
-              Another action
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">
-              Something else here
-            </a>
-          </li>
-        </ul>
       </div>
 
       <div className="d-flex flex-row justify-content-center align-items-center col-12 pt-5">
@@ -85,7 +55,7 @@ const Question3 = (props) => {
           type="button"
           className="button-layout button-outlined mx-2"
           onClick={() => {
-            props.changeSlide(5);
+            props.changeSlide(6);
           }}
         >
           Back
@@ -95,7 +65,7 @@ const Question3 = (props) => {
           type="button"
           className="button-layout button-orange mx-2"
           onClick={() => {
-            props.changeSlide(7);
+            props.changeSlide(8);
           }}
         >
           Next
@@ -105,4 +75,4 @@ const Question3 = (props) => {
   );
 };
 
-export default Question3;
+export default Question4;
