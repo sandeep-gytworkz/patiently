@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../../UI/Header/Header";
 import homeImg from "../../assets/images/homeImg.png";
 import "../../styles/common/global.css";
@@ -6,10 +6,31 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
 const ResetPassword = () => {
+  const [passwordValue, setPasswordValue] = useState("");
+
   const navigate = useNavigate();
   const onSubmitHandler = (event) => {
     event.preventDefault();
     navigate("/login");
+  };
+
+  const passwordGenerator = (e) => {
+    if (!e.target.checked) {
+      setPasswordValue("");
+      return;
+    }
+    var generator = require("generate-password-browser");
+
+    var password = generator.generate({
+      length: 10,
+      numbers: true,
+      symbols: true,
+      exclude: '{,},`,~,[,],|,/,:,",(,),<,>,%,^,;,=,-,+,?',
+    });
+    // console.log(e.target.checked);
+
+    // console.log(password);
+    setPasswordValue(password);
   };
 
   return (
@@ -26,25 +47,47 @@ const ResetPassword = () => {
                     <p className="fs-14">
                       Enter new password to reset your login password
                     </p>
-                    <label htmlFor="email" className="fs-14 color-primary">
+
+                    <label
+                      htmlFor="password"
+                      className=" d-flex fs-14 color-primary mb-1 justify-content-between"
+                    >
                       Password*
+                      <span>
+                        <input
+                          type="checkbox"
+                          className="form-check-input  "
+                          id="check"
+                          onChange={passwordGenerator}
+                        />
+                        &nbsp;
+                        <label className="form-check-label">
+                          Auto Generate password
+                        </label>
+                      </span>
                     </label>
+
                     <input
                       type="text"
                       placeholder="Minimum 8 characters"
-                      id="email"
+                      id="password"
                       className=" form-control p-2 input-class"
+                      value={passwordValue}
+                      onChange={(e) => setPasswordValue(e.target.value)}
                     />
                   </div>
 
                   <div className="p-3 d-flex flex-column col-8">
-                    <label htmlFor="password" className="fs-14 color-primary">
+                    <label
+                      htmlFor="re-enterPassword"
+                      className="fs-14 color-primary mb-1"
+                    >
                       Re-enter Password*
                     </label>
                     <input
                       type="text"
                       placeholder="Minimum 8 characters"
-                      id="password"
+                      id="re-enterPassword"
                       className="form-control input-class p-2"
                     />
                   </div>

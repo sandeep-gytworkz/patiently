@@ -33,9 +33,9 @@ const Signup = ({ changeSlide }) => {
       length: 10,
       numbers: true,
       symbols: true,
-      exclude: "{,},`,~,[,],|,/,:,\",(,),<,>,%,^,;,=,-,+,?"
+      exclude: '{,},`,~,[,],|,/,:,",(,),<,>,%,^,;,=,-,+,?',
     });
-    console.log(e.target.checked);
+    // console.log(e.target.checked);
 
     // console.log(password);
     setPasswordValue(password);
