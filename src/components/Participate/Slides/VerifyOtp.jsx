@@ -46,6 +46,10 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                       }}
                     />
                   </div>
+                  <div className="d-flex justify-content-between col-9 ">
+                    <button className="button-a-tag">Resend Code</button>
+                    <p className="fs-14 mb-0">Code expires in 00.30s</p>
+                  </div>
                   <div className="d-flex flex-row mt-5 align-items-center  ">
                     <Link
                       to="/"
