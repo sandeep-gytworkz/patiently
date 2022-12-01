@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Header from "../../UI/Header/Header";
 import homeImg from "../../assets/images/homeImg.png";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -82,7 +83,7 @@ const LoginPage = () => {
                       className="button-orange button-layout w-100"
                       aria-current="page"
                     >
-                      Login
+                      Login &nbsp; <AiOutlineArrowRight />
                     </button>
                   </div>
                   <div>

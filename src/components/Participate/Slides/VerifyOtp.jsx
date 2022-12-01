@@ -3,6 +3,7 @@ import OtpInput from "react-otp-input";
 import homeImg from "../../../assets/images/homeImg.png";
 import { Link } from "react-router-dom";
 import Header from "../../../UI/Header/Header";
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
   const [otp, setOtp] = useState("");
@@ -17,7 +18,7 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
           <div className="row content-section">
             <div className="col-6 flex-column align-items-center p-5">
               <div className="d-flex flex-column align-items-center">
-                <div className="p-3 d-flex flex-column col-8">
+                <div className="p-3 d-flex flex-column col-9">
                   <h4>
                     {isForgotPassword
                       ? "verify code"
@@ -61,6 +62,7 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                       {isForgotPassword
                         ? "Verify code"
                         : "Continue to Questions"}
+                      &nbsp; <AiOutlineArrowRight />
                     </button>
                   </div>
                 </div>
