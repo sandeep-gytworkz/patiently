@@ -22,78 +22,90 @@ const LoginPage = () => {
         <Header />
         <div className="container-fluid text-left">
           <div className="row content-section">
-            <div className="col-sm-12 col-md-5 offset-md-1 p-5">
-              <h2 className="color-primary fs-24 px-2">LOGIN</h2>
-              <p className="px-2">
-                <small>
-                  Log in with details that you entered during your registration
-                </small>
-              </p>
-              <form
-                onSubmit={(event) => {
-                  event.preventDefault();
-                  onSubmitHandler();
-                }}
-                className="mt-1 d-flex flex-column col-12 mt-5"
-              >
-                <div className="mb-1 p-2 col-10 ">
-                  <label
-                    htmlFor="inputEmail"
-                    className="form-label fs-6 color-primary"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="inputEmail"
-                    placeholder="Enter email ID"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </div>
-                <div className="mb-1 p-2 col-10 ">
-                  <label
-                    htmlFor="password"
-                    className="form-label fs-6 color-primary d-flex justify-content-between"
-                  >
-                    Password
-                  </label>
-                  <input
-                    type="password"
-                    className="form-control"
-                    id="password"
-                    placeholder="Enter password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                </div>
-                <div className="d-flex flex-column px-2">
-                  <button
-                    type="submit"
-                    className="button-layout button-primary me-3 col-10"
-                  >
-                    Login
-                  </button>
-                  <div className="text-center col-10">
-                    <p className="mb-0 py-2">
-                      Not registered?
-                      <Link className="a-tag " to="/participate-now">
-                        &nbsp; Create Account
-                      </Link>
+            <div className="col-6 flex-column align-items-center p-5">
+              <form onSubmit={onSubmitHandler}>
+                <div className="d-flex flex-column align-items-center">
+                  <div className="p-3 d-flex flex-column col-8">
+                    <h5>Login</h5>
+                    <p className="fs-14">
+                      Log in with details that you entered during your
+                      registration
                     </p>
+                    <label htmlFor="email" className="fs-14 color-primary">
+                      Email*
+                    </label>
+                    <input
+                      type="email"
+                      placeholder="mail@website.com"
+                      id="email"
+                      className=" form-control p-2 input-class"
+                    />
+                  </div>
+
+                  <div className="p-3 d-flex flex-column col-8">
+                    <label htmlFor="password" className="fs-14 color-primary">
+                      Password*
+                    </label>
+                    <input
+                      type="password"
+                      placeholder="Minimum 8 characters"
+                      id="password"
+                      className="form-control input-class p-2"
+                    />
+                  </div>
+                  <div className="py-2 col-8 d-flex flex-row justify-content-between">
+                    <div className="form-check">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                      />
+                      <label
+                        className="form-check-label fs-14"
+                        htmlFor="flexCheckChecked"
+                      >
+                        Remember me
+                      </label>
+                    </div>
+                    <div>
+                      <button
+                        className="button-a-tag fs-14"
+                        onClick={forgotPasswordHandler}
+                      >
+                        Forgot Password?
+                      </button>
+                    </div>
+                  </div>
+                  <div className="py-1 col-8  ">
+                    <button
+                      className="button-orange button-layout w-100"
+                      aria-current="page"
+                    >
+                      Login
+                    </button>
+                  </div>
+                  <div>
+                    <div className="d-flex flex-row  align-items-center">
+                      <p className="mb-0 py-2 fs-14">Not Registered?</p>
+                      <Link
+                        to="/participate-now "
+                        className="button-a-tag fs-14"
+                      >
+                        &nbsp; Create an Account
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </form>
+            </div>
 
-              <div className="col-sm-12 col-md-6 right-half p-5">
-                <img
-                  src={homeImg}
-                  className="img-fluid p-5"
-                  alt="home page logo"
-                />
-              </div>
+            <div className="col-sm-12 col-md-6 right-half p-5">
+              <img
+                src={homeImg}
+                className="img-fluid p-5"
+                alt="home page logo"
+              />
             </div>
           </div>
         </div>
