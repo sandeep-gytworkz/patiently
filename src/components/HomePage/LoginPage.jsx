@@ -15,7 +15,7 @@ const LoginPage = () => {
     navigate("/view-profile");
   };
   const forgotPasswordHandler = () => {
-    navigate("/verify-otp");
+    navigate("/forgot-password-otp");
   };
   return (
     <>
@@ -26,7 +26,7 @@ const LoginPage = () => {
             <div className="col-6 flex-column align-items-center p-5">
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
-                  <div className="p-3 d-flex flex-column col-8">
+                  <div className="py-3 d-flex flex-column col-8">
                     <h5>Login</h5>
                     <p className="fs-14">
                       Log in with details that you entered during your
@@ -43,7 +43,7 @@ const LoginPage = () => {
                     />
                   </div>
 
-                  <div className="p-3 d-flex flex-column col-8">
+                  <div className="py-3 d-flex flex-column col-8">
                     <label htmlFor="password" className="fs-14 color-primary">
                       Password*
                     </label>

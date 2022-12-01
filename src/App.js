@@ -16,6 +16,7 @@ import Slide9 from "./components/Participate/Slides/Slide9";
 
 import VerifyOtp from "./components/Participate/Slides/VerifyOtp";
 import ResetPassword from "./components/HomePage/ResetPassword";
+import ForgotPasswordOtp from "./components/HomePage/ForgotPasswordOtp";
 
 function App() {
   const navigate = useNavigate();
@@ -42,6 +43,11 @@ function App() {
           }
         />
         <Route exact path="/reset-password" element={<ResetPassword />} />
+        <Route
+          exact
+          path="/forgot-password-otp"
+          element={<ForgotPasswordOtp />}
+        />
       </Routes>
 
       {/* <Dashboard /> */}
