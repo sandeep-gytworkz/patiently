@@ -3,8 +3,9 @@ import "../../styles/common/global.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import Header from "../../UI/Header/Header";
-import homeImg from "../../assets/images/homeImg.png";
+import homePageCircle from "../../assets/images/homePageCircle.svg";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Footer from "../../UI/Footer/Footer";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -80,7 +81,7 @@ const LoginPage = () => {
                   </div>
                   <div className="py-1 col-8  ">
                     <button
-                      className="button-orange button-layout w-100"
+                      className="button-green button-layout w-100"
                       aria-current="page"
                     >
                       Login &nbsp; <AiOutlineArrowRight />
@@ -99,13 +100,14 @@ const LoginPage = () => {
                   </div>
                 </div>
               </form>
+              <Footer />
             </div>
 
-            <div className="col-sm-12 col-md-6 right-half p-5">
+            <div className="col-sm-12 col-md-6  p-5">
               <img
-                src={homeImg}
+                src={homePageCircle}
                 className="img-fluid p-5"
-                alt="home page logo"
+                alt="home page circles"
               />
             </div>
           </div>

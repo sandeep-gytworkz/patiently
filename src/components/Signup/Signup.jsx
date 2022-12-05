@@ -176,7 +176,7 @@ const Signup = ({ changeSlide }) => {
                 />
 
                 <label className="form-check-label">
-                  I Agree, I have read and agree to the &nbsp;
+                  I Agree to the &nbsp;
                 </label>
 
                 <TermsModal
@@ -190,7 +190,7 @@ const Signup = ({ changeSlide }) => {
                   data-bs-target="#exampleModalLong"
                   href="#"
                 >
-                  Terms
+                  Terms & Conditions
                 </a>
               </div>
               <div className="d-flex flex-column px-2">

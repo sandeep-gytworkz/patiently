@@ -8,14 +8,12 @@
   font-size: 54px;
 }
 
-
-
-.form-label{
+.form-label {
   font-size: 12px;
   font-weight: 400;
 }
 
-.button-primary{
+.button-primary {
   background-color: #ee6639 !important;
   color: #ffffff;
   border: none;
@@ -29,14 +27,13 @@
   color: #707070;
 }
 
-.button-orange {
-  background-color: #ee6639;
+.button-green {
+  background-color: #04d976;
   color: #ffffff;
   border: none;
 }
 
 .button-layout {
-  border-radius: 100px;
   padding: 0.5rem 2rem;
   font-weight: 500;
 }
@@ -82,6 +79,9 @@
   border: none;
 }
 
+.fw-b {
+  font-weight: bold;
+}
 .fs-18 {
   font-size: 18px;
 }
@@ -89,11 +89,32 @@
 .fs-16 {
   font-size: 16px;
 }
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
 .fs-24 {
   font-size: 24px;
 }
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-32 {
+  font-size: 32px;
+}
+
 .fs-36 {
   font-size: 36px;
+}
+
+.fs-64 {
+  font-size: 64px;
 }
 
 .fs-14 {
@@ -113,6 +134,20 @@
 }
 .a-tag-btn:hover {
   color: #ed6639;
+}
+
+.a-tag-white-btn {
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.a-tag-white-btn:hover {
+  color: #000000;
+}
+
+.a-tag-common {
+  text-decoration: none;
 }
 
 .a-tag {
@@ -139,18 +174,14 @@
 }
 
 .input-class {
-  border: 1px solid #459a99;
-  border-radius: 100px;
+  border: 1px solid #bcbcbc;
   background-color: transparent;
-}
-
-input.form-control {
-  border-radius: 25px;
+  border-radius: 0;
 }
 
 input.form-control:focus {
   box-shadow: none;
-  border: 1px solid #459a99;
+  border: 1px solid #0fc6d9;
 }
 
 .radio-btn-label {
@@ -167,4 +198,21 @@ input.form-control:focus {
 .page-header {
   font-size: 40px;
   font-weight: 600;
+}
+
+.bg-blue {
+  background-color: #0fc6d9;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bg-pink {
+  background-color: #f230bb;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.bg-green {
+  background-color: #04d976;
+  color: #ffffff;
 }

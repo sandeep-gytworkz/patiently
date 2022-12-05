@@ -12,6 +12,8 @@ const ForgotPasswordOtp = () => {
     navigate("/verify-otp");
   };
 
+  const [email, setEmail] = useState("");
+
   return (
     <>
       <div className="d-flex flex-column homePage-container">
@@ -40,6 +42,8 @@ const ForgotPasswordOtp = () => {
                       placeholder="mail@website.com"
                       id="email"
                       className=" form-control p-2 input-class"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
 

@@ -1,20 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
-const Footer = ({toggleContactUs}) => {
+
+const Footer = () => {
   return (
-    <div className="footer d-flex justify-content-center">
-      <a
-        className="btn color-secondary"
-        onClick={()=>{toggleContactUs()}}
-      >
+    <div className="footer d-flex justify-content-start">
+      <Link to="/contact-us" className="a-tag-common">
         Contact us
-      </a>
-      <span className="mx-2 p-2"> | </span>
-      <a
-        className=" btn color-secondary"
-      >
-        Privacy Policy / Cookie Settings
-      </a>
+      </Link>
+      <span className="mx-2 "> | </span>
+      <a>Privacy Policy / Cookie Settings</a>
     </div>
   );
 };

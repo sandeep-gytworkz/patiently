@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
-import ContactUs from "../../UI/ContactUs/ContactUs";
-import AboutUs from "../../UI/AboutUs/AboutUs";
+import homePageCircle from "../../assets/images/homePageCircle.svg";
+
 import "./HomePage.css";
 import homeImg from "../../assets/images/homeImg.png";
 import "../../styles/common/global.css";
@@ -11,8 +11,6 @@ import { Link } from "react-router-dom";
 
 const Homepage = () => {
   const [cookieState, setCookieState] = useState(false);
-  const [showContactUs, toggleContactUs] = useState(false);
-  const [showAboutUs, toggleAboutUs] = useState(false);
 
   const setCookie = () => {
     setCookieState(true);
@@ -28,65 +26,36 @@ const Homepage = () => {
 
   return (
     <div className="d-flex flex-column homePage-container">
-      <Header
-        toggleAboutUs={() => {
-          toggleAboutUs(!showAboutUs);
-        }}
-      />
-      <div className="container-fluid text-left">
-        <div className="row content-section">
-          <div className="col-sm-12 col-md-6 ps-5 pt-5">
-            <h1 className="color-primary px-5 pt-5">
-              Desire to improve
-              <br />
-              <span className="heading-highlight ">medical care</span> for
-              future
-              <br /> generations
-            </h1>
-            <h5 className="sub-heading ps-5">
-              Clinical trials offer hope for many people and an opportunity to
-              help researchers find better treatments for others in the future.
-            </h5>
+      <Header />
+      <div className="bg-green d-flex flex-row">
+        <div className="col-8 ps-5 d-flex flex-column">
+          <div>
+            <p className="fs-64"> Bringing the Patient Journey to Life</p>
+            <p className="fs-32">
+              Your celiac health journey is unique, but you are not alone. Join
+              a community of fellow celiac patients, share your experience, be
+              part of the solution.
+            </p>
             <Link
-              className="btn btn-info learn-more-button mx-5"
-              to="/participate-now"
+              to="/participate-now "
+              className="button-layout a-tag-white-btn"
             >
-              Learn More{" "}
-              <img
-                src={arrow}
-                alt="arrow"
-                width={18}
-                height={21}
-                className="ms-3"
-              />
+              Participate Now
             </Link>
           </div>
-          <div className="col-sm-12 col-md-6 right-half p-5">
-            <img src={homeImg} alt="home page logo" className="col-10" />
+          <div>
+            <Footer />
           </div>
-          {showContactUs && (
-            <ContactUs
-              showContactUs={showContactUs}
-              toggleContactUs={() => toggleContactUs(!showContactUs)}
-            />
-          )}
-          {showAboutUs && (
-            <AboutUs
-              showAboutUs={showAboutUs}
-              toggleAboutUs={() => toggleAboutUs(!showAboutUs)}
-            />
-          )}
         </div>
-        {/* <div className="row">
-          <div className="col-sm-12 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
-          <div className="col-sm-12 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
-        </div> */}
+        <div className="col-4">
+          <img
+            src={homePageCircle}
+            alt="home page circles image"
+            className="h-100"
+          />
+        </div>
       </div>
-      <Footer
-        toggleContactUs={() => {
-          toggleContactUs(!showContactUs);
-        }}
-      />
+
       {!cookieState && (
         <div className=" cookies-banner">
           <div className="  cookies-banner-main d-flex  flex-row align-items-center justify-content-between">

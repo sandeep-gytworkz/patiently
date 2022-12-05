@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../assets/images/logo.png";
+import patientlyLogo from "../../../assets/images/patientlyLogo.png";
 import "./slide9.css";
 import { Link } from "react-router-dom";
 import personImg from "../../../assets/images/personImg.png";
@@ -19,7 +19,11 @@ const Slide9 = () => {
         <div className="container-fluid d-flex ">
           <div className="h-20">
             <Link className="navbar-brand" to="/">
-              <img src={logo} alt="app-logo" style={{ height: "40px" }} />
+              <img
+                src={patientlyLogo}
+                alt="app-logo"
+                style={{ height: "40px" }}
+              />
             </Link>
           </div>
           <button

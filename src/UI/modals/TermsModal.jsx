@@ -1,22 +1,23 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./TermsModal.css";
-import Logo from "../../../src/assets/images/logo1.png";
+import patientlyLogo from "../../assets/images/patientlyLogo.png";
 
 const TermsModal = (props) => {
   const [reachedBottom, setScrolledBottom] = useState(false);
 
   const handleScroll = (e) => {
-    const bottom = e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
+    const bottom =
+      e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
     setScrolledBottom(bottom);
     // if (bottom) { ... }
-  }
+  };
 
-  const checkTerms = (e)=>{
+  const checkTerms = (e) => {
     e.preventDefault();
-    if(reachedBottom){ 
-      props.stateChanger() 
+    if (reachedBottom) {
+      props.stateChanger();
     }
-  }
+  };
 
   return (
     <>
@@ -33,17 +34,19 @@ const TermsModal = (props) => {
             <div className="modal-header">
               <div className="col-8">
                 <h6 className="modal-title" id="exampleModalLongTitle">
-                  <img src={Logo} alt="logo" height="20" width="20" />
-                  &nbsp;
-                  TERMS OF SERVICE AGREEMENT
+                  <img src={patientlyLogo} alt="logo" height="20" width="20" />
+                  &nbsp; TERMS OF SERVICE AGREEMENT
                 </h6>
-                <p className="m-0">Please scroll till the end of the page to accept all terms and conditions</p>
+                <p className="m-0">
+                  Please scroll till the end of the page to accept all terms and
+                  conditions
+                </p>
               </div>
               <div className="col-4">
-                <p className="m-0">Last modified: 22/09/2022</p> 
+                <p className="m-0">Last modified: 22/09/2022</p>
               </div>
             </div>
-            <div className="modal-body"  onScroll={handleScroll}>
+            <div className="modal-body" onScroll={handleScroll}>
               <h6>LAST REVISION: 22-November-2022</h6>
               <p>
                 PLEASE READ THIS TERMS OF SERVICE AGREEMENT CAREFULLY. BY USING
@@ -377,9 +380,12 @@ const TermsModal = (props) => {
               </button>
               <button
                 type="button"
-                className={"btn btn-secondary btn-accept px-5 " + (reachedBottom ? "active" : "")}
+                className={
+                  "btn btn-secondary btn-accept px-5 " +
+                  (reachedBottom ? "active" : "")
+                }
                 data-bs-dismiss="modal"
-                onClick={(e)=>checkTerms(e)}
+                onClick={(e) => checkTerms(e)}
               >
                 Accept
               </button>

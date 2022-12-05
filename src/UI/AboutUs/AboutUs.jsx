@@ -1,51 +1,55 @@
-import React, { useState } from "react";
-import { FaTimes } from "react-icons/fa";
+import React from "react";
+import Header from "../Header/Header";
+import aboutUsImg from "../../assets/images/aboutUsImg.png";
+import "../../styles/common/global.css";
 
-const ContactUs = ({ toggleAboutUs, showAboutUs }) => {
+const AboutUs = () => {
   return (
-    <div
-      className={
-        "d-flex flex-column col-xs-12 col-sm-6 h-100 animate__animated p-5 " +
-        (showAboutUs ? "animate__slideInRight" : "animate__slideOutRight")
-      }
-      style={{
-        position: "fixed",
-        right: 0,
-        top: 0,
-        backgroundColor: "#029C9A",
-      }}
-    >
-      <FaTimes
-        onClick={toggleAboutUs}
-        className="close-icon text-white"
-        fontSize={20}
-      />
-      <div className="container-fluid text-left">
-        <div className="row content-section">
-          <h2 className="text-left text-white page-header col-12 mt-3 mb-5">
-            {" "}
-            About Us{" "}
-          </h2>
-          <p className="text-white">
-            Treat your about page as an introduction to your customers. Share
-            who you are, why you started the brand, your vision and mission and
-            how you plan to grow your brand. Consider this as your store's
-            resume that you need to keep updated at all times. The more you
-            share about yourself, the closer your customers will feel to your
-            brand.
+    <div className="d-flex flex-column">
+      <Header />
+      <div className="col-12 bg-blue px-5 py-4 mb-2 ">
+        <h1>About</h1>
+      </div>
+      <div className="d-flex flex-column px-5 ">
+        <div>
+          <p className="fs-18 fw-b">
+            Patiently Health Data is a patient-driven, real-world data
+            aggregator. We partner directly with patients to gather the critical
+            health data researchers need to better understand under-researched
+            diseases and, ultimately advance care for patients.​
           </p>
-          <p className="text-white">
-            We know how tough it is when it comes to writing about yourelf. So
-            we suggest you start with a set of points that you'd like your
-            customers to know about you. Then create simple questions around
-            them like you're interviewing yourself, and start jotting down your
-            answers. You could also consider getting an about us page written by
-            a copywriter. But remember not to lose your personality there.
-          </p>
+        </div>
+        <div className="d-flex flex-row ">
+          <div className="col-3">
+            <img src={aboutUsImg} alt="about-us-image" className="w-100" />
+          </div>
+          <div className="col-9 px-5">
+            <p className="fs-22 fw-b mb-1">Patient-centricity</p>
+            <p className="fs-18">
+              patients know their healthcare journey better than anyone. We
+              partner directly with patients who choose to share their
+              healthcare data, not healthcare providers or third-party data
+              brokers.
+            </p>
+            <p className="fs-22 fw-b mb-1">Transparency</p>
+            <p className="fs-18">
+              patients should know exactly who is accessing their healthcare
+              data and how it is being used. As members of the Patiently HD
+              community, our patient partners will be informed every time their
+              data is accessed and when possible, by whom and for what purpose.​
+            </p>
+            <p className="fs-22 fw-b mb-1">Privacy</p>
+            <p className="fs-18">
+              we know that health data is highly sensitive therefore we have a
+              robust framework of security measures and confidentiality
+              practices in place to ensure our patient partners’ data is secure,
+              de-identified, and only shared in ways that they have agreed to.​
+            </p>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default ContactUs;
+export default AboutUs;
