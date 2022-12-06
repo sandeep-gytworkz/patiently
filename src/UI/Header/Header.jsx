@@ -6,16 +6,14 @@ import patientlyLogo from "../../assets/images/patientlyLogo.png";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg px-5">
-      <div className="col-4">
+    <nav className="navbar navbar-expand-lg px-xs-0 px-sm-5">
+      <div className="col-sm-5 col-12 px-xs-0 px-sm-5 d-flex justify-content-between">
         <Link
-          className="navbar-brand col-lg-6 col-xs-10 h-100 m-0 p-sm-4 pt-sm-5"
+          className="navbar-brand col-lg-6 col-xs-10 h-100 m-0 px-sm-5 px-3"
           to="/"
         >
-          <img src={patientlyLogo} alt="patiently -logo " />
+          <img src={patientlyLogo} alt="patiently -logo " height={"120px"} />
         </Link>
-      </div>
-      <div className="col-8">
         <button
           className="navbar-toggler"
           type="button"
@@ -27,35 +25,37 @@ const Header = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+      </div>
+      <div className="col-sm-7">
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav d-flex">
             <li className="nav-item px-3">
-              <Link className="nav-link fs-28 fw-b" to="/how-it-works">
+              <Link className="nav-link fs-28 fw-mb" to="/how-it-works">
                 How it Works
               </Link>
             </li>
             <li className="nav-item px-3">
-              <Link className="nav-link fs-28 fw-b" to="/data-privacy">
+              <Link className="nav-link fs-28 fw-mb" to="/data-privacy">
                 Data Privacy
               </Link>
             </li>
             <li className="nav-item px-3 ">
-              <Link className="nav-link fs-28 fw-b " to="/about">
+              <Link className="nav-link fs-28 fw-mb " to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item px-3">
               <Link
-                className="nav-link fs-28 fw-b "
+                className="nav-link fs-28 fw-mb "
                 aria-current="page"
                 to="/login"
               >
                 Login
               </Link>
             </li>
-            <li className="nav-item participate-now">
+            <li className="nav-item participate-now px-3">
               <Link
-                className="nav-link fs-28 fw-b signUp-btn "
+                className="nav-link fs-28 fw-mb signUp-btn px-4"
                 to="/participate-now"
               >
                 Sign Up

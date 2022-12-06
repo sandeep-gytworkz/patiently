@@ -2,3 +2,15 @@
   background: transparent;
   border: 2px solid #000000;
 }
+
+.navbar-nav .nav-link{
+  color: black;
+}
+
+.navbar .navbar-toggler{
+  border: none;
+}
+
+.navbar .navbar-toggler:focus{
+  box-shadow: none;
+}
