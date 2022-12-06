@@ -1,15 +1,18 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../../styles/common/global.css";
 import Header from "../../UI/Header/Header";
 import homePageCircle from "../../assets/images/homePageCircle.svg";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Footer from "../../UI/Footer/Footer";
+import { Link, useNavigate } from "react-router-dom";
+import { AppContext } from "../../App";
 
 const LoginPage = () => {
   const navigate = useNavigate();
   const appContext = useContext(AppContext);
   const onSubmitHandler = (event) => {
     event.preventDefault();
+    appContext.appDispatch({ type: "login" });
     navigate("/view-profile");
   };
   const forgotPasswordHandler = () => {
@@ -34,6 +37,7 @@ const LoginPage = () => {
                       Email*
                     </label>
                     <input
+                      required
                       type="email"
                       placeholder="mail@website.com"
                       id="email"
@@ -46,6 +50,7 @@ const LoginPage = () => {
                       Password*
                     </label>
                     <input
+                      required
                       type="password"
                       placeholder="Minimum 8 characters"
                       id="password"
@@ -109,9 +114,7 @@ const LoginPage = () => {
             </div>
             <div className="py-3 px-2  d-flex justify-content-between">
               <button
-                onClick={() => {
-                  appContext.appDispatch({ type: "login" });
-                }}
+                onClick={() => {}}
                 className="btn button-contained button-layout me-2"
                 aria-current="page"
               >
