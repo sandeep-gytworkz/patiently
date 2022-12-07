@@ -58,7 +58,7 @@ const Signup = ({ changeSlide }) => {
       <div className="container-fluid text-left">
         <div className="row content-section">
           <div className="col-sm-12 col-md-5 offset-md-1 px-5">
-            <h2 className="color-primary fs-20 px-2 ">SIGN UP</h2>
+            <h2 className="color-primary fs-20 px-2 mt-2  ">SIGN UP</h2>
             <form
               onSubmit={(event) => {
                 event.preventDefault();

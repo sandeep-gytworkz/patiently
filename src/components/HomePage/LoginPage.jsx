@@ -112,7 +112,7 @@ const LoginPage = () => {
                 className=" col-8"
               />
             </div>
-            <div className="py-3 px-2  d-flex justify-content-between">
+            {/* <div className="py-3 px-2  d-flex justify-content-between">
               <button
                 onClick={() => {}}
                 className="btn button-contained button-layout me-2"
@@ -126,7 +126,7 @@ const LoginPage = () => {
                   &nbsp; Register
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -47,43 +47,21 @@ const Question3 = (props) => {
           </label>
         </div>
       </div>
-      <div className="dropdown d-flex flex-column col-8">
-        <label htmlFor="dropdownMenuButton1" className="fs-18 fw-b">
-          Select celiac disease
-        </label>
-        <button
-          className="button-dropdown dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton1"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Select
-        </button>
-        <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton1">
-          <li>
-            <a className="dropdown-item" href="#">
-              9 Meters Biopharma/Larazotide
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">
-              Immunogenics/Latiglutenase
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">
-              Takeda/TAK-062
-            </a>
-          </li>
-          <li>
-            <a className="dropdown-item" href="#">
-              Provention Bio/PROACTIVE
-            </a>
-          </li>
-        </ul>
+      <div className="col-8">
+        <select className="form-select" aria-label="Default select example">
+          <option selected>Select</option>
+          <option value=" 9 Meters Biopharma/Larazotide">
+            9 Meters Biopharma/Larazotide
+          </option>
+          <option value="Immunogenics/Latiglutenase">
+            Immunogenics/Latiglutenase
+          </option>
+          <option value="Takeda/TAK-062">Takeda/TAK-062</option>
+          <option value="Provention Bio/PROACTIVE">
+            Provention Bio/PROACTIVE
+          </option>
+        </select>
       </div>
-
       <div className="d-flex flex-row justify-content-center align-items-center col-12 pt-5">
         <Link to="/" className="button-layout button-outlined mx-2 a-tag-btn">
           Cancel

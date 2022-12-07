@@ -27,10 +27,13 @@ const Homepage = () => {
   return (
     <div className="d-flex flex-column homePage-container">
       <Header />
-      <div className="bg-green d-flex flex-row pt-5">
+      <div className="bg-green d-flex flex-row pt-5 h-100">
         <div className="col-sm-6 col-xs-12 offset-sm-1 d-flex flex-column py-5 ps-1 pe-5">
           <div>
-            <p className="fs-56 fw-mb heading-shadow"> Bringing the Patient Journey to Life</p>
+            <p className="fs-56 fw-mb heading-shadow">
+              {" "}
+              Bringing the Patient Journey to Life
+            </p>
             <p className="fs-32 fw-500">
               Your celiac health journey is unique, but you are not alone. Join
               a community of fellow celiac patients, share your experience, be
@@ -47,11 +50,11 @@ const Homepage = () => {
             <Footer />
           </div>
         </div>
-        <div className="col-sm-4">
+        <div className="col-sm-5 ">
           <img
             src={homePageCircle}
             alt="home page circles image"
-            className="h-100"
+            className="w-100"
           />
         </div>
       </div>
