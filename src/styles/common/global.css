@@ -85,6 +85,9 @@
 .fw-mb {
   font-weight: 600;
 }
+.fw-500{
+  font-weight: 500;
+}
 .fs-18 {
   font-size: 18px;
 }
@@ -109,11 +112,15 @@
 }
 
 .fs-32 {
-  font-size: 32px;
+  font-size: 1.8em;
 }
 
 .fs-36 {
   font-size: 36px;
+}
+
+.fs-56 {
+  font-size: 3.5em;
 }
 
 .fs-64 {
@@ -218,4 +225,12 @@ input.form-control:focus {
 .bg-green {
   background-color: #04d976;
   color: #ffffff;
+}
+
+.heading-shadow{
+  text-shadow: 0 3px 5px #00000029
+}
+
+.container-shadow{
+  box-shadow: 0 3px 5px #00000029;
 }
