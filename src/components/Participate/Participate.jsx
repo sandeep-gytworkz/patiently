@@ -55,7 +55,9 @@ const Participate = () => {
                 paddingBottom: "10px",
               }}
             >
-              <h3 className="text-center col-12 pt-3">Questions</h3>
+              <p className="text-center col-12 pt-3 fs-28 dark-blue fw-b">
+                Questions
+              </p>
               <div
                 className="btn-group mx-auto"
                 role="group"

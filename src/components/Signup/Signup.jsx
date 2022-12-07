@@ -1,5 +1,5 @@
 import React, { useState, useReducer } from "react";
-import homeImg from "../../assets/images/homeImg.png";
+import homePageCircle from "../../assets/images/homePageCircle.svg";
 import arrow from "../../assets/images/arrow.svg";
 import "../../styles/common/global.css";
 import { Link } from "react-router-dom";
@@ -57,21 +57,21 @@ const Signup = ({ changeSlide }) => {
       <Header />
       <div className="container-fluid text-left">
         <div className="row content-section">
-          <div className="col-sm-12 col-md-5 offset-md-1 p-5">
-            <h2 className="color-primary fs-24 px-2 ">SIGN UP</h2>
+          <div className="col-sm-12 col-md-5 offset-md-1 px-5">
+            <h2 className="color-primary fs-20 px-2 ">SIGN UP</h2>
             <form
               onSubmit={(event) => {
                 event.preventDefault();
                 submitRegistration();
               }}
-              className="mt-1 d-flex flex-column col-12"
+              className=" d-flex flex-column col-12"
             >
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="firstName"
-                  className="form-label fs-6 color-primary"
+                  className="form-label fs-16 color-primary mb-0 fw-b"
                 >
-                  Name
+                  Name*
                 </label>
                 <input
                   type="text"
@@ -87,9 +87,9 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="inputEmail"
-                  className="form-label fs-6 color-primary"
+                  className="form-label fs-16 color-primary fw-b mb-0"
                 >
-                  Email address
+                  Email*
                 </label>
                 <input
                   type="email"
@@ -104,9 +104,9 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="contactNumber"
-                  className="form-label fs-6 color-primary"
+                  className="form-label fs-16 color-primary fw-b mb-0"
                 >
-                  Contact Number
+                  Phone Number*
                 </label>
                 <input
                   type="text"
@@ -120,9 +120,9 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="password"
-                  className="form-label fs-6 color-primary d-flex justify-content-between"
+                  className="form-label fs-16 color-primary d-flex justify-content-between fw-b mb-0"
                 >
-                  Password
+                  Password*
                   <span>
                     <input
                       type="checkbox"
@@ -131,7 +131,7 @@ const Signup = ({ changeSlide }) => {
                       onChange={passwordGenerator}
                     />
                     &nbsp;
-                    <label className="form-check-label">
+                    <label className="form-check-label fs-16 fw-b mb-0">
                       Auto Generate password
                     </label>
                   </span>
@@ -148,9 +148,9 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10">
                 <label
                   htmlFor="confirmPassword"
-                  className="form-label fs-6 color-primary"
+                  className="form-label fs-16 color-primary fw-b mb-0"
                 >
-                  Confirm Password
+                  Confirm Password*
                 </label>
                 <input
                   type="text"
@@ -162,7 +162,7 @@ const Signup = ({ changeSlide }) => {
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
               </div>
-              <div className=" col-10 form-check justify-content-between mb-4 mx-2">
+              <div className=" col-10 form-check justify-content-between mb-3 mx-2">
                 <input
                   type="checkbox"
                   className="form-check-input  "
@@ -196,12 +196,12 @@ const Signup = ({ changeSlide }) => {
               <div className="d-flex flex-column px-2">
                 <button
                   type="submit"
-                  className="button-layout button-primary me-3 col-10"
+                  className="button-layout button-green me-3 col-10"
                 >
                   Sign Up
                 </button>
                 <div className="text-center col-10">
-                  <p className="mb-0 py-2">
+                  <p className="mb-0 py-1">
                     Already user?
                     <Link className="a-tag " to="/login">
                       &nbsp; Login
@@ -212,11 +212,12 @@ const Signup = ({ changeSlide }) => {
             </form>
           </div>
 
-          <div className="col-sm-12 col-md-6 right-half p-5">
-            <img src={homeImg} className="img-fluid p-5" alt="home page logo" />
+          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
+            <img src={homePageCircle} alt="circles image" className=" col-8" />
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

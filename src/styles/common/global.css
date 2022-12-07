@@ -1,5 +1,5 @@
 .content-section {
-  /* height: 90vh; */
+  height: 90vh;
 }
 
 .color-primary {
@@ -44,8 +44,8 @@
 }
 
 .button-outlined {
-  color: #ed6639;
-  border: 1px solid #ed6639;
+  color: #04d976;
+  border: 1px solid #04d976;
   background-color: transparent;
 }
 
@@ -73,9 +73,9 @@
   color: rgb(71, 134, 244);
 }
 .button-browse {
-  background-color: #029c9a;
+  background-color: #0fc6d9;
   color: #ffffff;
-  border-radius: 100px;
+  border-radius: none;
   border: none;
 }
 
@@ -132,11 +132,11 @@
   font-weight: 400;
 }
 .a-tag-btn {
-  color: #ed6639;
+  color: #04d976;
   text-decoration: none;
 }
 .a-tag-btn:hover {
-  color: #ed6639;
+  color: #04d976;
 }
 
 .a-tag-white-btn {
@@ -215,7 +215,23 @@ input.form-control:focus {
   font-weight: bold;
 }
 
+.pink {
+  color: #f230bb;
+}
+
 .bg-green {
   background-color: #04d976;
+  color: #ffffff;
+}
+
+.dim-gray {
+  color: #6c6c6c;
+}
+
+.dark-blue {
+  color: #2b3566;
+}
+.radio-btn {
+  border: 3px solid #00cfe5;
   color: #ffffff;
 }

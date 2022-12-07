@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import OtpInput from "react-otp-input";
-import homeImg from "../../../assets/images/homeImg.png";
+import homePageCircle from "../../../assets/images/homePageCircle.svg";
 import { Link } from "react-router-dom";
 import Header from "../../../UI/Header/Header";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Footer from "../../../UI/Footer/Footer";
 
 const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
   const [otp, setOtp] = useState("");
@@ -19,17 +20,19 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
             <div className="col-6 flex-column align-items-center p-5">
               <div className="d-flex flex-column align-items-center">
                 <div className="p-3 d-flex flex-column col-9">
-                  <h4>
+                  <p className="fs-20 fw-b">
                     {isForgotPassword
-                      ? "verify code"
+                      ? "Verify code"
                       : "Two Factor Authentication"}
-                  </h4>
-                  <p>
+                  </p>
+                  <p className="fs-18 dim-gray">
                     {isForgotPassword
                       ? "We have sent you a 6 digit code"
                       : "Hi John, We have sent you a six digit verification code to provided email/contact number"}
                   </p>
-                  <p>If you did not receive the code, Select resend code</p>
+                  <p className="fs-18 dim-gray">
+                    If you did not receive the code, Select resend code
+                  </p>
                   <div>
                     <OtpInput
                       value={otp}
@@ -61,7 +64,7 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                       onClick={() => {
                         changeSlide();
                       }}
-                      className="button-layout button-primary"
+                      className="button-layout button-green"
                     >
                       {isForgotPassword
                         ? "Verify code"
@@ -71,12 +74,13 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                   </div>
                 </div>
               </div>
+              <Footer />
             </div>
-            <div className="col-sm-12 col-md-6 right-half p-5">
+            <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
               <img
-                src={homeImg}
-                className="img-fluid p-5"
-                alt="home page logo"
+                src={homePageCircle}
+                alt="circles image"
+                className=" col-8"
               />
             </div>
           </div>

@@ -18,14 +18,14 @@ const Question2 = (props) => {
       <div className="d-flex flex-row my-3 justify-content-between ">
         <div className="form-check form-check-inline d-flex flex-row align-items-center mx-4">
           <input
-            className="form-check-input mx-2"
+            className="form-check-input mx-2 radio-btn"
             type="radio"
             name="inlineRadioOptions"
             id="inlineRadio1"
             value="Yes"
           />
           <label
-            className="form-check-label radio-btn-label "
+            className="form-check-label radio-btn-label dark-blue "
             htmlFor="inlineRadio1"
           >
             Yes
@@ -33,14 +33,14 @@ const Question2 = (props) => {
         </div>
         <div className="form-check form-check-inline d-flex flex-row align-items-center mx-4">
           <input
-            className="form-check-input mx-2"
+            className="form-check-input mx-2 radio-btn"
             type="radio"
             name="inlineRadioOptions"
             id="inlineRadio2"
             value="No"
           />
           <label
-            className="form-check-label radio-btn-label"
+            className="form-check-label radio-btn-label dark-blue"
             htmlFor="inlineRadio2"
           >
             No
@@ -64,7 +64,7 @@ const Question2 = (props) => {
 
         <button
           type="button"
-          className="button-layout button-orange mx-2"
+          className="button-layout button-green mx-2"
           onClick={() => {
             props.changeSlide(6);
           }}

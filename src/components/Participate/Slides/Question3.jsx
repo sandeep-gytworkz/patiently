@@ -18,14 +18,14 @@ const Question3 = (props) => {
       <div className="d-flex flex-row my-3 justify-content-between ">
         <div className="form-check form-check-inline d-flex flex-row align-items-center mx-4">
           <input
-            className="form-check-input mx-2"
+            className="form-check-input mx-2 radio-btn"
             type="radio"
             name="inlineRadioOptions"
             id="inlineRadio1"
             value="Yes"
           />
           <label
-            className="form-check-label radio-btn-label "
+            className="form-check-label radio-btn-label dark-blue "
             htmlFor="inlineRadio1"
           >
             Yes
@@ -33,14 +33,14 @@ const Question3 = (props) => {
         </div>
         <div className="form-check form-check-inline d-flex flex-row align-items-center mx-4">
           <input
-            className="form-check-input mx-2"
+            className="form-check-input mx-2 radio-btn"
             type="radio"
             name="inlineRadioOptions"
             id="inlineRadio2"
             value="No"
           />
           <label
-            className="form-check-label radio-btn-label"
+            className="form-check-label radio-btn-label dark-blue"
             htmlFor="inlineRadio2"
           >
             No
@@ -48,7 +48,9 @@ const Question3 = (props) => {
         </div>
       </div>
       <div className="dropdown d-flex flex-column col-8">
-        <label htmlFor="dropdownMenuButton1">Select celiac disease </label>
+        <label htmlFor="dropdownMenuButton1" className="fs-18 fw-b">
+          Select celiac disease
+        </label>
         <button
           className="button-dropdown dropdown-toggle"
           type="button"
@@ -58,20 +60,25 @@ const Question3 = (props) => {
         >
           Select
         </button>
-        <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <ul className="dropdown-menu " aria-labelledby="dropdownMenuButton1">
           <li>
             <a className="dropdown-item" href="#">
-              Action
+              9 Meters Biopharma/Larazotide
             </a>
           </li>
           <li>
             <a className="dropdown-item" href="#">
-              Another action
+              Immunogenics/Latiglutenase
             </a>
           </li>
           <li>
             <a className="dropdown-item" href="#">
-              Something else here
+              Takeda/TAK-062
+            </a>
+          </li>
+          <li>
+            <a className="dropdown-item" href="#">
+              Provention Bio/PROACTIVE
             </a>
           </li>
         </ul>
@@ -93,7 +100,7 @@ const Question3 = (props) => {
 
         <button
           type="button"
-          className="button-layout button-orange mx-2"
+          className="button-layout button-green mx-2"
           onClick={() => {
             props.changeSlide(7);
           }}

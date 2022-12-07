@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Header from "../../UI/Header/Header";
-import homeImg from "../../assets/images/homeImg.png";
+import homePageCircle from "../../assets/images/homePageCircle.svg";
 import "../../styles/common/global.css";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import Footer from "../../UI/Footer/Footer";
 
 const ForgotPasswordOtp = () => {
   const navigate = useNavigate();
@@ -24,15 +25,15 @@ const ForgotPasswordOtp = () => {
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
                   <div className=" d-flex flex-column col-8">
-                    <h5>Forgot Password</h5>
-                    <p className="fs-14">
+                    <p className="fs-20 fw-b">Forgot Password</p>
+                    <p className="fs-18 dim-gray">
                       Provide you account’s email for which you want to reset
                       your password
                     </p>
 
                     <label
                       htmlFor="email"
-                      className=" d-flex fs-14 color-primary mb-1 justify-content-between"
+                      className=" d-flex fs-16 fw-b color-primary mb-1 justify-content-between"
                     >
                       Email*
                     </label>
@@ -49,7 +50,7 @@ const ForgotPasswordOtp = () => {
 
                   <div className="py-3 col-8  ">
                     <button
-                      className="button-orange button-layout w-100"
+                      className="button-green button-layout w-100"
                       aria-current="page"
                     >
                       Send OTP &nbsp; <AiOutlineArrowRight />
@@ -57,12 +58,13 @@ const ForgotPasswordOtp = () => {
                   </div>
                 </div>
               </form>
+              <Footer />
             </div>
-            <div className="col-sm-12 col-md-6 right-half p-5">
+            <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
               <img
-                src={homeImg}
-                className="img-fluid p-5"
-                alt="home page logo"
+                src={homePageCircle}
+                alt="circles image"
+                className=" col-8"
               />
             </div>
           </div>

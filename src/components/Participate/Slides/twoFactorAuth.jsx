@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import OtpInput from "react-otp-input";
-import homeImg from "../../../assets/images/homeImg.png";
+import homePageCircle from "../../../assets/images/homePageCircle.svg";
 import { Link } from "react-router-dom";
 import Header from "../../../UI/Header/Header";
 
@@ -46,17 +46,17 @@ const TwoFactorAuth = ({ changeSlide }) => {
                   onClick={() => {
                     changeSlide(3);
                   }}
-                  className="button-layout button-primary"
+                  className="button-layout button-green"
                 >
                   Continue to Questions
                 </button>
               </div>
             </div>
-            <div className="col-sm-12 col-md-6 right-half p-5">
+            <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
               <img
-                src={homeImg}
-                className="img-fluid p-5"
-                alt="home page logo"
+                src={homePageCircle}
+                alt="circles image"
+                className=" col-8"
               />
             </div>
           </div>
