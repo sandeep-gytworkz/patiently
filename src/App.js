@@ -1,10 +1,7 @@
-import React from "react";
+import React, { createContext, useReducer } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import "animate.css";
-
-import AdminNavBar from "./components/Admin-UI/common-components/AdminNavBar";
-import Dashboard from "./components/Admin-UI/Dashboard";
 import AboutUs from "../src/UI/AboutUs/AboutUs";
 import DataPrivacy from "./components/HomePage/DataPrivacy";
 import Homepage from "./components/HomePage/HomePage";
@@ -19,11 +16,19 @@ import ResetPassword from "./components/HomePage/ResetPassword";
 import ForgotPasswordOtp from "./components/HomePage/ForgotPasswordOtp";
 import ContactUs from "./UI/ContactUs/ContactUs";
 import HowItWorks from "./components/HomePage/HowItWorks";
+import { reducer } from "./Redux/Reducers";
+import { initialState } from "./Redux/States";
+import ProtectedRoute from "./components/ProtectedRoute";
+
+export const AppContext = createContext();
 
 function App() {
+
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   const navigate = useNavigate();
   return (
-    <>
+    <AppContext.Provider value={{ appState: state, appDispatch: dispatch }}>
       <Routes>
         <Route exact path="/" element={<Homepage />} />
         <Route exact path="/signup" element={<Signup />} />
@@ -33,7 +38,7 @@ function App() {
         <Route exact path="/participate-now" element={<Participate />} />
         <Route exact path="/data-privacy" element={<DataPrivacy />} />
         <Route exact path="/login" element={<LoginPage />} />
-        <Route exact path="/view-profile" element={<Slide9 />} />
+        <Route exact path="/view-profile" element={<ProtectedRoute><Slide9 /></ProtectedRoute>} />
         <Route
           exact
           path="/verify-otp"
@@ -53,9 +58,7 @@ function App() {
           element={<ForgotPasswordOtp />}
         />
       </Routes>
-
-      {/* <Dashboard /> */}
-    </>
+    </AppContext.Provider>
   );
 }
 
