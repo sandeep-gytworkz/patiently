@@ -82,6 +82,9 @@
 .fw-b {
   font-weight: bold;
 }
+.fw-mb {
+  font-weight: 600;
+}
 .fs-18 {
   font-size: 18px;
 }
@@ -102,7 +105,7 @@
   font-size: 24px;
 }
 .fs-28 {
-  font-size: 28px;
+  font-size: 1.5em;
 }
 
 .fs-32 {
