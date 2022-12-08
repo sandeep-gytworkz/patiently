@@ -250,3 +250,9 @@ input.form-control:focus {
   border: 3px solid #00cfe5;
   color: #ffffff;
 }
+
+.participants-btn {
+  color: #ffffff;
+  background-color: #1f376d;
+  border: none;
+}

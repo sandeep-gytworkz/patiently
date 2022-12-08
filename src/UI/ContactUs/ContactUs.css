@@ -1,16 +1,5 @@
-.dropdown-btn {
-  border: 1px solid #bcbcbc;
-  border-radius: 4px;
-  background-color: transparent;
-  color: #4b4b4b;
-}
-
 .msg-div {
   border: 1px solid #bcbcbc;
   border-radius: 4px;
   min-height: 8rem;
-}
-
-.dropdown-toggle::after {
-  margin-left: 31rem;
 }

@@ -1,10 +1,12 @@
 import React from "react";
 import personImg from "../../../assets/images/personImg.png";
 import "./AdminNavBar.css";
+import "../../../styles/common/global.css";
+import { BiSearch } from "react-icons/bi";
 
 const AdminNavBar = (props) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-primary">
+    <nav className="navbar navbar-expand-lg navbar-light bg-green admin-navbar">
       <div className="container-fluid justify-content-evenly">
         <div>
           <i className="bx bx-menu" id="btn" onClick={props.onClick}></i>

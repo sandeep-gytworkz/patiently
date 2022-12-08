@@ -41,7 +41,7 @@ body {
   width: 240px;
 }
 .sidebar .logo_content {
-  background-color: blue;
+  background-color: #1f376d;
   padding: 6px;
 }
 .sidebar .logo_content .logo {
@@ -53,6 +53,7 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s ease;
+  padding-inline-start: 2rem;
 }
 .sidebar.active .logo_content .logo {
   opacity: 1;
@@ -163,9 +164,10 @@ body {
 }
 
 .sidebar ul li a:hover {
-  color: var(--black-color);
-  background: var(--white-color);
+  color: white;
+  background-color: #eb796f;
 }
+
 .sidebar ul li i {
   font-size: 18px;
   font-weight: 400;
@@ -253,7 +255,7 @@ body {
   height: 100%;
   width: calc(100% - 78px);
   left: 78px;
-  background: var(--sky-color);
+  background-color: #f7f7f8;
 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: all 0.5s ease;

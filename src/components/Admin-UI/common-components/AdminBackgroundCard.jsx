@@ -1,21 +1,11 @@
 import React, { useState } from "react";
 import AdminNavBar from "./AdminNavBar";
 import "./AdminBackgroundCard.css";
+import { AiOutlineFileSearch } from "react-icons/ai";
+import { GrUserSettings } from "react-icons/gr";
+import { IoSettingsOutline } from "react-icons/io5";
 
 const AdminBackgroundCard = (props) => {
-  // let btn = document.querySelector("#btn");
-  // let AdminBackgroundCard = document.querySelector(".AdminBackgroundCard");
-  // let searchBtn = document.querySelector(".bx-search");
-
-  // btn.onClick = function () {
-  //   AdminBackgroundCard.classList.toggle("active");
-  // };
-  // const btnOnClickHandler = () => AdminBackgroundCard.classList.toggle("active");
-  // const bxSearchOnClickHandler = () => AdminBackgroundCard.classList.toggle("active");
-
-  // searchBtn.onClick = function () {
-  //   AdminBackgroundCard.classList.toggle("active");
-  // };
   const [appState, setAppState] = useState(true);
   const btnOnClickHandler = () => setAppState(!appState);
   const bxSearchOnClickHandler = () => setAppState(!appState);
@@ -34,11 +24,6 @@ const AdminBackgroundCard = (props) => {
         <div className="ul-class-list">
           <ul className="nav_list">
             <li>
-              <i className="bx bx-search" onClick={bxSearchOnClickHandler}></i>
-              <input type="text" placeholder="Search..." />
-              <span className="tooltip">Search</span>
-            </li>
-            <li>
               <a href="#">
                 <i
                   className="bx bx-grid-alt"
@@ -50,7 +35,9 @@ const AdminBackgroundCard = (props) => {
             </li>
             <li>
               <a href="#">
-                <i className="bx bx-user"></i>
+                <i>
+                  <AiOutlineFileSearch />
+                </i>
                 <span className="links_name">Records</span>
               </a>
               <span className="tooltip">Records</span>
@@ -64,14 +51,18 @@ const AdminBackgroundCard = (props) => {
             </li>
             <li>
               <a href="#">
-                <i className="bx bx-pie-chart-alt-2"></i>
+                <i>
+                  <GrUserSettings />
+                </i>
                 <span className="links_name">Account Management</span>
               </a>
               <span className="tooltip">Account</span>
             </li>
             <li>
               <a href="#">
-                <i className="bx bx-folder"></i>
+                <i>
+                  <IoSettingsOutline />
+                </i>
                 <span className="links_name">Settings</span>
               </a>
               <span className="tooltip">Settings</span>
@@ -81,74 +72,7 @@ const AdminBackgroundCard = (props) => {
       </div>
       <div className="home_content">
         <AdminNavBar onClick={btnOnClickHandler} />
-        <div className="p-3">
-          {/* <div className="text">Dashboard</div>
-          <p>
-            Nullam vulputate ultrices tellus et bibendum. Integer iaculis
-            pharetra ligula, eget condimentum nunc malesuada nec. Nullam eu
-            lorem sed tellus condimentum aliquam in in eros. Maecenas sagittis,
-            justo quis blandit aliquet, sem felis interdum elit, ac dictum purus
-            mauris nec mauris. In hac habitasse platea dictumst. Morbi placerat
-            nec lorem in feugiat. In tristique laoreet diam, vel vulputate mi
-            placerat id. Vivamus at quam rutrum, finibus tortor laoreet,
-            venenatis sem. Nam vitae libero ultrices, tristique ligula non,
-            sagittis elit. Vestibulum sed turpis nec eros convallis viverra.
-            Maecenas nunc arcu, pharetra bibendum feugiat ut, consequat quis
-            massa. Vivamus aliquet eros a efficitur fringilla. Aenean auctor ut
-            mi ut vestibulum. Suspendisse a turpis id nisi faucibus efficitur.
-            Sed ipsum urna, ultricies eget justo vitae, hendrerit malesuada
-            mauris. Donec a turpis malesuada, euismod massa id, ultrices ex.
-          </p>
-          <p>
-            Nullam vulputate ultrices tellus et bibendum. Integer iaculis
-            pharetra ligula, eget condimentum nunc malesuada nec. Nullam eu
-            lorem sed tellus condimentum aliquam in in eros. Maecenas sagittis,
-            justo quis blandit aliquet, sem felis interdum elit, ac dictum purus
-            mauris nec mauris. In hac habitasse platea dictumst. Morbi placerat
-            nec lorem in feugiat. In tristique laoreet diam, vel vulputate mi
-            placerat id. Vivamus at quam rutrum, finibus tortor laoreet,
-            venenatis sem. Nam vitae libero ultrices, tristique ligula non,
-            sagittis elit. Vestibulum sed turpis nec eros convallis viverra.
-            Maecenas nunc arcu, pharetra bibendum feugiat ut, consequat quis
-            massa. Vivamus aliquet eros a efficitur fringilla. Aenean auctor ut
-            mi ut vestibulum. Suspendisse a turpis id nisi faucibus efficitur.
-            Sed ipsum urna, ultricies eget justo vitae, hendrerit malesuada
-            mauris. Donec a turpis malesuada, euismod massa id, ultrices ex.
-          </p>
-          <p>
-            Nullam vulputate ultrices tellus et bibendum. Integer iaculis
-            pharetra ligula, eget condimentum nunc malesuada nec. Nullam eu
-            lorem sed tellus condimentum aliquam in in eros. Maecenas sagittis,
-            justo quis blandit aliquet, sem felis interdum elit, ac dictum purus
-            mauris nec mauris. In hac habitasse platea dictumst. Morbi placerat
-            nec lorem in feugiat. In tristique laoreet diam, vel vulputate mi
-            placerat id. Vivamus at quam rutrum, finibus tortor laoreet,
-            venenatis sem. Nam vitae libero ultrices, tristique ligula non,
-            sagittis elit. Vestibulum sed turpis nec eros convallis viverra.
-            Maecenas nunc arcu, pharetra bibendum feugiat ut, consequat quis
-            massa. Vivamus aliquet eros a efficitur fringilla. Aenean auctor ut
-            mi ut vestibulum. Suspendisse a turpis id nisi faucibus efficitur.
-            Sed ipsum urna, ultricies eget justo vitae, hendrerit malesuada
-            mauris. Donec a turpis malesuada, euismod massa id, ultrices ex.
-          </p>
-          <p>
-            Nullam vulputate ultrices tellus et bibendum. Integer iaculis
-            pharetra ligula, eget condimentum nunc malesuada nec. Nullam eu
-            lorem sed tellus condimentum aliquam in in eros. Maecenas sagittis,
-            justo quis blandit aliquet, sem felis interdum elit, ac dictum purus
-            mauris nec mauris. In hac habitasse platea dictumst. Morbi placerat
-            nec lorem in feugiat. In tristique laoreet diam, vel vulputate mi
-            placerat id. Vivamus at quam rutrum, finibus tortor laoreet,
-            venenatis sem. Nam vitae libero ultrices, tristique ligula non,
-            sagittis elit. Vestibulum sed turpis nec eros convallis viverra.
-            Maecenas nunc arcu, pharetra bibendum feugiat ut, consequat quis
-            massa. Vivamus aliquet eros a efficitur fringilla. Aenean auctor ut
-            mi ut vestibulum. Suspendisse a turpis id nisi faucibus efficitur.
-            Sed ipsum urna, ultricies eget justo vitae, hendrerit malesuada
-            mauris. Donec a turpis malesuada, euismod massa id, ultrices ex.
-          </p> */}
-          {props.children}
-        </div>
+        <div className="p-3">{props.children}</div>
       </div>
     </>
   );

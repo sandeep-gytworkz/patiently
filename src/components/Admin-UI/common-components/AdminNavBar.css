@@ -12,3 +12,9 @@
   position: inherit;
   line-height: 46px;
 }
+.admin-navbar {
+  background-color: #1f376d;
+  border-bottom: 1px solid #dddddd;
+  box-shadow: 0px 4px 6px #0000000f;
+  border-left: 1px solid #1f376d;
+}
