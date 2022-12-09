@@ -67,7 +67,6 @@ function App() {
         />
       </Routes>
     </AppContext.Provider>
-    // <Dashboard />
   );
 }
 

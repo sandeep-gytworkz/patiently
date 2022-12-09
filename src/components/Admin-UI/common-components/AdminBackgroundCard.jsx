@@ -18,6 +18,7 @@ const AdminBackgroundCard = (props) => {
             <div className="logo">
               <div className="logo_name">Patiently</div>
             </div>
+
             <i className="bx bx-menu" id="btn" onClick={btnOnClickHandler}></i>
           </div>
         </div>
@@ -25,10 +26,7 @@ const AdminBackgroundCard = (props) => {
           <ul className="nav_list">
             <li>
               <a href="#">
-                <i
-                  className="bx bx-grid-alt"
-                  onClick={bxSearchOnClickHandler}
-                ></i>
+                <i className="bx bx-grid-alt"></i>
                 <span className="links_name">Dashboard</span>
               </a>
               <span className="tooltip">Dashboard</span>
