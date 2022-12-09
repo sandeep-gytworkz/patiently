@@ -257,16 +257,11 @@ input.form-control:focus {
   border: none;
 }
 
-.data-grid-comp .rdg-cell{
-  border: none;
-  border-bottom: 1px solid #E9EBEC;
-}
-
-.records-card{
-  border: 1px solid #DFE1E6;
+.records-card {
+  border: 1px solid #dfe1e6;
   border-radius: 4px;
 }
 
-.dashboard-primary-color{
-  color: #172E50;
+.dashboard-primary-color {
+  color: #172e50;
 }
