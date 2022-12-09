@@ -38,6 +38,7 @@ function App() {
         <Route exact path="/participate-now" element={<Participate />} />
         <Route exact path="/data-privacy" element={<DataPrivacy />} />
         <Route exact path="/login" element={<LoginPage />} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
         <Route
           exact
           path="/view-profile"
