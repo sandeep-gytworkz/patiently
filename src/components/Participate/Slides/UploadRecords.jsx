@@ -92,7 +92,7 @@ const UploadRecords = ({ changeSlide }) => {
             Back to Questions
           </button>
           <button
-            className="button-orange button-layout px-5"
+            className="button-green button-layout px-5"
             onClick={() => {
               changeSlide(9);
             }}

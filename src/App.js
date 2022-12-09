@@ -19,11 +19,11 @@ import HowItWorks from "./components/HomePage/HowItWorks";
 import { reducer } from "./Redux/Reducers";
 import { initialState } from "./Redux/States";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Dashboard from "../src/components/Admin-UI/Dashboard";
 
 export const AppContext = createContext();
 
 function App() {
-
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const navigate = useNavigate();
@@ -38,7 +38,16 @@ function App() {
         <Route exact path="/participate-now" element={<Participate />} />
         <Route exact path="/data-privacy" element={<DataPrivacy />} />
         <Route exact path="/login" element={<LoginPage />} />
-        <Route exact path="/view-profile" element={<ProtectedRoute><Slide9 /></ProtectedRoute>} />
+        <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route
+          exact
+          path="/view-profile"
+          element={
+            <ProtectedRoute>
+              <Slide9 />
+            </ProtectedRoute>
+          }
+        />
         <Route
           exact
           path="/verify-otp"

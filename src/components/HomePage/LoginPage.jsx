@@ -28,12 +28,12 @@ const LoginPage = () => {
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
                   <div className="py-3 d-flex flex-column col-8">
-                    <h5>Login</h5>
-                    <p className="fs-14">
+                    <p className="fs-20 fw-b">Login</p>
+                    <p className="fs-16 dim-gray">
                       Log in with details that you entered during your
                       registration
                     </p>
-                    <label htmlFor="email" className="fs-14 color-primary">
+                    <label htmlFor="email" className="fs-16 fw-b">
                       Email*
                     </label>
                     <input
@@ -46,7 +46,7 @@ const LoginPage = () => {
                   </div>
 
                   <div className="py-3 d-flex flex-column col-8">
-                    <label htmlFor="password" className="fs-14 color-primary">
+                    <label htmlFor="password" className="fs-16 fw-b">
                       Password*
                     </label>
                     <input
@@ -66,7 +66,7 @@ const LoginPage = () => {
                         id="flexCheckChecked"
                       />
                       <label
-                        className="form-check-label fs-14"
+                        className="form-check-label fs-16 fw-b"
                         htmlFor="flexCheckChecked"
                       >
                         Remember me
@@ -74,7 +74,7 @@ const LoginPage = () => {
                     </div>
                     <div>
                       <button
-                        className="button-a-tag fs-14"
+                        className="button-a-tag fs-16 "
                         onClick={forgotPasswordHandler}
                       >
                         Forgot Password?
@@ -91,10 +91,10 @@ const LoginPage = () => {
                   </div>
                   <div>
                     <div className="d-flex flex-row  align-items-center">
-                      <p className="mb-0 py-2 fs-14">Not Registered?</p>
+                      <p className="mb-0 py-2 fs-16 fw-b">Not Registered?</p>
                       <Link
                         to="/participate-now "
-                        className="button-a-tag fs-14"
+                        className="button-a-tag fs-16"
                       >
                         &nbsp; Create an Account
                       </Link>
@@ -105,14 +105,14 @@ const LoginPage = () => {
               <Footer />
             </div>
 
-            <div className="col-sm-12 col-md-6  p-5">
+            <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
               <img
                 src={homePageCircle}
-                className="img-fluid p-5"
-                alt="home page circles"
+                alt="circles image"
+                className=" col-8"
               />
             </div>
-            <div className="py-3 px-2  d-flex justify-content-between">
+            {/* <div className="py-3 px-2  d-flex justify-content-between">
               <button
                 onClick={() => {}}
                 className="btn button-contained button-layout me-2"
@@ -126,7 +126,7 @@ const LoginPage = () => {
                   &nbsp; Register
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

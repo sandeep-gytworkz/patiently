@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Header from "../../UI/Header/Header";
-import homeImg from "../../assets/images/homeImg.png";
+import homePageCircle from "../../assets/images/homePageCircle.svg";
 import "../../styles/common/global.css";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../UI/Footer/Footer";
 
 const ResetPassword = () => {
   const [passwordValue, setPasswordValue] = useState("");
@@ -43,14 +44,14 @@ const ResetPassword = () => {
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
                   <div className="p-3 d-flex flex-column col-8">
-                    <h5>Reset Password</h5>
-                    <p className="fs-14">
+                    <p className="fs-20 fw-b">Reset Password</p>
+                    <p className="fs-14 dim-gray">
                       Enter new password to reset your login password
                     </p>
 
                     <label
                       htmlFor="password"
-                      className=" d-flex fs-14 color-primary mb-1 justify-content-between"
+                      className=" d-flex fs-16 fw-b color-primary mb-1 justify-content-between"
                     >
                       Password*
                       <span>
@@ -80,7 +81,7 @@ const ResetPassword = () => {
                   <div className="p-3 d-flex flex-column col-8">
                     <label
                       htmlFor="re-enterPassword"
-                      className="fs-14 color-primary mb-1"
+                      className="fs-16 color-primary mb-1 fw-b"
                     >
                       Re-enter Password*
                     </label>
@@ -101,7 +102,7 @@ const ResetPassword = () => {
                       Cancel
                     </Link>
                     <button
-                      className="button-orange button-layout "
+                      className="button-green button-layout "
                       aria-current="page"
                     >
                       Reset Password
@@ -109,12 +110,13 @@ const ResetPassword = () => {
                   </div>
                 </div>
               </form>
+              <Footer />
             </div>
-            <div className="col-sm-12 col-md-6 right-half p-5">
+            <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
               <img
-                src={homeImg}
-                className="img-fluid p-5"
-                alt="home page logo"
+                src={homePageCircle}
+                alt="circles image"
+                className=" col-8"
               />
             </div>
           </div>

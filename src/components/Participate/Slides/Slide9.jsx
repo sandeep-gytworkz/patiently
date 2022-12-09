@@ -99,7 +99,7 @@ const Slide9 = () => {
                 </p>
                 <p className="color-primary fs-16 fw-bold mt-0">or</p>
                 <div className="pt-5">
-                  <button className="button-contained button-layout px-5">
+                  <button className="button-browse button-layout px-5">
                     Browse
                   </button>
                 </div>

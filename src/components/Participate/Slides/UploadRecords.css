@@ -15,7 +15,7 @@
 
 .title-input {
   border: 1px solid #b0b0b0;
-  border-radius: 100px;
+  border-radius: none;
   outline: none;
   max-width: 300px;
   width: 100%;

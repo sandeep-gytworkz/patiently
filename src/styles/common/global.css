@@ -1,5 +1,5 @@
 .content-section {
-  /* height: 90vh; */
+  height: 90vh;
 }
 
 .color-primary {
@@ -44,8 +44,8 @@
 }
 
 .button-outlined {
-  color: #ed6639;
-  border: 1px solid #ed6639;
+  color: #04d976;
+  border: 1px solid #04d976;
   background-color: transparent;
 }
 
@@ -73,9 +73,9 @@
   color: rgb(71, 134, 244);
 }
 .button-browse {
-  background-color: #029c9a;
+  background-color: #0fc6d9;
   color: #ffffff;
-  border-radius: 100px;
+  border-radius: none;
   border: none;
 }
 
@@ -85,16 +85,19 @@
 .fw-mb {
   font-weight: 600;
 }
+.fw-500 {
+  font-weight: 500;
+}
 .fs-18 {
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .fs-16 {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .fs-20 {
-  font-size: 20px;
+  font-size: 1.4;
 }
 
 .fs-22 {
@@ -109,11 +112,15 @@
 }
 
 .fs-32 {
-  font-size: 32px;
+  font-size: 1.8em;
 }
 
 .fs-36 {
   font-size: 36px;
+}
+
+.fs-56 {
+  font-size: 3.5em;
 }
 
 .fs-64 {
@@ -132,11 +139,11 @@
   font-weight: 400;
 }
 .a-tag-btn {
-  color: #ed6639;
+  color: #04d976;
   text-decoration: none;
 }
 .a-tag-btn:hover {
-  color: #ed6639;
+  color: #04d976;
 }
 
 .a-tag-white-btn {
@@ -215,7 +222,51 @@ input.form-control:focus {
   font-weight: bold;
 }
 
+.pink {
+  color: #f230bb;
+}
+
 .bg-green {
   background-color: #04d976;
   color: #ffffff;
+}
+
+.heading-shadow {
+  text-shadow: 0 3px 5px #00000029;
+}
+
+.container-shadow {
+  box-shadow: 0 3px 5px #00000029;
+}
+
+.dim-gray {
+  color: #6c6c6c;
+}
+
+.dark-blue {
+  color: #2b3566;
+}
+.radio-btn {
+  border: 3px solid #00cfe5;
+  color: #ffffff;
+}
+
+.participants-btn {
+  color: #ffffff;
+  background-color: #1f376d;
+  border: none;
+}
+
+.data-grid-comp .rdg-cell{
+  border: none;
+  border-bottom: 1px solid #E9EBEC;
+}
+
+.records-card{
+  border: 1px solid #DFE1E6;
+  border-radius: 4px;
+}
+
+.dashboard-primary-color{
+  color: #172E50;
 }

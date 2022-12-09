@@ -6,10 +6,13 @@ const Questions = (props) => {
   return (
     <WhiteCard>
       <div>
-        <h1>Hi first name, we're so glad you're here!</h1>
+        <h1 className="dark-blue">
+          Hi <span className="pink">first name</span>, we're so glad you're
+          here!
+        </h1>
       </div>
       <div>
-        <p>
+        <p className="fs-24">
           We need to ask you a couple questions to set up your Patiently profile
         </p>
       </div>
@@ -18,7 +21,7 @@ const Questions = (props) => {
           Cancel
         </Link>
         <button
-          className="mx-2 button-orange button-layout"
+          className="mx-2 button-green button-layout"
           onClick={() => {
             props.changeSlide(4);
           }}
