@@ -89,15 +89,15 @@
   font-weight: 500;
 }
 .fs-18 {
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .fs-16 {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .fs-20 {
-  font-size: 20px;
+  font-size: 1.4;
 }
 
 .fs-22 {
@@ -255,4 +255,18 @@ input.form-control:focus {
   color: #ffffff;
   background-color: #1f376d;
   border: none;
+}
+
+.data-grid-comp .rdg-cell{
+  border: none;
+  border-bottom: 1px solid #E9EBEC;
+}
+
+.records-card{
+  border: 1px solid #DFE1E6;
+  border-radius: 4px;
+}
+
+.dashboard-primary-color{
+  color: #172E50;
 }

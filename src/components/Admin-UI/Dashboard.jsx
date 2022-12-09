@@ -4,12 +4,13 @@ import "./Dashboard.css";
 import "react-data-grid/lib/styles.css";
 import DataGrid from "react-data-grid";
 import "../../styles/common/global.css";
-import { GrView } from "react-icons/gr";
+import { GrView, GrCopy } from "react-icons/gr";
 import { VscFilePdf } from "react-icons/vsc";
 import { TbFileImport } from "react-icons/tb";
+import {HiDotsHorizontal} from "react-icons/hi"
 
 const ActionsComponent = (props) => {
-  return <button onClick={() => console.log(props)}>Test</button>;
+  return <div onClick={() => console.log(props)} className="col-3 text-center text-black-50 fs-32"><HiDotsHorizontal size={"28px"}/></div>;
 };
 
 const QuestionsComponent = () => {
@@ -154,31 +155,33 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="d-flex flex-row col-12 pt-2">
-          <div className="col-3  ms-2 d-flex flex-row records-card">
-            <div className="p-3">
-              <h3>Total Records</h3>
-              <h4>765</h4>
-            </div>
-            <div className="p-3">
-              <h5>Total Participants</h5>
-              <h4>765</h4>
-            </div>
-          </div>
-          <div className="col-3 records-card ms-2">
-            <div className="py-4 fs-22 fw-b px-5">
-              <p>Pending for Review</p>
-              <p>34</p>
+          <div className="col-3 pe-2">
+            <div className="d-flex flex-row records-card p-4">
+              <div className="col-7">
+                <h3 className="fs-18 dashboard-primary-color">Total Records</h3>
+                <h4 className="py-2 fs-32 dashboard-primary-color"><span className="bg-primary rounded-1 p-2 me-2 text-dark bg-opacity-10"><GrCopy size={'22px'}/></span>765</h4>
+              </div>
+              <div className="col-5">
+                <h5 className="fs-16 dashboard-primary-color">Total Participants</h5>
+                <h4 className="dashboard-primary-color">667</h4>
+              </div>
             </div>
           </div>
-          <div className="col-3 records-card ms-2">
-            <div className="py-4 fs-22 fw-b px-5">
-              <p>Closed</p>
-              <p>731</p>
+          <div className="col-3 pe-2">
+            <div className="records-card p-4">
+              <h3 className="fs-18 dashboard-primary-color">Pending for Review</h3>
+              <h4 className="py-2 fs-32 dashboard-primary-color"><span className="bg-danger rounded-1 p-2 me-2 text-warning bg-opacity-10"><GrCopy size={'22px'}/></span>34</h4>
+            </div>
+          </div>
+          <div className="col-3 pe-2">
+            <div className="records-card p-4">
+              <h3 className="fs-18 dashboard-primary-color">Closed</h3>
+              <h4 className="py-2 fs-32 dashboard-primary-color"><span className="bg-warning rounded-1 p-2 me-2 text-dark bg-opacity-10"><GrCopy size={'22px'}/></span>731</h4>
             </div>
           </div>
         </div>
         <div className="mt-3">
-          <DataGrid columns={columns} rows={rows} />
+          <DataGrid columns={columns} rows={rows} className="data-grid-comp"/>
         </div>
       </div>
     </AdminBackgroundCard>
