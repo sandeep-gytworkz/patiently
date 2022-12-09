@@ -18,3 +18,18 @@
   box-shadow: 0px 4px 6px #0000000f;
   border-left: 1px solid #1f376d;
 }
+
+.search-bar input {
+  width: 95%;
+  border: none;
+}
+
+.search-bar input:focus {
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  border: none;
+  background-color: transparent;
+}

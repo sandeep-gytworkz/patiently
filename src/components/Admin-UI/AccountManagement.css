@@ -1,0 +1,9 @@
+.account-mgmt-tab {
+  border-bottom: 1px solid #00000029;
+}
+
+.account-mgmnt-btn {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+}

@@ -27,7 +27,18 @@ const AdminNavBar = (props) => {
           id="navbarSupportedContent"
         >
           <form className="d-flex col-6">
-            <input
+            <div className="form-control me-2 search-bar">
+              <input
+                type="search"
+                placeholder="Search Here"
+                aria-label="Search"
+              />
+              <button type="submit">
+                <BiSearch />
+              </button>
+            </div>
+
+            {/* <input
               className="form-control me-2"
               type="search"
               placeholder="Search"
@@ -35,7 +46,7 @@ const AdminNavBar = (props) => {
             />
             <button className="btn btn-outline-success" type="submit">
               Search
-            </button>
+            </button> */}
           </form>
         </div>
         <div className="d-flex flex-row">

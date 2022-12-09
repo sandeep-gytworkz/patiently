@@ -20,6 +20,10 @@ import { reducer } from "./Redux/Reducers";
 import { initialState } from "./Redux/States";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "../src/components/Admin-UI/Dashboard";
+import Records from "./components/Admin-UI/Records";
+import ParticipantProfile from "./components/Admin-UI/ParticipantProfile";
+import Participants from "./components/Admin-UI/Participants";
+import AccountManagement from "./components/Admin-UI/AccountManagement";
 
 export const AppContext = createContext();
 
@@ -39,6 +43,18 @@ function App() {
         <Route exact path="/data-privacy" element={<DataPrivacy />} />
         <Route exact path="/login" element={<LoginPage />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
+        <Route exact path="/records" element={<Records />} />
+        <Route
+          exact
+          path="/participant-profile"
+          element={<ParticipantProfile />}
+        />
+        <Route exact path="/participants" element={<Participants />} />
+        <Route
+          exact
+          path="/account-management"
+          element={<AccountManagement />}
+        />
         <Route
           exact
           path="/view-profile"
