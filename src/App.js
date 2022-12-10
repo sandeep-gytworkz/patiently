@@ -1,4 +1,4 @@
-import React, { createContext, useReducer } from "react";
+import React, { createContext, useEffect, useReducer } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import "./App.css";
 import "animate.css";
@@ -26,9 +26,29 @@ import Participants from "./components/Admin-UI/Participants";
 import AccountManagement from "./components/Admin-UI/AccountManagement";
 
 export const AppContext = createContext();
+// export const DashboardContext = createContext();
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
+
+  //? Removing logs in production
+
+  useEffect(() => {
+
+    if (process.env.NODE_ENV === "development") {
+      return
+    }
+
+    const noop = () => { }
+    ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+      'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+      'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+      'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn',
+    ].forEach((method) => {
+      window.console[method] = noop
+    })
+
+  })
 
   const navigate = useNavigate();
   return (

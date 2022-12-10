@@ -10,9 +10,9 @@ import { AppContext } from "../../App";
 const LoginPage = () => {
   const navigate = useNavigate();
   const appContext = useContext(AppContext);
-  const onSubmitHandler = (event) => {
+  const onSubmitHandler = async (event) => {
     event.preventDefault();
-    appContext.appDispatch({ type: "login" });
+    await appContext.appDispatch({ type: "login" });
     navigate("/view-profile");
   };
   const forgotPasswordHandler = () => {

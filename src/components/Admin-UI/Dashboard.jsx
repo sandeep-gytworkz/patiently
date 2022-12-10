@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useContext, useEffect, useReducer } from "react";
 import AdminBackgroundCard from "./common-components/AdminBackgroundCard";
 import "./Dashboard.css";
 import "react-data-grid/lib/styles.css";
@@ -9,6 +9,13 @@ import { VscFilePdf } from "react-icons/vsc";
 import { TbFileImport } from "react-icons/tb";
 import { HiDotsHorizontal } from "react-icons/hi";
 import DataGridComp from "./common-components/DataGrid/DataGridComp";
+import { dashboardReducer } from "../../Redux/Reducers";
+import { dashboardState } from "../../Redux/States";
+import AdminAPI from "../../api/patients";
+
+export const DashboardContext = createContext();
+
+const adminAPI = new AdminAPI()
 
 const ActionsComponent = (props) => {
   return (
@@ -133,7 +140,33 @@ const rows = [
 ];
 
 const Dashboard = () => {
+
+  const [state, dispatch] = useReducer(dashboardReducer, dashboardState);
+
+  const dashboardContext = useContext(DashboardContext);
+
+  useEffect( () => {
+
+    async function getAllPosts(){
+      try{
+        const result = await adminAPI.getPosts();
+        console.log(result.data);
+        await dispatch({ type: "getPatients", payload: result.data });
+      }
+      catch(e){
+        console.log(e);
+      }
+    }
+
+    getAllPosts();
+    
+  }, [])
+
+  console.log(state.patients);
+
+
   return (
+    // 
     <AdminBackgroundCard>
       <div className="d-flex flex-column ">
         <div className="d-flex flex-row justify-content-between">
@@ -214,8 +247,14 @@ const Dashboard = () => {
             title="Recently Received Records"
           />
         </div>
+        {/* {state.patients.map(patient => (
+          <div>
+            <h5>{patient.title}</h5>
+          </div>
+        ))} */}
       </div>
     </AdminBackgroundCard>
+    // </DashboardContext>
   );
 };
 
