@@ -1,4 +1,10 @@
-import React, { createContext, useContext, useEffect, useReducer } from "react";
+import React, {
+  createContext,
+  useContext,
+  useEffect,
+  useReducer,
+  useMemo,
+} from "react";
 import AdminBackgroundCard from "./common-components/AdminBackgroundCard";
 import "./Dashboard.css";
 import "react-data-grid/lib/styles.css";
@@ -12,59 +18,32 @@ import DataGridComp from "./common-components/DataGrid/DataGridComp";
 import { dashboardReducer } from "../../Redux/Reducers";
 import { dashboardState } from "../../Redux/States";
 import AdminAPI from "../../api/patients";
+import { useTable } from "react-table";
 
 export const DashboardContext = createContext();
 
-const adminAPI = new AdminAPI()
+const adminAPI = new AdminAPI();
 
-const ActionsComponent = (props) => {
-  return (
-    <div
-      onClick={() => console.log(props)}
-      className="col-3 text-center text-black-50 fs-32"
-    >
-      <HiDotsHorizontal size={"28px"} />
-    </div>
-  );
-};
-
-const QuestionsComponent = () => {
-  return (
-    <a href="#">
-      <GrView />
-      View
-    </a>
-  );
-};
-
-const AttachmentsComponent = () => {
-  return (
-    <p>
-      <VscFilePdf />
-      mRNA flu report.pdf
-    </p>
-  );
-};
-
-const columns = [
-  { key: "participantsName", name: "Participants Name" },
-  { key: "recievedDateTime", name: "Recieved Date Time" },
-  { key: "researchName", name: "Research Name" },
+const tableColumns = [
+  { accessor: "participantsName", Header: "Participants Name" },
+  { accessor: "recievedDateTime", Header: "Recieved Date Time" },
+  { accessor: "researchName", Header: "Research Name" },
   {
-    key: "questions",
-    name: "Questions",
-    formatter: QuestionsComponent,
+    accessor: "questions",
+    Header: "Questions",
   },
-  { key: "attachment", name: "Attachment", formatter: AttachmentsComponent },
   {
-    key: "actions",
-    name: "Actions",
-    formatter: ActionsComponent,
-    getRowMetaData: (row) => row,
+    accessor: "attachment",
+    Header: "Attachment",
+  },
+  {
+    accessor: "actions",
+    Header: "Actions",
+    Cell: ({ row }) => <HiDotsHorizontal onClick={() => alert("clicked")} />,
   },
 ];
 
-const rows = [
+const tableRows = [
   {
     participantsName: "riyaz",
     recievedDateTime: "15nov2022",
@@ -140,33 +119,33 @@ const rows = [
 ];
 
 const Dashboard = () => {
+  const columns = useMemo(() => tableColumns, []);
+  const data = useMemo(() => tableRows, []);
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable({ columns, data });
 
   const [state, dispatch] = useReducer(dashboardReducer, dashboardState);
 
   const dashboardContext = useContext(DashboardContext);
 
-  useEffect( () => {
-
-    async function getAllPosts(){
-      try{
+  useEffect(() => {
+    async function getAllPosts() {
+      try {
         const result = await adminAPI.getPosts();
         console.log(result.data);
         await dispatch({ type: "getPatients", payload: result.data });
-      }
-      catch(e){
+      } catch (e) {
         console.log(e);
       }
     }
 
     getAllPosts();
-    
-  }, [])
+  }, []);
 
   console.log(state.patients);
 
-
   return (
-    // 
+    //
     <AdminBackgroundCard>
       <div className="d-flex flex-column ">
         <div className="d-flex flex-row justify-content-between">
@@ -241,17 +220,37 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="mt-3">
-          <DataGridComp
+          {/* <DataGridComp
             columns={columns}
             rows={rows}
             title="Recently Received Records"
-          />
+          /> */}
+          <table {...getTableProps()}>
+            <thead>
+              {headerGroups.map((headerGroup) => (
+                <tr {...headerGroup.getHeaderGroupProps()}>
+                  {headerGroup.headers.map((column) => (
+                    <th {...column.getHeaderProps()}>
+                      {column.render("Header")}
+                    </th>
+                  ))}
+                </tr>
+              ))}
+            </thead>
+            <tbody {...getTableBodyProps()}>
+              {rows.map((row, index) => {
+                prepareRow(row);
+                return (
+                  <tr {...row.getRowProps()}>
+                    {row.cells.map((cell) => (
+                      <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+                    ))}
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
-        {/* {state.patients.map(patient => (
-          <div>
-            <h5>{patient.title}</h5>
-          </div>
-        ))} */}
       </div>
     </AdminBackgroundCard>
     // </DashboardContext>

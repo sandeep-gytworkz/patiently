@@ -8,6 +8,7 @@ import homeImg from "../../assets/images/homeImg.png";
 import "../../styles/common/global.css";
 import arrow from "../../assets/images/arrow.svg";
 import { Link } from "react-router-dom";
+import { BsArrowRight } from "react-icons/bs";
 
 const Homepage = () => {
   const [cookieState, setCookieState] = useState(false);
@@ -43,11 +44,12 @@ const Homepage = () => {
               to="/participate-now "
               className="button-layout a-tag-white-btn"
             >
-              Participate Now
+              Participate Now &nbsp;
+              <BsArrowRight />
             </Link>
           </div>
           <div>
-            <Footer />
+            <Footer home={true} />
           </div>
         </div>
         <div className="col-sm-5 ">

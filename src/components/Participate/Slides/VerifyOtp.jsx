@@ -40,20 +40,20 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                       numInputs={6}
                       containerStyle={{ padding: "10px 0" }}
                       inputStyle={{
-                        width: "50px",
-                        height: "60px",
-                        marginRight: "10px",
+                        width: "60px",
+                        height: "70px",
+                        marginRight: "17px",
                         fontSize: "2rem",
                         borderRadius: "8px",
                         border: "1px solid rgba(0,0,0,0.3)",
                       }}
                     />
                   </div>
-                  <div className="d-flex justify-content-between col-9 ">
+                  <div className="d-flex justify-content-between col-12 ">
                     <button className="button-a-tag">Resend Code</button>
                     <p className="fs-14 mb-0">Code expires in 00.30s</p>
                   </div>
-                  <div className="d-flex flex-row mt-5 align-items-center  ">
+                  <div className="d-flex flex-row mt-5 align-items-center justify-content-between ">
                     <Link
                       to="/"
                       className="me-3 button-layout button-outlined a-tag-btn"
