@@ -34,12 +34,12 @@ const TermsModal = (props) => {
             <div className="modal-header">
               <div className="col-8">
                 <h6 className="modal-title" id="exampleModalLongTitle">
-                  <img src={patientlyLogo} alt="logo" height="20" width="20" />
+                  {/* <img src={patientlyLogo} alt="logo" height="20" width="20" /> */}
                   &nbsp; TERMS OF SERVICE AGREEMENT
                 </h6>
                 <p className="m-0">
-                  Please scroll till the end of the page to accept all terms and
-                  conditions
+                  &nbsp; Please scroll till the end of the page to accept all
+                  terms and conditions
                 </p>
               </div>
               <div className="col-4">
@@ -376,7 +376,7 @@ const TermsModal = (props) => {
                 className="btn btn-secondary btn-decline px-5"
                 data-bs-dismiss="modal"
               >
-                Reject
+                Decline
               </button>
               <button
                 type="button"

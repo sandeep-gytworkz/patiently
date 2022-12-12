@@ -58,7 +58,7 @@ const Signup = ({ changeSlide }) => {
       <div className="container-fluid text-left">
         <div className="row content-section">
           <div className="col-sm-12 col-md-5 offset-md-1 px-5">
-            <h2 className="color-primary fs-20 px-2 mt-2  ">SIGN UP</h2>
+            <h3 className="color-primary  px-2 mt-3 mb-0 ">SIGN UP</h3>
             <form
               onSubmit={(event) => {
                 event.preventDefault();
@@ -162,7 +162,7 @@ const Signup = ({ changeSlide }) => {
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
               </div>
-              <div className=" col-10 form-check justify-content-between mb-3 mx-2">
+              <div className=" col-10 form-check justify-content-between mb-1 mx-2 ">
                 <input
                   type="checkbox"
                   className="form-check-input  "
@@ -185,7 +185,7 @@ const Signup = ({ changeSlide }) => {
                   }}
                 />
                 <a
-                  className="color-primary fs-12 a-tag"
+                  className="color-primary fs-14 a-tag"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModalLong"
                   href="#"
@@ -201,9 +201,9 @@ const Signup = ({ changeSlide }) => {
                   Sign Up
                 </button>
                 <div className="text-center col-10">
-                  <p className="mb-0 py-1">
+                  <p className="mb-0 py-1 ">
                     Already user?
-                    <Link className="a-tag " to="/login">
+                    <Link className="a-tag  " to="/login">
                       &nbsp; Login
                     </Link>
                   </p>
