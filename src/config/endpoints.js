@@ -1,5 +1,5 @@
 export const HEADERS = {};
-export const baseUrl = process.env.REACT_APP_API_URL || 'https://jsonplaceholder.typicode.com/';
+export const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000/public/constants/';
 
 export const HttpMethod = {
   Get: 'GET',
@@ -18,7 +18,7 @@ const ApiRoutes = {
   },
   Admin: {
     PatientsList: {
-        Endpoint: 'posts',
+        Endpoint: 'patients.json',
         Method: HttpMethod.Get
     }
   }

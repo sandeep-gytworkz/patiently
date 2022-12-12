@@ -1,0 +1,32 @@
+{
+    "patientsList": [
+        {
+            "participantName": "Sara Jones",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/25/2022 9:00 AM",
+            "email": "dev@mail.com",
+            "contact": "+919876543210"
+        },
+        {
+            "participantName": "Sara Jones",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/25/2022 9:00 AM",
+            "email": "dev@mail.com",
+            "contact": "+919876543210"
+        },
+        {
+            "participantName": "Sara Jones",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/25/2022 9:00 AM",
+            "email": "dev@mail.com",
+            "contact": "+919876543210"
+        },
+        {
+            "participantName": "Sara Jones",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/25/2022 9:00 AM",
+            "email": "dev@mail.com",
+            "contact": "+919876543210"
+        }
+    ]
+}

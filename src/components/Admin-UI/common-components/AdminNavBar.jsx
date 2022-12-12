@@ -8,20 +8,6 @@ const AdminNavBar = (props) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-green admin-navbar">
       <div className="container-fluid justify-content-evenly">
-        <div>
-          <i className="bx bx-menu" id="btn" onClick={props.onClick}></i>
-        </div>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
         <div
           className="collapse navbar-collapse justify-content-center"
           id="navbarSupportedContent"
@@ -50,8 +36,7 @@ const AdminNavBar = (props) => {
           </form>
         </div>
         <div className="d-flex flex-row">
-          <div></div>
-          <div className="d-flex flex-row  admin-username-div">
+          <div className="d-flex flex-row admin-username-div">
             <div className="p-2">
               <img
                 src={personImg}
