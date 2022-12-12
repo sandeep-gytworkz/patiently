@@ -19,6 +19,7 @@ import { dashboardReducer } from "../../Redux/Reducers";
 import { dashboardState } from "../../Redux/States";
 import AdminAPI from "../../api/patients";
 import { useTable } from "react-table";
+import "./ReactTable.css";
 
 export const DashboardContext = createContext();
 
@@ -220,11 +221,6 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="mt-3">
-          {/* <DataGridComp
-            columns={columns}
-            rows={rows}
-            title="Recently Received Records"
-          /> */}
           <table {...getTableProps()}>
             <thead>
               {headerGroups.map((headerGroup) => (
