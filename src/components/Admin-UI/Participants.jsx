@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useReducer } from "react";
 import AdminBackgroundCard from "./common-components/AdminBackgroundCard";
 import "react-data-grid/lib/styles.css";
 import DataGrid from "react-data-grid";
@@ -7,6 +7,11 @@ import { TbFileImport } from "react-icons/tb";
 import { HiDotsHorizontal } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
 import { Link } from "react-router-dom";
+import AdminAPI from "../../api/patients";
+import { dashboardReducer } from "../../Redux/Reducers";
+import { dashboardState } from "../../Redux/States";
+
+const adminAPI = new AdminAPI();
 
 const ActionsComponent = (props) => {
   return (
@@ -20,9 +25,9 @@ const ActionsComponent = (props) => {
 };
 
 const columns = [
-  { key: "participantsName", name: "Participants Name" },
+  { key: "participantName", name: "Participants Name" },
   { key: "studyType", name: "Study Type" },
-  { key: "registeredDate", name: "Registered Date" },
+  { key: "registrationDate", name: "Registered Date" },
   { key: "email", name: "Email" },
   { key: "contact", name: "Contact" },
   {
@@ -33,82 +38,30 @@ const columns = [
   },
 ];
 
-const rows = [
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-  {
-    participantsName: "Sara Jones",
-    studyType: "mRNA Flu Vaccine Study",
-    registeredDate: "11/25/2022 9:00 AM",
-    email: "dev@mail.com",
-    contact: "887-897-8978",
-    actions: "actions",
-  },
-];
 
 const Participants = () => {
+
+  
+  const [state, dispatch] = useReducer(dashboardReducer, dashboardState);
+  
+  const rows = state.participants;
+
+  useEffect(() => {
+    async function getAllParticipants() {
+      try {
+        const result = await adminAPI.getParticipants();
+        console.log(result.data.participantsList);
+        await dispatch({ type: "getParticipants", payload: result.data.participantsList });
+      } catch (e) {
+        console.log(e);
+      }
+    }
+  
+    getAllParticipants();
+  }, []);
+
+  console.log(state.participants);
+
   return (
     <AdminBackgroundCard>
       <div className="d-flex flex-column ">

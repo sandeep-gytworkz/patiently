@@ -16,6 +16,10 @@ export const dashboardReducer = (state, action) => {
             return {
                 ...state, patients: action.payload
             };
+        case 'getParticipants': 
+            return {
+                ...state, participants: action.payload
+            };
         default:
             return state
     }

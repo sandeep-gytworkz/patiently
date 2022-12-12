@@ -1,5 +1,5 @@
 export const HEADERS = {};
-export const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:3000/public/constants/';
+export const baseUrl = '/constants/';
 
 export const HttpMethod = {
   Get: 'GET',
@@ -19,6 +19,10 @@ const ApiRoutes = {
   Admin: {
     PatientsList: {
         Endpoint: 'patients.json',
+        Method: HttpMethod.Get
+    },
+    ParticipantsList: {
+        Endpoint: 'participants.json',
         Method: HttpMethod.Get
     }
   }
