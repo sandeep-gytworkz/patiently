@@ -19,8 +19,8 @@ const Slide8 = () => {
           </div>
           <div className="col-6">
             <div className="py-5">
-              <h2 className="pink fs-24 pb-3">Thanks John</h2>
-              <p className="color-dark-grey fs-18 col-8">
+              <h2 className="pink fs-24 pb-3 fw-m">Thanks John</h2>
+              <p className="color-dark-grey fs-18 col-9 fw-r">
                 See a summary of the information you share and the data saved in
                 your
                 <span>

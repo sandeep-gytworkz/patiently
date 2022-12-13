@@ -55,7 +55,7 @@ const Participate = () => {
                 paddingBottom: "10px",
               }}
             >
-              <p className="text-center col-12 pt-3 fs-28 dark-blue fw-b">
+              <p className="text-center col-12 pt-3 fs-28 dark-blue fw-m">
                 Questions
               </p>
               <div
@@ -100,7 +100,7 @@ const Participate = () => {
                 paddingBottom: "10px",
               }}
             >
-              <h3 className="text-center col-12 pt-3">Upload Records</h3>
+              <h3 className="text-center col-12 pt-3 fw-m">Upload Records</h3>
               <div
                 className="btn-group mx-auto"
                 role="group"

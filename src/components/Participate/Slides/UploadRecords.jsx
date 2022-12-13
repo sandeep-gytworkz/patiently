@@ -26,7 +26,7 @@ const UploadRecords = ({ changeSlide }) => {
     <WhiteCard>
       <div className="mx-5 ">
         <div className="d-flex flex-column mb-2">
-          <label htmlFor="title" className="fs-12 color-primary fw-bold">
+          <label htmlFor="title" className="fs-12 color-primary fw-m">
             Enter Title
           </label>
           <input
@@ -49,12 +49,12 @@ const UploadRecords = ({ changeSlide }) => {
           >
             <div className="c-12 file-upload-label d-flex justify-content-center  ">
               <div className="file-upload-label-main">
-                <p className="color-primary fs-16 fw-bold my-0">
+                <p className="color-primary fs-16 fw-m my-0">
                   Drag here to upload
                 </p>
-                <p className="color-primary fs-16 fw-bold my-0">or</p>
+                <p className="color-primary fs-16 fw-m my-0">or</p>
                 <button className="button-browse px-5 py-2 ">Browse</button>
-                <p className="fs-12 mt-3 mb-0">
+                <p className="fs-12 mt-3 mb-0 fw-m">
                   Supported formats are PDF, JPG, Word Document , Maximum file
                   size 10 MB
                 </p>
@@ -62,7 +62,7 @@ const UploadRecords = ({ changeSlide }) => {
             </div>
           </FileUploader>
         </div>
-        <p className="fs-12 data-protection-para mt-3">
+        <p className="fs-12 data-protection-para mt-3 fw-m ">
           The right of access plays a central role in the General Data
           Protection Regulation (GDPR). On the one hand, because only the right
           of access allows the data subject to exercise further rights (such as
@@ -79,7 +79,7 @@ const UploadRecords = ({ changeSlide }) => {
             </div>
           </div>
         )}
-        <div className="d-flex flex-row col-12 justify-content-evenly align-items-center">
+        <div className="d-flex flex-row  justify-content-evenly ">
           <Link className="button-layout button-outlined a-tag-btn" href="/">
             Cancel
           </Link>

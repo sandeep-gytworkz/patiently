@@ -49,7 +49,7 @@ const Homepage = () => {
             </Link>
           </div>
           <div>
-            <Footer home={true} />
+            <Footer home={true} alignment="justify-content-start" />
           </div>
         </div>
         <div className="col-sm-5 ">

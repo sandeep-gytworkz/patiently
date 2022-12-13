@@ -48,12 +48,12 @@ const TermsModal = (props) => {
             </div>
             <div className="modal-body" onScroll={handleScroll}>
               <h6>LAST REVISION: 22-November-2022</h6>
-              <p>
+              <p className="fs-r">
                 PLEASE READ THIS TERMS OF SERVICE AGREEMENT CAREFULLY. BY USING
                 THIS WEBSITE OR ORDERING PRODUCTS FROM THIS WEBSITE YOU AGREE TO
                 BE BOUND BY ALL OF THE TERMS AND CONDITIONS OF THIS AGREEMENT.
               </p>
-              <p>
+              <p className="fs-r">
                 This Terms of Service Agreement governs your use of this
                 website, support@patiently.com ,www.patiently.com, Patiently
                 offer of products for purchase on this Website, or your purchase
@@ -80,12 +80,12 @@ const TermsModal = (props) => {
                 button on your browser toolbar.
               </p>
               <h6>I. PRODUCTS</h6>
-              <p>
+              <p className="fs-r">
                 Terms of Offer. This Website offers for sale certain products
                 (the "Products"). By placing an order for Products through this
                 Website, you agree to the terms set forth in this Agreement.
               </p>
-              <p>
+              <p className="fs-r">
                 Customer Solicitation: Unless you notify our third party call
                 center reps or direct Patiently sales reps, while they are
                 calling you, of your desire to opt out from further direct
@@ -94,7 +94,7 @@ const TermsModal = (props) => {
                 Patiently and its designated in house or third party call
                 team(s).
               </p>
-              <p>
+              <p className="fs-r">
                 Opt Out Procedure: We provide 3 easy ways to opt out of from
                 future solicitations. 1. You may use the opt out link found in
                 any email solicitation that you may receive. 2. You may also
@@ -102,7 +102,7 @@ const TermsModal = (props) => {
                 email. 3. You may send a written remove request to Company
                 Address.
               </p>
-              <p>
+              <p className="fs-r">
                 Proprietary Rights. Patiently has proprietary rights and trade
                 secrets in the Products. You may not copy, reproduce, resell or
                 redistribute any Product manufactured and/or distributed by
@@ -110,12 +110,12 @@ const TermsModal = (props) => {
                 dress and specific layouts of this webpage, including calls to
                 action, text placement, images and other information.
               </p>
-              <p>
+              <p className="fs-r">
                 Sales Tax. If you purchase any Products, you will be responsible
                 for paying any applicable sales tax.
               </p>
               <h6>II. WEBSITE</h6>
-              <p>
+              <p className="fs-r">
                 Content; Intellectual Property; Third Party Links. In addition
                 to making Products available, this Website also offers
                 information and marketing materials. This Website also offers
@@ -136,7 +136,7 @@ const TermsModal = (props) => {
                 or reliance on these third-party websites. If you link to
                 third-party websites, you do so at your own risk.
               </p>
-              <p>
+              <p className="fs-r">
                 Use of Website; Patiently is not responsible for any damages
                 resulting from use of this website by anyone. You will not use
                 the Website for illegal purposes. You will (1) abide by all
@@ -149,7 +149,7 @@ const TermsModal = (props) => {
                 type of unsolicited communication, and (5) not defame, harass,
                 abuse, or disrupt other users of the Website
               </p>
-              <p>
+              <p className="fs-r">
                 License. By using this Website, you are granted a limited,
                 non-exclusive, nontransferable right to use the content and
                 materials on the Website in connection with your normal,
@@ -159,7 +159,7 @@ const TermsModal = (props) => {
                 Patiently or the applicable third party (if third party content
                 is at issue).
               </p>
-              <p>
+              <p className="fs-r">
                 Posting. By posting, storing, or transmitting any content on the
                 Website, you hereby grant Patiently a perpetual, worldwide,
                 non-exclusive, royalty-free, assignable, right and license to
@@ -178,7 +178,7 @@ const TermsModal = (props) => {
                 discretion.
               </p>
               <h6>III. DISCLAIMER OF WARRANTIES </h6>
-              <p>
+              <p className="fs-r">
                 YOUR USE OF THIS WEBSITE AND/OR PRODUCTS ARE AT YOUR SOLE RISK.
                 THE WEBSITE AND PRODUCTS ARE OFFERED ON AN "AS IS" AND "AS
                 AVAILABLE" BASIS. Patiently EXPRESSLY DISCLAIMS ALL WARRANTIES
@@ -189,24 +189,24 @@ const TermsModal = (props) => {
                 WEBSITE CONTENT OR PRODUCTS. ("PRODUCTS" INCLUDE TRIAL
                 PRODUCTS.)
               </p>
-              <p>
+              <p className="fs-r">
                 WITHOUT LIMITING THE GENERALITY OF THE FOREGOING, Patiently
                 MAKES NO WARRANTY:
               </p>
-              <p>
+              <p className="fs-r">
                 THAT THE INFORMATION PROVIDED ON THIS WEBSITE IS ACCURATE,
                 RELIABLE, COMPLETE, OR TIMELY.
               </p>
-              <p>
+              <p className="fs-r">
                 THAT THE LINKS TO THIRD-PARTY WEBSITES ARE TO INFORMATION THAT
                 IS ACCURATE, RELIABLE, COMPLETE, OR TIMELY.
               </p>
-              <p>
+              <p className="fs-r">
                 NO ADVICE OR INFORMATION, WHETHER ORAL OR WRITTEN, OBTAINED BY
                 YOU FROM THIS WEBSITE WILL CREATE ANY WARRANTY NOT EXPRESSLY
                 STATED HEREIN.
               </p>
-              <p>
+              <p className="fs-r">
                 AS TO THE RESULTS THAT MAY BE OBTAINED FROM THE USE OF THE
                 PRODUCTS OR THAT DEFECTS IN PRODUCTS WILL BE CORRECTED.
                 REGARDING ANY PRODUCTS PURCHASED OR OBTAINED THROUGH THE
@@ -215,14 +215,14 @@ const TermsModal = (props) => {
                 APPLY TO YOU.
               </p>
               <h6>IV. LIMITATION OF LIABILITY</h6>
-              <p>
+              <p className="fs-r">
                 Patiently ENTIRE LIABILITY, AND YOUR EXCLUSIVE REMEDY, IN LAW,
                 IN EQUITY, OR OTHWERWISE, WITH RESPECT TO THE WEBSITE CONTENT
                 AND PRODUCTS AND/OR FOR ANY BREACH OF THIS AGREEMENT IS SOLELY
                 LIMITED TO THE AMOUNT YOU PAID, LESS SHIPPING AND HANDLING, FOR
                 PRODUCTS PURCHASED VIA THE WEBSITE.
               </p>
-              <p>
+              <p className="fs-r">
                 Patiently WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT,
                 INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES IN CONNECTION WITH
                 THIS AGREEMENT OR THE PRODUCTS IN ANY MANNER, INCLUDING
@@ -232,13 +232,13 @@ const TermsModal = (props) => {
                 OBTAINED OR TRANSACTIONS ENTERED INTO THROUGH THE WEBSITE; OR
                 (4) ANY LOST PROFITS YOU ALLEGE.
               </p>
-              <p>
+              <p className="fs-r">
                 SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OR EXCLUSION OF
                 LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES SO SOME OF THE
                 ABOVE LIMITATIONS MAY NOT APPLY TO YOU.
               </p>
               <h6> V. INDEMNIFICATION</h6>
-              <p>
+              <p className="fs-r">
                 You will release, indemnify, defend and hold harmless Patiently,
                 and any of its contractors, agents, employees, officers,
                 directors, shareholders, affiliates and assigns from all
@@ -268,37 +268,37 @@ const TermsModal = (props) => {
                 Agreement or your use of the Website or Products.
               </p>
               <h6>VI. PRIVACY</h6>
-              <p>
+              <p className="fs-r">
                 Patiently believes strongly in protecting user privacy and
                 providing you with notice of MuscleUP Nutrition 's use of data.
                 Please refer to Patiently privacy policy, incorporated by
                 reference herein, that is posted on the Website.
               </p>
               <h6>VI. AGREEMENT TO BE BOUND</h6>
-              <p>
+              <p className="fs-r">
                 By using this Website or ordering Products, you acknowledge that
                 you have read and agree to be bound by this Agreement and all
                 terms and conditions on this Website.
               </p>
               <h6>VIII. GENERAL</h6>
-              <p>
+              <p className="fs-r">
                 Force Majeure. Patiently will not be deemed in default hereunder
                 or held responsible for any cessation, interruption or delay in
                 the performance of its obligations hereunder due to earthquake,
                 flood, fire, storm, natural disaster, act of God, war,
                 terrorism, armed conflict, labor strike, lockout, or boycott.
               </p>
-              <p>
+              <p className="fs-r">
                 Cessation of Operation. Patiently may at any time, in its sole
                 discretion and without advance notice to you, cease operation of
                 the Website and distribution of the Products.
               </p>
-              <p>
+              <p className="fs-r">
                 Entire Agreement. This Agreement comprises the entire agreement
                 between you and Patiently and supersedes any prior agreements
                 pertaining to the subject matter contained herein.
               </p>
-              <p>
+              <p className="fs-r">
                 Effect of Waiver. The failure of Patiently to exercise or
                 enforce any right or provision of this Agreement will not
                 constitute a waiver of such right or provision. If any provision
@@ -308,7 +308,7 @@ const TermsModal = (props) => {
                 reflected in the provision, and the other provisions of this
                 Agreement remain in full force and effect.
               </p>
-              <p>
+              <p className="fs-r">
                 Governing Law; Jurisdiction. This Website originates from the
                 City, State. This Agreement will be governed by the laws of the
                 State of Law State Name without regard to its conflict of law
@@ -324,14 +324,14 @@ const TermsModal = (props) => {
                 to trial by jury arising out of this Agreement and any related
                 documents.
               </p>
-              <p>
+              <p className="fs-r">
                 Statute of Limitation. You agree that regardless of any statute
                 or law to the contrary, any claim or cause of action arising out
                 of or related to use of the Website or Products or this
                 Agreement must be filed within one (1) year after such claim or
                 cause of action arose or be forever barred.
               </p>
-              <p>
+              <p className="fs-r">
                 Waiver of Class Action Rights. BY ENTERING INTO THIS AGREEMENT,
                 YOU HEREBY IRREVOCABLY WAIVE ANY RIGHT YOU MAY HAVE TO JOIN
                 CLAIMS WITH THOSE OF OTHER IN THE FORM OF A CLASS ACTION OR
@@ -339,7 +339,7 @@ const TermsModal = (props) => {
                 TO, OR CONNECTION WITH THIS AGREEMENT MUST BE ASSERTED
                 INDIVIDUALLY.
               </p>
-              <p>
+              <p className="fs-r">
                 Termination. Patiently reserves the right to terminate your
                 access to the Website if it reasonably believes, in its sole
                 discretion, that you have breached any of the terms and
@@ -353,7 +353,7 @@ const TermsModal = (props) => {
                 until Patiently chooses, in its sole discretion and without
                 advance to you, to terminate it.
               </p>
-              <p>
+              <p className="fs-r">
                 Domestic Use. Patiently makes no representation that the Website
                 or Products are appropriate or available for use in locations
                 outside India. Users who access the Website from outside India
@@ -364,7 +364,7 @@ const TermsModal = (props) => {
                 obligations under this Agreement in its sole discretion and
                 without advance notice to you.
               </p>
-              <p>
+              <p className="fs-r">
                 BY USING THIS WEBSITE OR ORDERING PRODUCTS FROM THIS WEBSITE YOU
                 AGREE TO BE BOUND BY ALL OF THE TERMS AND CONDITIONS OF THIS
                 AGREEMENT.

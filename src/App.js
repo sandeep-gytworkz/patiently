@@ -24,6 +24,7 @@ import Records from "./components/Admin-UI/Records";
 import ParticipantProfile from "./components/Admin-UI/ParticipantProfile";
 import Participants from "./components/Admin-UI/Participants";
 import AccountManagement from "./components/Admin-UI/AccountManagement";
+import "./App.css";
 
 export const AppContext = createContext();
 // export const DashboardContext = createContext();
@@ -34,21 +35,40 @@ function App() {
   //? Removing logs in production
 
   useEffect(() => {
-
     if (process.env.NODE_ENV === "development") {
-      return
+      return;
     }
 
-    const noop = () => { }
-    ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-      'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-      'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-      'timeline', 'timelineEnd', 'timeStamp', 'trace', 'warn',
+    const noop = () => {};
+    [
+      "assert",
+      "clear",
+      "count",
+      "debug",
+      "dir",
+      "dirxml",
+      "error",
+      "exception",
+      "group",
+      "groupCollapsed",
+      "groupEnd",
+      "info",
+      "log",
+      "markTimeline",
+      "profile",
+      "profileEnd",
+      "table",
+      "time",
+      "timeEnd",
+      "timeline",
+      "timelineEnd",
+      "timeStamp",
+      "trace",
+      "warn",
     ].forEach((method) => {
-      window.console[method] = noop
-    })
-
-  })
+      window.console[method] = noop;
+    });
+  });
 
   const navigate = useNavigate();
   return (

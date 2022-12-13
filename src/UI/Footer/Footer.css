@@ -6,7 +6,6 @@
   padding-bottom: 4px;
   position: absolute;
   bottom: 0;
-  justify-content: center;
 }
 
 .footer-home {
@@ -17,7 +16,6 @@
   padding-bottom: 4px;
   position: absolute;
   bottom: 0;
-  justify-content: flex-start;
 }
 
 .a-tag-white {
