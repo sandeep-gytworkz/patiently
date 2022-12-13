@@ -8,11 +8,11 @@ const ContactUs = () => {
     <div className="d-flex flex-column">
       <Header />
       <div className="col-12 bg-pink px-5 py-4 mb-2 ">
-        <h1 className="px-5">Contact Us</h1>
+        <h1 className="p-l-3 fw-sb">Contact Us</h1>
       </div>
-      <div className="col-12 d-flex flex-row">
-        <div className="d-flex flex-column px-5 col-7">
-          <p className="fs-18 fw-b">
+      <div className="col-12 d-flex flex-row px-5">
+        <div className="d-flex flex-column p-l-3 p-r-2 col-7">
+          <p className="fs-18 fw-m">
             Have a specific question related to patient.ly HD? Fill out the
             following and you will hear from us soon!
           </p>
@@ -21,7 +21,7 @@ const ContactUs = () => {
               <input
                 placeholder="First Name"
                 type="text"
-                className="px-2 m-2 col-5 py-1"
+                className="px-2 my-2 col-5 py-1"
               />
               <input
                 placeholder="Last Name"
@@ -33,11 +33,11 @@ const ContactUs = () => {
               <input
                 placeholder="Email"
                 type="email"
-                className="px-2 m-2 col-5 py-1"
+                className="px-2 my-2 col-5 py-1"
               />
             </div>
 
-            <div className="dropdown col-12 m-2">
+            <div className="dropdown col-12 my-2">
               <select
                 className="form-select"
                 aria-label="Default select example"
@@ -59,14 +59,14 @@ const ContactUs = () => {
               </select>
             </div>
 
-            <textarea className="col-12 msg-div m-2 " placeholder="Message" />
+            <textarea className="col-12 msg-div my-2 " placeholder="Message" />
             <div className="d-flex flex-row justify-content-end my-2">
               <button className="button-layout button-green">Submit</button>
             </div>
           </form>
         </div>
         <div className="col-5">
-          <p className="fs-18 fw-b">Contact Email</p>
+          <p className="fs-18 fw-m">Contact Email</p>
           <a>info@patientlyhd.com</a>
         </div>
       </div>

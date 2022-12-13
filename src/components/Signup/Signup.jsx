@@ -7,6 +7,7 @@ import TermsModal from "../../UI/modals/TermsModal";
 import { registrationReducer, initRegState } from "./Reducers/Signup";
 import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
+import { BsArrowRight } from "react-icons/bs";
 
 const Signup = ({ changeSlide }) => {
   const [termsState, setTermsState] = useState(false);
@@ -35,9 +36,7 @@ const Signup = ({ changeSlide }) => {
       symbols: true,
       exclude: '{,},`,~,[,],|,/,:,",(,),<,>,%,^,;,=,-,+,?',
     });
-    // console.log(e.target.checked);
 
-    // console.log(password);
     setPasswordValue(password);
   };
 
@@ -58,7 +57,7 @@ const Signup = ({ changeSlide }) => {
       <div className="container-fluid text-left">
         <div className="row content-section">
           <div className="col-sm-12 col-md-5 offset-md-1 px-5">
-            <h3 className="color-primary  px-2 mt-3 mb-0 ">SIGN UP</h3>
+            <p className="color-primary  px-2 mt-3 mb-0 fw-m fs-20">SIGN UP</p>
             <form
               onSubmit={(event) => {
                 event.preventDefault();
@@ -69,7 +68,7 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="firstName"
-                  className="form-label fs-16 color-primary mb-0 fw-b"
+                  className="form-label fs-16 color-primary mb-0 fw-m"
                 >
                   Name*
                 </label>
@@ -87,7 +86,7 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="inputEmail"
-                  className="form-label fs-16 color-primary fw-b mb-0"
+                  className="form-label fs-16 color-primary fw-m mb-0"
                 >
                   Email*
                 </label>
@@ -104,7 +103,7 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="contactNumber"
-                  className="form-label fs-16 color-primary fw-b mb-0"
+                  className="form-label fs-16 color-primary fw-m mb-0"
                 >
                   Phone Number*
                 </label>
@@ -120,7 +119,7 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="password"
-                  className="form-label fs-16 color-primary d-flex justify-content-between fw-b mb-0"
+                  className="form-label fs-16 color-primary d-flex justify-content-between fw-m mb-0"
                 >
                   Password*
                   <span>
@@ -131,7 +130,7 @@ const Signup = ({ changeSlide }) => {
                       onChange={passwordGenerator}
                     />
                     &nbsp;
-                    <label className="form-check-label fs-16 fw-b mb-0">
+                    <label className="form-check-label fs-16 fw-m mb-0">
                       Auto Generate password
                     </label>
                   </span>
@@ -148,7 +147,7 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10">
                 <label
                   htmlFor="confirmPassword"
-                  className="form-label fs-16 color-primary fw-b mb-0"
+                  className="form-label fs-16 color-primary fw-m mb-0"
                 >
                   Confirm Password*
                 </label>
@@ -175,7 +174,7 @@ const Signup = ({ changeSlide }) => {
                   disabled={!termsState}
                 />
 
-                <label className="form-check-label">
+                <label className="form-check-label fw-r">
                   I Agree to the &nbsp;
                 </label>
 
@@ -185,7 +184,7 @@ const Signup = ({ changeSlide }) => {
                   }}
                 />
                 <a
-                  className="color-primary fs-14 a-tag"
+                  className="color-primary fs-14 a-tag fw-m"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModalLong"
                   href="#"
@@ -198,12 +197,12 @@ const Signup = ({ changeSlide }) => {
                   type="submit"
                   className="button-layout button-green me-3 col-10"
                 >
-                  Sign Up
+                  Sign Up &nbsp; <BsArrowRight />
                 </button>
                 <div className="text-center col-10">
-                  <p className="mb-0 py-1 ">
-                    Already user?
-                    <Link className="a-tag  " to="/login">
+                  <p className="mb-0 py-1 fw-r">
+                    Already registered?
+                    <Link className="a-tag fw-m " to="/login">
                       &nbsp; Login
                     </Link>
                   </p>
@@ -217,7 +216,7 @@ const Signup = ({ changeSlide }) => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer alignment="justify-content-center" />
     </div>
   );
 };

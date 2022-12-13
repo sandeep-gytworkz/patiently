@@ -79,15 +79,26 @@
   border: none;
 }
 
-.fw-b {
-  font-weight: bold;
+/* l-light, r-regular, m-medium, sb- semi-bold, b-bold */
+
+.fw-l {
+  font-weight: 300;
 }
-.fw-mb {
-  font-weight: 600;
+.fw-r {
+  font-weight: 400;
 }
-.fw-500 {
+.fw-m {
   font-weight: 500;
 }
+
+.fw-sb {
+  font-weight: 600;
+}
+
+.fw-b {
+  font-weight: 700;
+}
+
 .fs-18 {
   font-size: 1.2em;
 }
@@ -97,7 +108,7 @@
 }
 
 .fs-20 {
-  font-size: 1.4;
+  font-size: 20px;
 }
 
 .fs-22 {
@@ -119,6 +130,10 @@
   font-size: 36px;
 }
 
+.fs-48 {
+  font-size: 48px;
+}
+
 .fs-56 {
   font-size: 3.5em;
 }
@@ -129,14 +144,10 @@
 
 .fs-14 {
   font-size: 14px;
-  font-family: Helvetica;
-  font-weight: 500;
 }
 
 .fs-12 {
   font-size: 12px;
-  font-family: Helvetica;
-  font-weight: 400;
 }
 .a-tag-btn {
   color: #04d976;
@@ -243,6 +254,10 @@ input.form-control:focus {
   color: #6c6c6c;
 }
 
+.very-dark-gray {
+  color: #707070;
+}
+
 .dark-blue {
   color: #2b3566;
 }
@@ -264,4 +279,12 @@ input.form-control:focus {
 
 .dashboard-primary-color {
   color: #172e50;
+}
+
+.p-l-3 {
+  padding-left: 3.5rem;
+}
+
+.p-r-2 {
+  padding-right: 2.5rem;
 }

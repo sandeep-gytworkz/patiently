@@ -25,15 +25,15 @@ const ForgotPasswordOtp = () => {
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
                   <div className=" d-flex flex-column col-8">
-                    <p className="fs-20 fw-b">Forgot Password</p>
-                    <p className="fs-18 dim-gray">
+                    <p className="fs-20 fw-m">Forgot Password</p>
+                    <p className="fs-18 dim-gray fw-r">
                       Provide you account’s email for which you want to reset
                       your password
                     </p>
 
                     <label
                       htmlFor="email"
-                      className=" d-flex fs-16 fw-b color-primary mb-1 justify-content-between"
+                      className=" d-flex fs-16 fw-m color-primary mb-1 justify-content-between"
                     >
                       Email*
                     </label>
@@ -58,7 +58,9 @@ const ForgotPasswordOtp = () => {
                   </div>
                 </div>
               </form>
-              <Footer />
+              <div>
+                <Footer alignment="justify-content-center" />
+              </div>
             </div>
             <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
               <img

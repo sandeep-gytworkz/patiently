@@ -6,8 +6,8 @@ import patientlyLogo from "../../assets/images/patientlyLogo.png";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg px-xs-0 px-sm-5 container-shadow">
-      <div className="col-sm-5 col-12 px-xs-0 px-sm-5 d-flex justify-content-between">
+    <nav className="navbar navbar-expand-lg px-xs-0 px-sm-4 container-shadow">
+      <div className="col-sm-5 col-12 px-xs-0 px-sm-4 d-flex justify-content-between">
         <Link
           className="navbar-brand col-lg-6 col-xs-10 h-100 m-0 px-sm-5 px-3"
           to="/"
@@ -30,23 +30,23 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav d-flex">
             <li className="nav-item px-3">
-              <Link className="nav-link fs-28 fw-mb" to="/how-it-works">
+              <Link className="nav-link fs-28 fw-sb" to="/how-it-works">
                 How it Works
               </Link>
             </li>
             <li className="nav-item px-3">
-              <Link className="nav-link fs-28 fw-mb" to="/data-privacy">
+              <Link className="nav-link fs-28 fw-sb" to="/data-privacy">
                 Data Privacy
               </Link>
             </li>
             <li className="nav-item px-3 ">
-              <Link className="nav-link fs-28 fw-mb " to="/about">
+              <Link className="nav-link fs-28 fw-sb " to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item px-3">
               <Link
-                className="nav-link fs-28 fw-mb "
+                className="nav-link fs-28 fw-sb "
                 aria-current="page"
                 to="/login"
               >
@@ -55,7 +55,7 @@ const Header = () => {
             </li>
             <li className="nav-item participate-now px-3">
               <Link
-                className="nav-link fs-28 fw-mb signUp-btn px-4"
+                className="nav-link fs-28 fw-sb signUp-btn px-4"
                 to="/participate-now"
               >
                 Sign Up
