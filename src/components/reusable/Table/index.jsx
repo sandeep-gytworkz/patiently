@@ -3,10 +3,11 @@ import { useTable, usePagination, useSortBy } from 'react-table'
 import './table.css';
 
 const TableHead = styled.tr`
-    /* padding: 15px 20px; */
     font-size: 1rem;
     color: black;
     text-align: start;
+    background-color: #E9EBEC;
+    padding: 10px;
 `
 
 const TableWrapper = styled.table`
