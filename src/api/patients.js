@@ -7,7 +7,7 @@ export default class AdminAPI extends HttpClient {
         this._initializeRequestInterceptor();
     }
 
-    patients = ApiRoutes.Admin.PatientsList;
+    dashboard = ApiRoutes.Admin.DashboardList;
     participants = ApiRoutes.Admin.ParticipantsList;
 
     _initializeRequestInterceptor = () => {
@@ -18,10 +18,10 @@ export default class AdminAPI extends HttpClient {
         return axiosConfig;
     };
 
-    getPosts = () => {
+    getDashboard = () => {
         return this.instance({
-            method: this.patients.Method,
-            url: this.patients.Endpoint,
+            method: this.dashboard.Method,
+            url: this.dashboard.Endpoint,
             headers: {},
             data: undefined
         })

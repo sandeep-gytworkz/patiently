@@ -12,9 +12,9 @@ export const reducer = (state, action) => {
 
 export const dashboardReducer = (state, action) => {
     switch (action.type) {
-        case 'getPatients': 
+        case 'getDashboard': 
             return {
-                ...state, patients: action.payload
+                ...state, dashboard: action.payload
             };
         case 'getParticipants': 
             return {

@@ -17,8 +17,8 @@ const ApiRoutes = {
     }
   },
   Admin: {
-    PatientsList: {
-        Endpoint: 'patients.json',
+    DashboardList: {
+        Endpoint: 'participants.json',
         Method: HttpMethod.Get
     },
     ParticipantsList: {
