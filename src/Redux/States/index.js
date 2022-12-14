@@ -4,7 +4,7 @@
     };
 
     export const dashboardState = {
-        patients: [],
+        dashboard: [],
         participants: [],
         isLoading: false
     };
