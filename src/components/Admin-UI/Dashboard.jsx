@@ -25,6 +25,7 @@ import { dashboardState } from "../../Redux/States";
 import { dashboardReducer } from "../../Redux/Reducers";
 import Card from "../reusable/Card";
 import Modal from "../reusable/Modal";
+import LargeModal from "../reusable/Modal/LargeModal";
 
 export const DashboardContext = createContext();
 
@@ -35,6 +36,7 @@ const Dashboard = () => {
   const [top, setTop] = useState(0);
   const [left, setLeft] = useState(0);
   const [show, setShow] = useState(false);
+  const [questionsOpen, setQuestionsOpen] = useState(false);
 
   const handleModalClick = (e) =>{
     e.preventDefault();
@@ -55,7 +57,7 @@ const Dashboard = () => {
       accessor: "questions",
       Header: "Questions",
       disableSortBy: true,
-      Cell: () => <div style={{color: 'blue', cursor: 'pointer', display: 'flex', alignItems: 'center', fontWeight: 'normal'}}><AiOutlineEye size='20px' /> <div style={{marginLeft: '6px'}}>View</div></div>
+      Cell: () => <div style={{color: 'blue', cursor: 'pointer', display: 'flex', alignItems: 'center', fontWeight: 'normal'}}><AiOutlineEye onClick={()=>{setQuestionsOpen(true)}} size='20px' /> <div onClick={()=>{setQuestionsOpen(true)}} style={{marginLeft: '6px'}}>View</div><LargeModal questionsOpen={questionsOpen} setQuestionsOpen={setQuestionsOpen} /></div>
     },
     {
       accessor: "attachment",
