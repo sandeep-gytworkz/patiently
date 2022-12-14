@@ -6,6 +6,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Footer from "../../UI/Footer/Footer";
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../../App";
+import "./LoginPage.css";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -28,12 +29,12 @@ const LoginPage = () => {
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
                   <div className="py-3 d-flex flex-column col-8">
-                    <p className="fs-20 fw-b">Login</p>
-                    <p className="fs-16 dim-gray">
+                    <p className="fs-20 fw-m login-underline">Login</p>
+                    <p className="fs-16 dim-gray fw-l">
                       Log in with details that you entered during your
                       registration
                     </p>
-                    <label htmlFor="email" className="fs-16 fw-b">
+                    <label htmlFor="email" className="fs-16 fw-m">
                       Email*
                     </label>
                     <input
@@ -46,7 +47,7 @@ const LoginPage = () => {
                   </div>
 
                   <div className="py-3 d-flex flex-column col-8">
-                    <label htmlFor="password" className="fs-16 fw-b">
+                    <label htmlFor="password" className="fs-16 fw-m">
                       Password*
                     </label>
                     <input
@@ -60,13 +61,13 @@ const LoginPage = () => {
                   <div className="py-2 col-8 d-flex flex-row justify-content-between">
                     <div className="form-check">
                       <input
-                        className="form-check-input"
+                        className="form-check-input checkbox-input"
                         type="checkbox"
                         value=""
                         id="flexCheckChecked"
                       />
                       <label
-                        className="form-check-label fs-16 fw-b"
+                        className="form-check-label fs-16 fw-r "
                         htmlFor="flexCheckChecked"
                       >
                         Remember me
@@ -74,7 +75,7 @@ const LoginPage = () => {
                     </div>
                     <div>
                       <button
-                        className="button-a-tag fs-16 "
+                        className=" fs-16 fw-r button-a-tag "
                         onClick={forgotPasswordHandler}
                       >
                         Forgot Password?
@@ -91,18 +92,18 @@ const LoginPage = () => {
                   </div>
                   <div>
                     <div className="d-flex flex-row  align-items-center">
-                      <p className="mb-0 py-2 fs-16 fw-b">Not Registered?</p>
+                      <p className="mb-0 py-2 fs-16 fw-r">Not Registered?</p>
                       <Link
                         to="/participate-now "
-                        className="button-a-tag fs-16"
+                        className="button-secondary fs-16 fw-m"
                       >
                         &nbsp; Create an Account
                       </Link>
                     </div>
                   </div>
+                  <Footer alignment="justify-content-center" />
                 </div>
               </form>
-              <Footer />
             </div>
 
             <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">

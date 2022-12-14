@@ -33,6 +33,11 @@
   border: none;
 }
 
+.button-green:disabled {
+  background-color: #e3e3e3;
+  color: #6c6c6c;
+}
+
 .button-layout {
   padding: 0.5rem 2rem;
   font-weight: 500;
@@ -53,8 +58,13 @@
   color: #1681f0;
   background-color: transparent;
   border: none;
-  font-weight: 500;
-  font-size: 14px;
+  text-decoration: none;
+}
+
+.button-secondary {
+  color: #0fc6d9;
+  background-color: transparent;
+  border: none;
   text-decoration: none;
 }
 
@@ -264,6 +274,15 @@ input.form-control:focus {
 .radio-btn {
   border: 3px solid #00cfe5;
   color: #ffffff;
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+}
+
+.radio-btn:checked {
+  background-color: #00cfe5;
+  border-color: #00cfe5;
+  box-shadow: none;
 }
 
 .participants-btn {
@@ -285,6 +304,51 @@ input.form-control:focus {
   padding-left: 3.5rem;
 }
 
+.p-l-6 {
+  padding-left: 6.5rem;
+}
+
 .p-r-2 {
   padding-right: 2.5rem;
+}
+
+.checkbox-input {
+  border: 2px solid #00cfe5;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+.checkbox-input:checked {
+  background-color: #00cfe5;
+  border: none;
+  box-shadow: none;
+}
+.pink-underline {
+  position: relative;
+}
+
+.pink-underline::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 77px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f230bb;
+  content: "";
+}
+
+.pink-underline-small {
+  position: relative;
+}
+
+.pink-underline-small::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 36px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f230bb;
+  content: "";
 }

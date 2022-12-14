@@ -1,3 +1,8 @@
 .data-container {
   background-color: #f7f7f7;
 }
+
+.data-privacy-item {
+  position: relative;
+  left: -50px;
+}

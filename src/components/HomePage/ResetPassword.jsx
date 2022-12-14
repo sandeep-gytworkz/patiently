@@ -44,25 +44,25 @@ const ResetPassword = () => {
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
                   <div className="p-3 d-flex flex-column col-8">
-                    <p className="fs-20 fw-b">Reset Password</p>
-                    <p className="fs-14 dim-gray">
+                    <p className="fs-20 fw-m pink-underline">Reset Password</p>
+                    <p className="fs-14 dim-gray fw-l">
                       Enter new password to reset your login password
                     </p>
 
                     <label
                       htmlFor="password"
-                      className=" d-flex fs-16 fw-b color-primary mb-1 justify-content-between"
+                      className=" d-flex fs-16 fw-m color-primary mb-1 justify-content-between"
                     >
                       Password*
                       <span>
                         <input
                           type="checkbox"
-                          className="form-check-input  "
+                          className="form-check-input  checkbox-input"
                           id="check"
                           onChange={passwordGenerator}
                         />
                         &nbsp;
-                        <label className="form-check-label">
+                        <label className="form-check-label fw-m ">
                           Auto Generate password
                         </label>
                       </span>
@@ -81,7 +81,7 @@ const ResetPassword = () => {
                   <div className="p-3 d-flex flex-column col-8">
                     <label
                       htmlFor="re-enterPassword"
-                      className="fs-16 color-primary mb-1 fw-b"
+                      className="fs-16 color-primary mb-1 fw-m"
                     >
                       Re-enter Password*
                     </label>
@@ -93,7 +93,7 @@ const ResetPassword = () => {
                     />
                   </div>
 
-                  <div className="py-3 col-8 d-flex flex-row justify-content-evenly ">
+                  <div className="p-3 col-8 d-flex flex-row justify-content-between ">
                     <Link
                       className=" button-layout button-outlined a-tag-btn "
                       aria-current="page"
@@ -108,9 +108,9 @@ const ResetPassword = () => {
                       Reset Password
                     </button>
                   </div>
+                  <Footer />
                 </div>
               </form>
-              <Footer />
             </div>
             <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
               <img

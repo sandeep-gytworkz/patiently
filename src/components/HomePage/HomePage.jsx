@@ -28,21 +28,20 @@ const Homepage = () => {
   return (
     <div className="d-flex flex-column homePage-container">
       <Header />
-      <div className="bg-green d-flex flex-row pt-5 h-100">
-        <div className="col-sm-6 col-xs-12 offset-sm-1 d-flex flex-column py-5 ps-1 pe-5">
+      <div className="bg-green d-flex flex-row pt-4 h-100">
+        <div className="col-sm-6 col-xs-12 offset-sm-1 d-flex flex-column py-5  pe-5">
           <div>
-            <p className="fs-56 fw-mb heading-shadow">
-              {" "}
+            <p className="fs-64 fw-sb heading-shadow">
               Bringing the Patient Journey to Life
             </p>
-            <p className="fs-32 fw-500">
+            <p className="fs-32 fw-m mb-4">
               Your celiac health journey is unique, but you are not alone. Join
               a community of fellow celiac patients, share your experience, be
               part of the solution.
             </p>
             <Link
               to="/participate-now "
-              className="button-layout a-tag-white-btn"
+              className="button-layout a-tag-white-btn "
             >
               Participate Now &nbsp;
               <BsArrowRight />

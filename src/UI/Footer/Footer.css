@@ -1,21 +1,21 @@
 .footer {
-  width: 50%;
+  /* width: 50%; */
   background-color: transparent;
 
   padding: 8px;
+
   padding-bottom: 4px;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
 }
 
 .footer-home {
-  width: 50%;
+  /* width: 50%; */
   background-color: transparent;
 
-  padding: 8px;
   padding-bottom: 4px;
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
 }
 
 .a-tag-white {
