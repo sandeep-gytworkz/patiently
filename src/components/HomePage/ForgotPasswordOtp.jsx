@@ -25,7 +25,7 @@ const ForgotPasswordOtp = () => {
               <form onSubmit={onSubmitHandler}>
                 <div className="d-flex flex-column align-items-center">
                   <div className=" d-flex flex-column col-8">
-                    <p className="fs-20 fw-m">Forgot Password</p>
+                    <p className="fs-20 fw-m pink-underline">Forgot Password</p>
                     <p className="fs-18 dim-gray fw-r">
                       Provide you account’s email for which you want to reset
                       your password
@@ -56,11 +56,10 @@ const ForgotPasswordOtp = () => {
                       Send OTP &nbsp; <AiOutlineArrowRight />
                     </button>
                   </div>
+                  <Footer alignment="justify-content-center" />
                 </div>
               </form>
-              <div>
-                <Footer alignment="justify-content-center" />
-              </div>
+              <div></div>
             </div>
             <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
               <img

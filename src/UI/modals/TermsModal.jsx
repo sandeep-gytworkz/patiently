@@ -9,7 +9,6 @@ const TermsModal = (props) => {
     const bottom =
       e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
     setScrolledBottom(bottom);
-    // if (bottom) { ... }
   };
 
   const checkTerms = (e) => {
@@ -373,7 +372,7 @@ const TermsModal = (props) => {
             <div className="modal-footer">
               <button
                 type="button"
-                className="btn btn-secondary btn-decline px-5"
+                className=" button-layout btn-decline px-5"
                 data-bs-dismiss="modal"
               >
                 Decline
@@ -381,11 +380,12 @@ const TermsModal = (props) => {
               <button
                 type="button"
                 className={
-                  "btn btn-secondary btn-accept px-5 " +
+                  " button-secondary btn-accept px-5 " +
                   (reachedBottom ? "active" : "")
                 }
                 data-bs-dismiss="modal"
                 onClick={(e) => checkTerms(e)}
+                disabled={!reachedBottom}
               >
                 Accept
               </button>

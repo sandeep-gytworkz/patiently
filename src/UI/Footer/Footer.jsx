@@ -5,7 +5,7 @@ import "./Footer.css";
 const Footer = (props) => {
   return (
     <div
-      className={`d-flex align-items-center ${
+      className={`d-flex align-items-center  ${
         props.home ? "footer-home " : "footer"
       } ${props.alignment}`}
     >

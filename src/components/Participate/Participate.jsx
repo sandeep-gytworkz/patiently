@@ -65,21 +65,33 @@ const Participate = () => {
               >
                 <button
                   type="button"
-                  className={`btn btn-secondary ${
-                    slide === 3 || slide === 4 ? "active" : ""
-                  }`}
+                  className={
+                    slide === 5 || slide === 6 || slide === 7
+                      ? "btn-dark"
+                      : `btn btn-secondary ${
+                          slide === 3 || slide === 4 ? "active" : ""
+                        }`
+                  }
                 >
                   &#11044;
                 </button>
                 <button
                   type="button"
-                  className={`btn btn-secondary ${slide === 5 ? "active" : ""}`}
+                  className={
+                    slide === 6 || slide === 7
+                      ? "btn-dark"
+                      : `btn btn-secondary ${slide === 5 ? "active" : ""}`
+                  }
                 >
                   &#11044;
                 </button>
                 <button
                   type="button"
-                  className={`btn btn-secondary ${slide === 6 ? "active" : ""}`}
+                  className={
+                    slide === 7
+                      ? "btn-dark"
+                      : `btn btn-secondary ${slide === 6 ? "active" : ""}`
+                  }
                 >
                   &#11044;
                 </button>
@@ -108,7 +120,11 @@ const Participate = () => {
               >
                 <button
                   type="button"
-                  className={`btn btn-secondary ${slide === 8 ? "active" : ""}`}
+                  className={
+                    slide === 9
+                      ? "btn-dark"
+                      : `btn btn-secondary ${slide === 8 ? "active" : ""}`
+                  }
                 >
                   &#11044;
                 </button>

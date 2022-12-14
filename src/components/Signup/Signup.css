@@ -12,7 +12,22 @@
   height: 70%;
 }
 
-.btn-group .btn {
+.signup-underline {
+  position: relative;
+}
+
+.signup-underline::after {
+  position: absolute;
+  bottom: -2px;
+  left: 8px;
+  width: 36px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f230bb;
+  content: "";
+}
+
+/* .btn-group .btn {
   background-color: transparent;
   border: none;
   color: lightgrey;
@@ -20,4 +35,4 @@
 
 .btn-group .btn.active {
   color: black;
-}
+} */
