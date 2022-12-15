@@ -38,87 +38,82 @@ const ResetPassword = () => {
     <>
       <div className="d-flex flex-column homePage-container">
         <Header />
-        <div className="container-fluid text-left">
-          <div className="row content-section">
-            <div className="col-6 flex-column align-items-center p-5">
-              <form onSubmit={onSubmitHandler}>
-                <div className="d-flex flex-column align-items-center">
-                  <div className="p-3 d-flex flex-column col-8">
-                    <p className="fs-20 fw-m pink-underline">Reset Password</p>
-                    <p className="fs-14 dim-gray fw-l">
-                      Enter new password to reset your login password
-                    </p>
 
-                    <label
-                      htmlFor="password"
-                      className=" d-flex fs-16 fw-m color-primary mb-1 justify-content-between"
-                    >
-                      Password*
-                      <span>
-                        <input
-                          type="checkbox"
-                          className="form-check-input  checkbox-input"
-                          id="check"
-                          onChange={passwordGenerator}
-                        />
-                        &nbsp;
-                        <label className="form-check-label fw-m ">
-                          Auto Generate password
-                        </label>
-                      </span>
-                    </label>
+        <div className="row flex-grow-1">
+          <div className="col-6 flex-column align-items-center p-5">
+            <form onSubmit={onSubmitHandler}>
+              <div className="d-flex flex-column align-items-center">
+                <div className="p-3 d-flex flex-column col-8">
+                  <p className="fs-20 fw-m pink-underline">Reset Password</p>
+                  <p className="fs-14 dim-gray fw-l">
+                    Enter new password to reset your login password
+                  </p>
 
-                    <input
-                      type="text"
-                      placeholder="Minimum 8 characters"
-                      id="password"
-                      className=" form-control p-2 input-class"
-                      value={passwordValue}
-                      onChange={(e) => setPasswordValue(e.target.value)}
-                    />
-                  </div>
+                  <label
+                    htmlFor="password"
+                    className=" d-flex fs-16 fw-m color-primary mb-1 justify-content-between"
+                  >
+                    Password*
+                    <span>
+                      <input
+                        type="checkbox"
+                        className="form-check-input  checkbox-input"
+                        id="check"
+                        onChange={passwordGenerator}
+                      />
+                      &nbsp;
+                      <label className="form-check-label fw-m ">
+                        Auto Generate password
+                      </label>
+                    </span>
+                  </label>
 
-                  <div className="p-3 d-flex flex-column col-8">
-                    <label
-                      htmlFor="re-enterPassword"
-                      className="fs-16 color-primary mb-1 fw-m"
-                    >
-                      Re-enter Password*
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="Minimum 8 characters"
-                      id="re-enterPassword"
-                      className="form-control input-class p-2"
-                    />
-                  </div>
-
-                  <div className="p-3 col-8 d-flex flex-row justify-content-between ">
-                    <Link
-                      className=" button-layout button-outlined a-tag-btn "
-                      aria-current="page"
-                      to="/"
-                    >
-                      Cancel
-                    </Link>
-                    <button
-                      className="button-green button-layout "
-                      aria-current="page"
-                    >
-                      Reset Password
-                    </button>
-                  </div>
-                  <Footer />
+                  <input
+                    type="text"
+                    placeholder="Minimum 8 characters"
+                    id="password"
+                    className=" form-control p-2 input-class"
+                    value={passwordValue}
+                    onChange={(e) => setPasswordValue(e.target.value)}
+                  />
                 </div>
-              </form>
-            </div>
-            <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
-              <img
-                src={homePageCircle}
-                alt="circles image"
-                className=" col-8"
-              />
-            </div>
+
+                <div className="p-3 d-flex flex-column col-8">
+                  <label
+                    htmlFor="re-enterPassword"
+                    className="fs-16 color-primary mb-1 fw-m"
+                  >
+                    Re-enter Password*
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Minimum 8 characters"
+                    id="re-enterPassword"
+                    className="form-control input-class p-2"
+                  />
+                </div>
+
+                <div className="p-3 col-8 d-flex flex-row justify-content-between ">
+                  <Link
+                    className=" button-layout button-outlined a-tag-btn "
+                    aria-current="page"
+                    to="/"
+                  >
+                    Cancel
+                  </Link>
+                  <button
+                    className="button-green button-layout "
+                    aria-current="page"
+                  >
+                    Reset Password
+                  </button>
+                </div>
+                <Footer />
+              </div>
+            </form>
+          </div>
+          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
+            <img src={homePageCircle} alt="circles image" className=" col-8" />
           </div>
         </div>
       </div>

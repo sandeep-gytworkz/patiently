@@ -62,7 +62,7 @@ const UploadRecords = ({ changeSlide }) => {
             </div>
           </FileUploader>
         </div>
-        <p className="fs-12 data-protection-para mt-3 fw-m ">
+        <p className="fs-12 data-protection-para mt-2 mb-1 fw-m ">
           The right of access plays a central role in the General Data
           Protection Regulation (GDPR). On the one hand, because only the right
           of access allows the data subject to exercise further rights (such as
@@ -70,8 +70,8 @@ const UploadRecords = ({ changeSlide }) => {
           incomplete disclosure is subject to fines.
         </p>
         {files.length > 0 && (
-          <div className="col-12 d-flex flex-column">
-            <p className="mb-1 fs-14">Uploaded Files</p>
+          <div className="col-12 d-flex flex-column mb-2">
+            <p className="mb-1 fs-16 fw-m">Uploaded Files</p>
             <div className="col-12 d-flex flex-row overflow-auto">
               {files.map((item, index) => (
                 <UploadedFile file={item} onDelete={deleteFile} index={index} />
