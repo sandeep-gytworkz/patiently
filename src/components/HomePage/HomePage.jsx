@@ -28,7 +28,7 @@ const Homepage = () => {
   return (
     <div className="d-flex flex-column homePage-container">
       <Header />
-      <div className="bg-green d-flex flex-row pt-4 h-100">
+      <div className="bg-green d-flex flex-row pt-4 flex-grow-1">
         <div className="col-sm-6 col-xs-12 offset-sm-1 d-flex flex-column py-5  pe-5">
           <div>
             <p className="fs-64 fw-sb heading-shadow">
@@ -56,6 +56,7 @@ const Homepage = () => {
             src={homePageCircle}
             alt="home page circles image"
             className="w-100"
+            style={{ maxHeight: "575px" }}
           />
         </div>
       </div>

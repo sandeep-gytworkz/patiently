@@ -1,0 +1,14 @@
+.admin-username-div {
+  background-color: black;
+}
+
+.link-tag {
+  color: white !important;
+}
+
+#btn {
+  color: white;
+  font-size: 22px;
+  position: inherit;
+  line-height: 46px;
+}

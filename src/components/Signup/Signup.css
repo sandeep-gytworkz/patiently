@@ -36,3 +36,9 @@
 .btn-group .btn.active {
   color: black;
 } */
+
+.form-class {
+  height: 100%;
+  overflow: auto;
+  max-height: 450px;
+}
