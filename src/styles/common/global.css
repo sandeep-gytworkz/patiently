@@ -190,6 +190,20 @@
   color: #000000;
 }
 
+.a-tag-green-btn {
+  color: #ffffff;
+  background-color: #04d976;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.a-tag-green-btn:hover {
+  color: #ffffff;
+}
+
 .a-tag-common {
   text-decoration: none;
 }
