@@ -15,11 +15,11 @@ const DataPrivacy = () => {
         <h1 className="p-l-3 fw-sb">Data Privacy</h1>
       </div>
       <div className="d-flex flex-column px-5 ">
-        <div className="d-flex flex-row my-2 p-l-3 p-r-2 ">
-          <div>
+        <div className="row my-2 p-l-3 p-r-2 ">
+          <div className="col-sm-2 col-12 p-0">
             <img src={dataPrivacy1} alt="data-privacy-image" />
           </div>
-          <div className="data-container">
+          <div className="data-container col-sm-10 col-12 p-0">
             <div className="col-8 px-4 py-2">
               <p className="fs-20 fw-sb mb-1 pt-2">De-identification</p>
               <p className="fs-18 fw-r">
