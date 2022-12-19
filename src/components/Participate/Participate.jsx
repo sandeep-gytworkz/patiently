@@ -55,7 +55,7 @@ const Participate = () => {
                 paddingBottom: "10px",
               }}
             >
-              <p className="text-center col-12 pt-3 fs-28 dark-blue fw-m">
+              <p className="text-center col-12 pt-3 fs-28 dark-blue fw-m mb-0">
                 Questions
               </p>
               <div
@@ -65,21 +65,33 @@ const Participate = () => {
               >
                 <button
                   type="button"
-                  className={`btn btn-secondary ${
-                    slide === 3 || slide === 4 ? "active" : ""
-                  }`}
+                  className={
+                    slide === 5 || slide === 6 || slide === 7
+                      ? "btn-dark"
+                      : `btn btn-secondary ${
+                          slide === 3 || slide === 4 ? "active" : ""
+                        }`
+                  }
                 >
                   &#11044;
                 </button>
                 <button
                   type="button"
-                  className={`btn btn-secondary ${slide === 5 ? "active" : ""}`}
+                  className={
+                    slide === 6 || slide === 7
+                      ? "btn-dark"
+                      : `btn btn-secondary ${slide === 5 ? "active" : ""}`
+                  }
                 >
                   &#11044;
                 </button>
                 <button
                   type="button"
-                  className={`btn btn-secondary ${slide === 6 ? "active" : ""}`}
+                  className={
+                    slide === 7
+                      ? "btn-dark"
+                      : `btn btn-secondary ${slide === 6 ? "active" : ""}`
+                  }
                 >
                   &#11044;
                 </button>
@@ -100,7 +112,9 @@ const Participate = () => {
                 paddingBottom: "10px",
               }}
             >
-              <h3 className="text-center col-12 pt-3 fw-m">Upload Records</h3>
+              <h3 className="text-center col-12 pt-3 fw-m mb-0">
+                Upload Records
+              </h3>
               <div
                 className="btn-group mx-auto"
                 role="group"
@@ -108,7 +122,11 @@ const Participate = () => {
               >
                 <button
                   type="button"
-                  className={`btn btn-secondary ${slide === 8 ? "active" : ""}`}
+                  className={
+                    slide === 9
+                      ? "btn-dark"
+                      : `btn btn-secondary ${slide === 8 ? "active" : ""}`
+                  }
                 >
                   &#11044;
                 </button>

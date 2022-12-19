@@ -30,33 +30,35 @@ const DataPrivacy = () => {
             </div>
           </div>
         </div>
-        <div className="d-flex flex-row my-2 p-l-3 p-r-2 ">
-          <div>
-            <img src={dataPrivacy2} alt="data-privacy-image" />
-          </div>
-          <div className="data-container">
-            <div className="col-8 px-4 py-2">
-              <p className="fs-20 fw-sb mb-1 pt-2">Encryption</p>
-              <p className="fs-18 fw-r">
-                All data shared with researchers is de-identified (no names,
-                addresses, phone numbers, etc.) so that the data cannot be
-                connected back to an individual.​
-              </p>
+        <div className="d-flex flex-row my-2 p-l-6 p-r-2">
+          <div className="data-container d-flex flex-row align-items-center  ">
+            <div className="  d-flex flex-row data-privacy-item align-items-center">
+              <img src={dataPrivacy2} alt="data-privacy-image" />
+
+              <div className="py-1 px-4">
+                <p className="fs-20 fw-sb mb-1 pt-2">Encryption</p>
+                <p className="fs-18 fw-r">
+                  All data shared with researchers is de-identified (no names,
+                  addresses, phone numbers, etc.) so that the data cannot be
+                  connected back to an individual.​
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div className="d-flex flex-row my-2 p-l-3 p-r-2 ">
-          <div>
-            <img src={dataPrivacy3} alt="data-privacy-image" />
-          </div>
-          <div className="data-container">
-            <div className="col-8 px-4 py-2">
-              <p className="fs-20 fw-sb mb-1 pt-2">Confidentiality​</p>
-              <p className="fs-18 fw-r">
-                all data shared with researchers is de-identified (no names,
-                addresses, phone numbers, etc.) so that the data cannot be
-                connected back to an individual.​
-              </p>
+        <div className="d-flex flex-row my-2 p-l-6 p-r-2">
+          <div className="data-container d-flex flex-row align-items-center  ">
+            <div className="  d-flex flex-row data-privacy-item align-items-center">
+              <img src={dataPrivacy3} alt="data-privacy-image" />
+
+              <div className="py-1 px-4">
+                <p className="fs-20 fw-sb mb-1 pt-2">Confidentiality​</p>
+                <p className="fs-18 fw-r">
+                  All data shared with researchers is de-identified (no names,
+                  addresses, phone numbers, etc.) so that the data cannot be
+                  connected back to an individual.​
+                </p>
+              </div>
             </div>
           </div>
         </div>

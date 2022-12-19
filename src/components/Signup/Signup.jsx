@@ -8,11 +8,13 @@ import { registrationReducer, initRegState } from "./Reducers/Signup";
 import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
 import { BsArrowRight } from "react-icons/bs";
+import "./Signup.css";
 
 const Signup = ({ changeSlide }) => {
   const [termsState, setTermsState] = useState(false);
   const [passwordValue, setPasswordValue] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [fullName, setFullName] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -54,45 +56,48 @@ const Signup = ({ changeSlide }) => {
   return (
     <div className="d-flex flex-column homePage-container">
       <Header />
-      <div className="container-fluid text-left">
-        <div className="row content-section">
-          <div className="col-sm-12 col-md-5 offset-md-1 px-5">
-            <p className="color-primary  px-2 mt-3 mb-0 fw-m fs-20">SIGN UP</p>
+
+      <div className="row flex-grow-1 ">
+        <div className="col-sm-12 col-md-5 offset-md-1 px-5 ">
+          <p className="color-primary  px-2  my-4 fw-m fs-20 signup-underline">
+            SIGN UP
+          </p>
+          <div className="d-flex flex-column align-items-center form-class">
             <form
               onSubmit={(event) => {
                 event.preventDefault();
                 submitRegistration();
               }}
-              className=" d-flex flex-column col-12"
+              className=" d-flex flex-column col-12 "
             >
               <div className="mb-1 p-2 col-10 ">
                 <label
-                  htmlFor="firstName"
-                  className="form-label fs-16 color-primary mb-0 fw-m"
+                  htmlFor="fullName"
+                  className="form-label fs-16 color-primary mb-2 fw-m"
                 >
                   Name*
                 </label>
                 <input
                   type="text"
-                  className="form-control"
-                  id="firstName"
-                  placeholder="Enter first name "
+                  className="form-control input-class"
+                  id="fullName"
+                  placeholder="Full Name "
                   required
-                  name="firstName"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
+                  name="fullName"
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
                 />
               </div>
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="inputEmail"
-                  className="form-label fs-16 color-primary fw-m mb-0"
+                  className="form-label fs-16 color-primary fw-m mb-2"
                 >
                   Email*
                 </label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control input-class"
                   id="inputEmail"
                   placeholder="Enter email ID"
                   required
@@ -103,13 +108,13 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="contactNumber"
-                  className="form-label fs-16 color-primary fw-m mb-0"
+                  className="form-label fs-16 color-primary fw-m mb-2"
                 >
                   Phone Number*
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control input-class"
                   id="contactNumber"
                   placeholder="Enter phone number"
                   value={phoneNumber}
@@ -119,25 +124,25 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10 ">
                 <label
                   htmlFor="password"
-                  className="form-label fs-16 color-primary d-flex justify-content-between fw-m mb-0"
+                  className="form-label fs-16 color-primary d-flex justify-content-between fw-m mb-2"
                 >
                   Password*
                   <span>
                     <input
                       type="checkbox"
-                      className="form-check-input  "
+                      className="form-check-input checkbox-input"
                       id="check"
                       onChange={passwordGenerator}
                     />
                     &nbsp;
-                    <label className="form-check-label fs-16 fw-m mb-0">
+                    <label className="form-check-label fs-16 fw-m mb-2">
                       Auto Generate password
                     </label>
                   </span>
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control input-class"
                   id="password"
                   placeholder="Enter password"
                   value={passwordValue}
@@ -147,13 +152,13 @@ const Signup = ({ changeSlide }) => {
               <div className="mb-1 p-2 col-10">
                 <label
                   htmlFor="confirmPassword"
-                  className="form-label fs-16 color-primary fw-m mb-0"
+                  className="form-label fs-16 color-primary fw-m mb-2 "
                 >
                   Confirm Password*
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control input-class"
                   id="confirmPassword"
                   placeholder="Re-enter password"
                   required
@@ -164,7 +169,7 @@ const Signup = ({ changeSlide }) => {
               <div className=" col-10 form-check justify-content-between mb-1 mx-2 ">
                 <input
                   type="checkbox"
-                  className="form-check-input  "
+                  className="form-check-input checkbox-input "
                   id="check"
                   required
                   checked={termsState}
@@ -184,7 +189,7 @@ const Signup = ({ changeSlide }) => {
                   }}
                 />
                 <a
-                  className="color-primary fs-14 a-tag fw-m"
+                  className=" fs-14 a-tag-common fw-m"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModalLong"
                   href="#"
@@ -196,27 +201,36 @@ const Signup = ({ changeSlide }) => {
                 <button
                   type="submit"
                   className="button-layout button-green me-3 col-10"
+                  disabled={
+                    !(
+                      fullName &&
+                      email &&
+                      phoneNumber &&
+                      passwordValue &&
+                      confirmPassword
+                    )
+                  }
                 >
                   Sign Up &nbsp; <BsArrowRight />
                 </button>
                 <div className="text-center col-10">
-                  <p className="mb-0 py-1 fw-r">
+                  <p className="mb-0 py-1 fw-r fs-16">
                     Already registered?
-                    <Link className="a-tag fw-m " to="/login">
+                    <Link className="a-tag-link fw-m fs-16 " to="/login">
                       &nbsp; Login
                     </Link>
                   </p>
                 </div>
               </div>
             </form>
-          </div>
-
-          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
-            <img src={homePageCircle} alt="circles image" className=" col-8" />
+            <Footer alignment="justify-content-center" />
           </div>
         </div>
+
+        <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
+          <img src={homePageCircle} alt="circles image" className=" col-8" />
+        </div>
       </div>
-      <Footer alignment="justify-content-center" />
     </div>
   );
 };

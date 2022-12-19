@@ -31,18 +31,17 @@ const Homepage = () => {
       <div className="bg-green row pt-5">
         <div className=" col-xs-12 col-sm-6 offset-sm-1 py-sm-5 ps-sm-1 pe-sm-5 p-4">
           <div>
-            <p className="fs-56 fw-mb heading-shadow">
-              {" "}
+            <p className="fs-64 fw-sb heading-shadow">
               Bringing the Patient Journey to Life
             </p>
-            <p className="fs-32 fw-500">
+            <p className="fs-32 fw-m mb-4">
               Your celiac health journey is unique, but you are not alone. Join
               a community of fellow celiac patients, share your experience, be
               part of the solution.
             </p>
             <Link
               to="/participate-now "
-              className="button-layout a-tag-white-btn"
+              className="button-layout a-tag-white-btn "
             >
               Participate Now &nbsp;
               <BsArrowRight />
@@ -54,6 +53,7 @@ const Homepage = () => {
             src={homePageCircle}
             alt="home page circles image"
             className="w-100"
+            style={{ maxHeight: "575px" }}
           />
         </div>
       </div>

@@ -1,0 +1,28 @@
+.container-style {
+  padding: 10px 0;
+}
+
+.input-style {
+  width: 62px !important;
+  height: 92px;
+  /* marginRight: 17px; */
+  font-size: 36px;
+  font-weight: 400;
+  border-radius: 0px;
+
+  text-align: center;
+  color: #00cfe5;
+}
+
+.has-value {
+  border: 1px solid #00cfe5;
+}
+
+.has-value[value=""] {
+  border: 1px solid #bcbcbc;
+}
+
+.focus-style {
+  outline: 1px solid #00cfe5;
+  border: none !important;
+}

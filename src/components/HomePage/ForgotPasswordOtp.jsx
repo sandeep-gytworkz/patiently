@@ -19,56 +19,50 @@ const ForgotPasswordOtp = () => {
     <>
       <div className="d-flex flex-column homePage-container">
         <Header />
-        <div className="container-fluid text-left">
-          <div className="row content-section">
-            <div className="col-6 flex-column align-items-center p-5">
-              <form onSubmit={onSubmitHandler}>
-                <div className="d-flex flex-column align-items-center">
-                  <div className=" d-flex flex-column col-8">
-                    <p className="fs-20 fw-m">Forgot Password</p>
-                    <p className="fs-18 dim-gray fw-r">
-                      Provide you account’s email for which you want to reset
-                      your password
-                    </p>
 
-                    <label
-                      htmlFor="email"
-                      className=" d-flex fs-16 fw-m color-primary mb-1 justify-content-between"
-                    >
-                      Email*
-                    </label>
+        <div className="row flex-grow-1">
+          <div className="col-6 flex-column align-items-center p-5">
+            <form onSubmit={onSubmitHandler}>
+              <div className="d-flex flex-column align-items-center">
+                <div className=" d-flex flex-column col-8">
+                  <p className="fs-20 fw-m pink-underline">Forgot Password</p>
+                  <p className="fs-18 dim-gray fw-r">
+                    Provide you account’s email for which you want to reset your
+                    password
+                  </p>
 
-                    <input
-                      type="email"
-                      placeholder="mail@website.com"
-                      id="email"
-                      className=" form-control p-2 input-class"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
-                  </div>
+                  <label
+                    htmlFor="email"
+                    className=" d-flex fs-16 fw-m color-primary mb-1 justify-content-between"
+                  >
+                    Email*
+                  </label>
 
-                  <div className="py-3 col-8  ">
-                    <button
-                      className="button-green button-layout w-100"
-                      aria-current="page"
-                    >
-                      Send OTP &nbsp; <AiOutlineArrowRight />
-                    </button>
-                  </div>
+                  <input
+                    type="email"
+                    placeholder="mail@website.com"
+                    id="email"
+                    className=" form-control p-2 input-class"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </div>
-              </form>
-              <div>
+
+                <div className="py-3 col-8  ">
+                  <button
+                    className="button-green button-layout w-100"
+                    aria-current="page"
+                  >
+                    Send OTP &nbsp; <AiOutlineArrowRight />
+                  </button>
+                </div>
                 <Footer alignment="justify-content-center" />
               </div>
-            </div>
-            <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
-              <img
-                src={homePageCircle}
-                alt="circles image"
-                className=" col-8"
-              />
-            </div>
+            </form>
+            <div></div>
+          </div>
+          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
+            <img src={homePageCircle} alt="circles image" className=" col-8" />
           </div>
         </div>
       </div>
