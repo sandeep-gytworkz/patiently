@@ -1,0 +1,73 @@
+{
+    "dashboardList": [
+        {
+            "participantsName": "Riyaz",
+            "recievedDateTime": "15nov2022",
+            "researchName": "disease data",
+            "questions": "questions",
+            "attachment": "mRNA Flu Report.pdf",
+            "actions": "actions"
+          },
+        {
+            "participantsName": "Sandeep",
+            "recievedDateTime": "15nov2022",
+            "researchName": "disease data",
+            "questions": "questions",
+            "attachment": "DNA Report.pdf",
+            "actions": "actions"
+          },
+        {
+            "participantsName": "Shivansh",
+            "recievedDateTime": "15nov2022",
+            "researchName": "disease data",
+            "questions": "questions",
+            "attachment": "Blood Sample.pdf",
+            "actions": "actions"
+          },
+        {
+            "participantsName": "Pankaj",
+            "recievedDateTime": "15nov2022",
+            "researchName": "disease data",
+            "questions": "questions",
+            "attachment": "Stress Report.pdf",
+            "actions": "actions"
+          }
+    ],
+    "participantsList": [
+        {
+            "participantName": "Sara Jones",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/27/2022 11:25 AM",
+            "email": "saramjones@gmail.com",
+            "contact": "+919876543210"
+        },
+        {
+            "participantName": "David Cooper",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/26/2022 10:00 AM",
+            "email": "davidcooper@orgmail.co",
+            "contact": "+919876543210"
+        },
+        {
+            "participantName": "Alina Doe",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/26/2022 9:45 AM",
+            "email": "alinadoe@orgmail.co",
+            "contact": "+919876543210"
+        },
+        {
+            "participantName": "John Johnson",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/25/2022 2:00 PM",
+            "email": "johnmjohnson77@gmail.com",
+            "contact": "+919876543210"
+        },
+        {
+            "participantName": "David Green",
+            "studyType": "mRNA Flu vaccine study",
+            "registrationDate": "11/25/2022 9:00 AM",
+            "email": "dgreen@hotmail.com",
+            "contact": "+919876543210"
+        }
+    ]
+}
