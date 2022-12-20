@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f411880c.css",
-    "main.js": "/static/js/main.a36b375d.js",
+    "main.css": "/static/css/main.3e0a13d9.css",
+    "main.js": "/static/js/main.20169f52.js",
     "static/js/787.83acb4b8.chunk.js": "/static/js/787.83acb4b8.chunk.js",
     "static/media/homeImg.png": "/static/media/homeImg.a6c2133f08da3e974dd5.png",
     "static/media/howItWorksMob.png": "/static/media/howItWorksMob.617d2114d87446720fbc.png",
@@ -12,12 +12,12 @@
     "index.html": "/index.html",
     "static/media/question.svg": "/static/media/question.b76f332bc35c3e0ddfc9fbd73d0804b8.svg",
     "static/media/arrow.svg": "/static/media/arrow.dfea546d744597c2de425fe4a192a267.svg",
-    "main.f411880c.css.map": "/static/css/main.f411880c.css.map",
-    "main.a36b375d.js.map": "/static/js/main.a36b375d.js.map",
+    "main.3e0a13d9.css.map": "/static/css/main.3e0a13d9.css.map",
+    "main.20169f52.js.map": "/static/js/main.20169f52.js.map",
     "787.83acb4b8.chunk.js.map": "/static/js/787.83acb4b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f411880c.css",
-    "static/js/main.a36b375d.js"
+    "static/css/main.3e0a13d9.css",
+    "static/js/main.20169f52.js"
   ]
 }
