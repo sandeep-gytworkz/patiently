@@ -36,3 +36,10 @@
   height: 65%;
   background-color: #fafcfc;
 }
+
+@media screen and (max-width: 576px) {
+  .middle-container {
+    min-height: 65%;
+    height: fit-content;
+  }
+}

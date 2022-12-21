@@ -21,10 +21,10 @@ const ForgotPasswordOtp = () => {
         <Header />
 
         <div className="row flex-grow-1">
-          <div className="col-6 flex-column align-items-center p-5">
+          <div className="col-xs-12 col-sm-6 flex-column align-items-center py-5 px-sm-5">
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
-                <div className=" d-flex flex-column col-8">
+                <div className=" d-flex flex-column col-sm-8 col-10">
                   <p className="fs-20 fw-m pink-underline">Forgot Password</p>
                   <p className="fs-18 dim-gray fw-r">
                     Provide you account’s email for which you want to reset your
@@ -48,7 +48,7 @@ const ForgotPasswordOtp = () => {
                   />
                 </div>
 
-                <div className="py-3 col-8  ">
+                <div className="py-3 col-sm-8 col-10  ">
                   <button
                     className="button-green button-layout w-100"
                     aria-current="page"
@@ -61,7 +61,7 @@ const ForgotPasswordOtp = () => {
             </form>
             <div></div>
           </div>
-          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
+          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end d-none d-sm-block">
             <img src={homePageCircle} alt="circles image" className=" col-8" />
           </div>
         </div>

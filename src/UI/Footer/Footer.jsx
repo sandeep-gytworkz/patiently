@@ -6,7 +6,9 @@ const Footer = (props) => {
   return (
     <>
       <div
-        className={`d-flex align-items-center  d-none d-sm-block ${ props.home ? "footer-home " : "footer" } ${props.alignment}`}
+        className={`d-flex align-items-center  d-none d-sm-block ${
+          props.home ? "footer-home " : "footer"
+        } ${props.alignment}`}
       >
         <Link
           to="/contact-us"
@@ -26,17 +28,23 @@ const Footer = (props) => {
         </a>
       </div>
       <div
-        className={`d-flex align-items-center d-block d-sm-none bg-white text-dark p-2`}
+        className={`d-flex align-items-center footer-sm d-block d-sm-none ${
+          props.home ? "bg-white text-dark" : "bg-dark text-white"
+        } p-2`}
       >
         <Link
           to="/contact-us"
-          className={`a-tag-common text-center fw-m fs-12 col-4 text-dark`}
+          className={`a-tag-common text-center fw-m fs-12 col-4  ${
+            props.home ? " text-dark" : "text-white"
+          }`}
         >
           Contact us
         </Link>
         <span className="mx-2 "> | </span>
         <a
-          className={`fs-12  fw-m a-tag-common text-center col-8 text-dark`}
+          className={`fs-12  fw-m a-tag-common text-center col-8  ${
+            props.home ? " text-dark" : "text-white"
+          }`}
         >
           Privacy Policy / Cookie Settings
         </a>

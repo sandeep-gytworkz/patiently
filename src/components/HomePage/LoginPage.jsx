@@ -25,10 +25,10 @@ const LoginPage = () => {
         <Header />
 
         <div className="row flex-grow-1">
-          <div className="col-6 flex-column align-items-center p-5">
+          <div className=" col-xs-12 col-sm-6 flex-column align-items-center py-5 px-sm-5">
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
-                <div className="py-3 d-flex flex-column col-8">
+                <div className="py-3 d-flex flex-column col-sm-8 col-10">
                   <p className="fs-20 fw-m login-underline">Login</p>
                   <p className="fs-16 dim-gray fw-l">
                     Log in with details that you entered during your
@@ -46,7 +46,7 @@ const LoginPage = () => {
                   />
                 </div>
 
-                <div className="py-3 d-flex flex-column col-8">
+                <div className="py-3 d-flex flex-column col-sm-8 col-10">
                   <label htmlFor="password" className="fs-16 fw-m">
                     Password*
                   </label>
@@ -58,7 +58,7 @@ const LoginPage = () => {
                     className="form-control input-class p-2"
                   />
                 </div>
-                <div className="py-2 col-8 d-flex flex-row justify-content-between">
+                <div className="py-2 col-sm-8 col-10 d-flex flex-row justify-content-between ">
                   <div className="form-check">
                     <input
                       className="form-check-input checkbox-input"
@@ -82,7 +82,7 @@ const LoginPage = () => {
                     </button>
                   </div>
                 </div>
-                <div className="py-1 col-8  ">
+                <div className="py-1 col-sm-8  col-10">
                   <button
                     className="button-green button-layout w-100"
                     aria-current="page"
@@ -90,23 +90,25 @@ const LoginPage = () => {
                     Login &nbsp; <AiOutlineArrowRight />
                   </button>
                 </div>
-                <div>
-                  <div className="d-flex flex-row  align-items-center">
+                <div className="py-1 col-sm-8  col-10">
+                  <div className="d-flex flex-row  align-items-center justify-content-center">
                     <p className="mb-0 py-2 fs-16 fw-r">Not Registered?</p>
                     <Link
                       to="/participate-now "
-                      className="button-secondary fs-16 fw-m"
+                      className="button-secondary fs-16 fw-m px-0"
                     >
                       &nbsp; Create an Account
                     </Link>
                   </div>
                 </div>
-                <Footer alignment="justify-content-center" />
+                <div className=" col-sm-8  col-12 d-flex justify-content-center">
+                  <Footer alignment="justify-content-center" />
+                </div>
               </div>
             </form>
           </div>
 
-          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
+          <div className=" d-flex flex-row d-none d-sm-block col-sm-6 right-half ps-5 bg-green justify-content-end">
             <img src={homePageCircle} alt="circles image" className=" col-8" />
           </div>
           {/* <div className="py-3 px-2  d-flex justify-content-between">

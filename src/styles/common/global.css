@@ -111,7 +111,7 @@
 }
 
 .fs-18 {
-  font-size: 1.125em;
+  font-size: 18px;
 }
 
 .fs-16 {
@@ -134,7 +134,7 @@
 }
 
 .fs-32 {
-  font-size: 1.8em;
+  font-size: 32px;
 }
 
 .fs-36 {
@@ -229,18 +229,6 @@
 }
 .link-class:hover {
   color: white;
-}
-
-.input-class {
-  border: 1px solid #bcbcbc;
-  background-color: transparent;
-  border-radius: 0;
-  height: 48px;
-}
-
-input.form-control:focus {
-  box-shadow: none;
-  border: 1px solid #0fc6d9;
 }
 
 .radio-btn-label {
@@ -387,4 +375,63 @@ input.form-control:focus {
   border: 1px solid #c7c7c7;
   font-size: 18px;
   font-weight: 400;
+  /* background-position: right -2.25rem center; */
+}
+
+.input-class {
+  border: 1px solid #bcbcbc;
+  background-color: transparent;
+  border-radius: 0;
+  height: 48px;
+}
+
+input.form-control:focus {
+  box-shadow: none;
+  border: 1px solid #0fc6d9;
+}
+
+@media screen and (max-width: 576px) {
+  .fs-64 {
+    font-size: 38px;
+  }
+
+  .fs-48 {
+    font-size: 24px;
+  }
+
+  .fs-32 {
+    font-size: 18px;
+  }
+
+  .fs-24 {
+    font-size: 16px;
+  }
+
+  .form-check {
+    padding-inline: 1em;
+  }
+
+  .radio-btn {
+    width: 20px;
+    height: 20px;
+  }
+
+  .radio-btn-label {
+    font-size: 16px;
+  }
+
+  .input-class {
+    border: 1px solid #bcbcbc;
+    background-color: transparent;
+    border-radius: 0;
+    height: 44px;
+  }
+
+  .selection-form {
+    height: 44px;
+    border-radius: 0px;
+    border: 1px solid #c7c7c7;
+    font-size: 14px;
+    font-weight: 400;
+  }
 }

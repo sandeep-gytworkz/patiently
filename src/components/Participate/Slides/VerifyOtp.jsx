@@ -19,9 +19,9 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
         <Header />
 
         <div className="row flex-grow-1">
-          <div className="col-6 flex-column align-items-center p-5">
+          <div className="col-xs-12 col-sm-6 flex-column align-items-center py-5 px-sm-5">
             <div className="d-flex flex-column align-items-center">
-              <div className="p-3 d-flex flex-column col-9">
+              <div className="py-3 d-flex flex-column col-sm-9 col-10">
                 <p className="fs-20 fw-m pink-underline">
                   {isForgotPassword
                     ? "Verify code"
@@ -35,7 +35,7 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                 <p className="fs-18 dim-gray fw-r">
                   If you did not receive the code, Select resend code
                 </p>
-                <div>
+                <div className="d-none d-sm-block">
                   <OtpInput
                     value={otp}
                     onChange={handleOtpChange}
@@ -52,33 +52,57 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                     shouldAutoFocus={true}
                   />
                 </div>
+                <div className="d-block d-sm-none">
+                  <OtpInput
+                    value={otp}
+                    onChange={handleOtpChange}
+                    numInputs={6}
+                    containerStyle="container-style"
+                    inputStyle="input-style-sm has-value"
+                    focusStyle="focus-style"
+                    separator={
+                      <span>
+                        <i className="px-2"></i>
+                      </span>
+                    }
+                    isInputNum={true}
+                    shouldAutoFocus={true}
+                  />
+                </div>
+
                 <div className="d-flex justify-content-between col-12 ">
                   <button className="button-a-tag fw-r">Resend Code</button>
                   <p className="fs-14 mb-0 fw-r ">Code expires in 00.30s</p>
                 </div>
-                <div className="d-flex flex-row mt-5 align-items-center justify-content-between ">
-                  <Link
-                    to="/"
-                    className="me-3 button-layout button-outlined a-tag-btn"
-                  >
-                    Cancel
-                  </Link>
-                  <button
-                    onClick={() => {
-                      changeSlide();
-                    }}
-                    className="button-layout button-green "
-                    disabled={otp.length !== 6}
-                  >
-                    {isForgotPassword ? "Verify code" : "Continue to Questions"}
-                    &nbsp; <AiOutlineArrowRight />
-                  </button>
+                <div className="d-flex flex-row mt-5 align-items-center justify-content-between flex-wrap-reverse">
+                  <div className="col-sm-5 col-12 mb-3">
+                    <Link
+                      to="/"
+                      className="me-sm-3 me-0 button-layout button-outlined a-tag-btn"
+                    >
+                      Cancel
+                    </Link>
+                  </div>
+                  <div className="col-sm-7 col-12 mb-3">
+                    <button
+                      onClick={() => {
+                        changeSlide();
+                      }}
+                      className="button-layout button-green w-100"
+                      disabled={otp.length !== 6}
+                    >
+                      {isForgotPassword
+                        ? "Verify code"
+                        : "Continue to Questions"}
+                      &nbsp; <AiOutlineArrowRight />
+                    </button>
+                  </div>
                 </div>
               </div>
               <Footer />
             </div>
           </div>
-          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
+          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end d-none d-sm-block ">
             <img src={homePageCircle} alt="circles image" className=" col-8" />
           </div>
         </div>
