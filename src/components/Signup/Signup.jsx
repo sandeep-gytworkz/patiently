@@ -58,7 +58,7 @@ const Signup = ({ changeSlide }) => {
       <Header />
 
       <div className="row flex-grow-1 ">
-        <div className="col-sm-12 col-md-5 offset-md-1 px-5 ">
+        <div className="col-sm-12 col-md-5 offset-md-1 px-sm-5 px-4 ">
           <p className="color-primary  px-2  my-4 fw-m fs-20 signup-underline">
             SIGN UP
           </p>
@@ -70,7 +70,7 @@ const Signup = ({ changeSlide }) => {
               }}
               className=" d-flex flex-column col-12 "
             >
-              <div className="mb-1 p-2 col-10 ">
+              <div className="mb-1 p-2 col-sm-10 col-12 ">
                 <label
                   htmlFor="fullName"
                   className="form-label fs-16 color-primary mb-2 fw-m"
@@ -88,7 +88,7 @@ const Signup = ({ changeSlide }) => {
                   onChange={(e) => setFullName(e.target.value)}
                 />
               </div>
-              <div className="mb-1 p-2 col-10 ">
+              <div className="mb-1 p-2 col-sm-10 col-12 ">
                 <label
                   htmlFor="inputEmail"
                   className="form-label fs-16 color-primary fw-m mb-2"
@@ -105,7 +105,7 @@ const Signup = ({ changeSlide }) => {
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
-              <div className="mb-1 p-2 col-10 ">
+              <div className="mb-1 p-2 col-sm-10 col-12 ">
                 <label
                   htmlFor="contactNumber"
                   className="form-label fs-16 color-primary fw-m mb-2"
@@ -121,7 +121,7 @@ const Signup = ({ changeSlide }) => {
                   onChange={(e) => setPhoneNumber(e.target.value)}
                 />
               </div>
-              <div className="mb-1 p-2 col-10 ">
+              <div className="mb-1 p-2 col-sm-10 col-12 ">
                 <label
                   htmlFor="password"
                   className="form-label fs-16 color-primary d-flex justify-content-between fw-m mb-2"
@@ -149,7 +149,7 @@ const Signup = ({ changeSlide }) => {
                   onChange={(e) => setPasswordValue(e.target.value)}
                 />
               </div>
-              <div className="mb-1 p-2 col-10">
+              <div className="mb-1 p-2 col-sm-10 col-12">
                 <label
                   htmlFor="confirmPassword"
                   className="form-label fs-16 color-primary fw-m mb-2 "
@@ -166,7 +166,7 @@ const Signup = ({ changeSlide }) => {
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
               </div>
-              <div className=" col-10 form-check justify-content-between mb-1 mx-2 ">
+              <div className="col-sm-10 col-12 form-check justify-content-between my-2 mx-2 ">
                 <input
                   type="checkbox"
                   className="form-check-input checkbox-input "
@@ -197,10 +197,10 @@ const Signup = ({ changeSlide }) => {
                   Terms & Conditions
                 </a>
               </div>
-              <div className="d-flex flex-column px-2">
+              <div className="d-flex flex-column px-2 col-sm-10 col-12 mb-2">
                 <button
                   type="submit"
-                  className="button-layout button-green me-3 col-10"
+                  className="button-layout button-green me-3 col-12"
                   disabled={
                     !(
                       fullName &&
@@ -213,7 +213,7 @@ const Signup = ({ changeSlide }) => {
                 >
                   Sign Up &nbsp; <BsArrowRight />
                 </button>
-                <div className="text-center col-10">
+                <div className="text-center col-12">
                   <p className="mb-0 py-1 fw-r fs-16">
                     Already registered?
                     <Link className="a-tag-link fw-m fs-16 " to="/login">
@@ -227,7 +227,7 @@ const Signup = ({ changeSlide }) => {
           </div>
         </div>
 
-        <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end">
+        <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end d-none d-sm-block">
           <img src={homePageCircle} alt="circles image" className=" col-8" />
         </div>
       </div>

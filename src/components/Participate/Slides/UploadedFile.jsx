@@ -5,7 +5,7 @@ import "./UploadFile.css";
 
 const UploadedFile = ({ file, index, onDelete }) => {
   return (
-    <div className="col-4 mb-2 px-2">
+    <div className="col-sm-4 col-12 mb-2 px-2">
       <div className="d-flex flex-row align-items-center  file-container  justify-content-between px-1">
         <RiFolderZipFill style={{ color: "#00cfe5" }} />
         <div className="d-flex flex-column justify-content-center py-1">

@@ -1,10 +1,23 @@
 .container-style {
   padding: 10px 0;
+  justify-content: space-between;
 }
 
 .input-style {
-  width: 62px !important;
+  width: 65px !important;
   height: 92px;
+  /* marginRight: 17px; */
+  font-size: 36px;
+  font-weight: 400;
+  border-radius: 0px;
+
+  text-align: center;
+  color: #00cfe5;
+}
+
+.input-style-sm {
+  width: 41px !important;
+  height: 55px;
   /* marginRight: 17px; */
   font-size: 36px;
   font-weight: 400;

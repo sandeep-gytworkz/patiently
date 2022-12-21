@@ -27,18 +27,15 @@
   content: "";
 }
 
-/* .btn-group .btn {
-  background-color: transparent;
-  border: none;
-  color: lightgrey;
-}
-
-.btn-group .btn.active {
-  color: black;
-} */
-
 .form-class {
   height: 100%;
   overflow: auto;
   max-height: 450px;
+}
+
+@media screen and (max-width: 576px) {
+  .form-class {
+    height: 100%;
+    overflow: unset;
+  }
 }

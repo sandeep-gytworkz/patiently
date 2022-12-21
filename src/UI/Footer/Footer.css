@@ -21,3 +21,9 @@
 .a-tag-white {
   color: white;
 }
+
+.footer-sm {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

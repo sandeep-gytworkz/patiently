@@ -3,3 +3,20 @@
   border-radius: 4px;
   min-height: 8rem;
 }
+
+.p-l-3 {
+  padding-left: 3.5rem;
+}
+
+.p-r-2 {
+  padding-right: 2.5rem;
+}
+@media screen and (max-width: 576px) {
+  .p-l-3 {
+    padding-left: 0;
+  }
+
+  .p-r-2 {
+    padding-right: 0;
+  }
+}

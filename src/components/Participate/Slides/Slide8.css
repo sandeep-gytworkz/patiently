@@ -1,0 +1,15 @@
+.records-image {
+  height: 25rem;
+}
+
+@media screen and (max-width: 576px) {
+  .records-image {
+    height: 18rem;
+  }
+  .thanks-div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
