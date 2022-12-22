@@ -99,7 +99,7 @@ const Signup = ({ changeSlide }) => {
                   type="email"
                   className="form-control input-class"
                   id="inputEmail"
-                  placeholder="Enter email ID"
+                  placeholder="mail@website.com"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
@@ -116,7 +116,7 @@ const Signup = ({ changeSlide }) => {
                   type="text"
                   className="form-control input-class"
                   id="contactNumber"
-                  placeholder="Enter phone number"
+                  placeholder="Phone Number"
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value)}
                 />
@@ -144,7 +144,7 @@ const Signup = ({ changeSlide }) => {
                   type="text"
                   className="form-control input-class"
                   id="password"
-                  placeholder="Enter password"
+                  placeholder="Minimum 8 character"
                   value={passwordValue}
                   onChange={(e) => setPasswordValue(e.target.value)}
                 />
@@ -160,7 +160,7 @@ const Signup = ({ changeSlide }) => {
                   type="text"
                   className="form-control input-class"
                   id="confirmPassword"
-                  placeholder="Re-enter password"
+                  placeholder="Minimum 8 character"
                   required
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}

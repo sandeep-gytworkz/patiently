@@ -38,7 +38,7 @@ const Footer = (props) => {
             props.home ? " text-dark" : "text-white"
           }`}
         >
-          Contact us
+          Contact Us
         </Link>
         <span className="mx-2 "> | </span>
         <a

@@ -29,7 +29,7 @@ const LoginPage = () => {
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
                 <div className="py-3 d-flex flex-column col-sm-8 col-10">
-                  <p className="fs-20 fw-m login-underline">Login</p>
+                  <p className="fs-20 fw-m user-login-underline">LOGIN</p>
                   <p className="fs-16 dim-gray fw-l">
                     Log in with details that you entered during your
                     registration
