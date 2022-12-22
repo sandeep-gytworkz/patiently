@@ -41,6 +41,7 @@ const CancelQuestionModal = () => {
                 >
                   Cancel
                 </button>
+
                 <Link
                   className="button-layout button-green mx-3 a-tag-green-btn"
                   to="/signup"

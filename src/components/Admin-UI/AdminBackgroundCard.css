@@ -16,7 +16,7 @@ body {
   position: relative;
   min-height: 100vh;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 ::selection {
   color: var(--white-color);
