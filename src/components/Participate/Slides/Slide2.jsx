@@ -14,7 +14,7 @@ const Slide2 = ({ changeSlide }) => {
         <img src={homeImg} alt="home image" className="h-100" />
       </div>
       <div className="col-6">
-        <h4>Two Factor Authentication</h4>
+        <h4>TWO FACTOR AUTHENTICATION</h4>
         <p>
           Hi John, You have received 6 digit code in your provided email/contact
           number.

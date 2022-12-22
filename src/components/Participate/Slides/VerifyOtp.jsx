@@ -24,8 +24,8 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
               <div className="py-3 d-flex flex-column col-sm-9 col-10">
                 <p className="fs-20 fw-m pink-underline">
                   {isForgotPassword
-                    ? "Verify code"
-                    : "Two Factor Authentication"}
+                    ? "CODE VERIFICATION"
+                    : "TWO FACTOR AUTHENTICATION"}
                 </p>
                 <p className="fs-18 dim-gray fw-r">
                   {isForgotPassword

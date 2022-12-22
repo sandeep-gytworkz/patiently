@@ -29,12 +29,12 @@ const LoginPage = () => {
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
                 <div className="py-3 d-flex flex-column col-sm-8 col-10">
-                  <p className="fs-20 fw-m user-login-underline">LOGIN</p>
+                  <p className="fs-20 fw-m login-underline">LOGIN</p>
                   <p className="fs-16 dim-gray fw-l">
                     Log in with details that you entered during your
                     registration
                   </p>
-                  <label htmlFor="email" className="fs-16 fw-m">
+                  <label htmlFor="email" className="fs-16 fw-m mb-2">
                     Email*
                   </label>
                   <input
@@ -47,7 +47,7 @@ const LoginPage = () => {
                 </div>
 
                 <div className="py-3 d-flex flex-column col-sm-8 col-10">
-                  <label htmlFor="password" className="fs-16 fw-m">
+                  <label htmlFor="password" className="fs-16 fw-m mb-2">
                     Password*
                   </label>
                   <input
@@ -58,7 +58,7 @@ const LoginPage = () => {
                     className="form-control input-class p-2"
                   />
                 </div>
-                <div className="py-2 col-sm-8 col-10 d-flex flex-row justify-content-between ">
+                <div className="py-2 col-sm-8 col-10 d-flex flex-row justify-content-between">
                   <div className="form-check">
                     <input
                       className="form-check-input checkbox-input"

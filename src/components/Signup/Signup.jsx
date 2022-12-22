@@ -79,7 +79,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="text"
-                  className="form-control input-class"
+                  className="form-control input-class rounded-corners"
                   id="fullName"
                   placeholder="Full Name "
                   required
@@ -97,7 +97,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="email"
-                  className="form-control input-class"
+                  className="form-control input-class rounded-corners"
                   id="inputEmail"
                   placeholder="mail@website.com"
                   required
@@ -114,7 +114,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="text"
-                  className="form-control input-class"
+                  className="form-control input-class rounded-corners"
                   id="contactNumber"
                   placeholder="Phone Number"
                   value={phoneNumber}
@@ -142,7 +142,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="text"
-                  className="form-control input-class"
+                  className="form-control input-class rounded-corners"
                   id="password"
                   placeholder="Minimum 8 character"
                   value={passwordValue}
@@ -158,7 +158,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="text"
-                  className="form-control input-class"
+                  className="form-control input-class rounded-corners"
                   id="confirmPassword"
                   placeholder="Minimum 8 character"
                   required
@@ -169,7 +169,7 @@ const Signup = ({ changeSlide }) => {
               <div className="col-sm-10 col-12 form-check justify-content-between my-2 mx-2 ">
                 <input
                   type="checkbox"
-                  className="form-check-input checkbox-input "
+                  className="form-check-input checkbox-input"
                   id="check"
                   required
                   checked={termsState}
@@ -189,7 +189,7 @@ const Signup = ({ changeSlide }) => {
                   }}
                 />
                 <a
-                  className=" fs-14 a-tag-common fw-m"
+                  className="fs-14 a-tag-common fw-m"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModalLong"
                   href="#"
@@ -200,7 +200,7 @@ const Signup = ({ changeSlide }) => {
               <div className="d-flex flex-column px-2 col-sm-10 col-12 mb-2">
                 <button
                   type="submit"
-                  className="button-layout button-green me-3 col-12"
+                  className="button-layout button-green me-3 col-12 rounded-corners"
                   disabled={
                     !(
                       fullName &&

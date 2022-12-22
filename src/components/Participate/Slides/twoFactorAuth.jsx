@@ -16,7 +16,7 @@ const TwoFactorAuth = ({ changeSlide }) => {
         <div className="container-fluid text-left">
           <div className="row content-section">
             <div className="col-6 flex-column align-items-center p-5">
-              <h4>Two Factor Authentication</h4>
+              <h4>TWO FACTOR AUTHENTICATION</h4>
               <p>
                 Hi John, You have received 6 digit code in your provided
                 email/contact number.
