@@ -1,8 +1,8 @@
-.login-underline {
+.admin-login-underline {
   position: relative;
 }
 
-.login-underline::after {
+.admin-login-underline::after {
   position: absolute;
   bottom: -2px;
   left: 0;

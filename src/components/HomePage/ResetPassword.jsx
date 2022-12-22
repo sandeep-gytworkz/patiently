@@ -44,7 +44,7 @@ const ResetPassword = () => {
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
                 <div className="py-3 d-flex flex-column col-sm-8 col-10">
-                  <p className="fs-20 fw-m pink-underline">Reset Password</p>
+                  <p className="fs-20 fw-m pink-underline">RESET PASSWORD</p>
                   <p className="fs-14 dim-gray fw-l">
                     Enter new password to reset your login password
                   </p>

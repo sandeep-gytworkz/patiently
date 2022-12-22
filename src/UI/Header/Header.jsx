@@ -32,7 +32,7 @@ const Header = () => {
           <ul className="navbar-nav d-flex">
             <li className="nav-item px-3">
               <Link className="nav-link fs-28 fw-sb" to="/how-it-works">
-                How it Works
+                How it Works?
               </Link>
             </li>
             <li className="nav-item px-3">
