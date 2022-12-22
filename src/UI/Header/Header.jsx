@@ -12,8 +12,18 @@ const Header = () => {
           className="navbar-brand col-lg-6 col-xs-10 h-100 m-0 px-sm-5 px-3"
           to="/"
         >
-          <img src={patientlyLogo} alt="patiently -logo " height={"120px"} className={'d-none d-sm-block'} />
-          <img src={patientlyLogo} alt="patiently -logo " height={"80px"} className={'d-block d-sm-none'} />
+          <img
+            src={patientlyLogo}
+            alt="patiently -logo "
+            height={"120px"}
+            className={"d-none d-sm-block"}
+          />
+          <img
+            src={patientlyLogo}
+            alt="patiently -logo "
+            height={"80px"}
+            className={"d-block d-sm-none"}
+          />
         </Link>
         <button
           className="navbar-toggler"
