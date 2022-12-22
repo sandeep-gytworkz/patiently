@@ -16,55 +16,37 @@ const DataPrivacy = () => {
       </div>
       <div className="data-privacy-main">
         <div className="data-container">
-          <img
-            src={dataPrivacy1}
-            alt="data-privacy-image"
-            className="data-privacy-image"
-          />
-          <div className="px-4 data-privacy-text-container">
-            <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">
-              De-identification
-            </p>
-            <p className="data-privacy-text-para fs-18 fw-r">
-              All data shared with researchers is de-identified (no names,
-              addresses, phone numbers, etc.) so that the data cannot be
-              connected back to an individual.​
-            </p>
-          </div>
+              <img src={dataPrivacy1} alt="data-privacy-image" className="data-privacy-image" />
+              <div className="px-4 data-privacy-text-container">
+                <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">De-identification</p>
+                <p className="data-privacy-text-para fs-18 fw-r">
+                  All data shared with researchers is de-identified (no names,
+                  addresses, phone numbers, etc.) so that the data cannot be
+                  connected back to an individual.​
+                </p>
+              </div>
         </div>
         <div className="data-container">
-          <img
-            src={dataPrivacy2}
-            alt="data-privacy-image"
-            className="data-privacy-image"
-          />
-          <div className="px-4 data-privacy-text-container">
-            <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">
-              Encryption
-            </p>
-            <p className="data-privacy-text-para fs-18 fw-r">
-              All data shared with researchers is de-identified (no names,
-              addresses, phone numbers, etc.) so that the data cannot be
-              connected back to an individual.​
-            </p>
-          </div>
+              <img src={dataPrivacy2} alt="data-privacy-image" className="data-privacy-image" />
+              <div className="px-4 data-privacy-text-container">
+                <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">Encryption</p>
+                <p className="data-privacy-text-para fs-18 fw-r">
+                  All data shared with researchers is de-identified (no names,
+                  addresses, phone numbers, etc.) so that the data cannot be
+                  connected back to an individual.​
+                </p>
+              </div>
         </div>
         <div className="data-container">
-          <img
-            src={dataPrivacy3}
-            alt="data-privacy-image"
-            className="data-privacy-image"
-          />
-          <div className="px-4 data-privacy-text-container">
-            <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">
-              Confidentiality​
-            </p>
-            <p className="data-privacy-text-para fs-18 fw-r">
-              All data shared with researchers is de-identified (no names,
-              addresses, phone numbers, etc.) so that the data cannot be
-              connected back to an individual.​
-            </p>
-          </div>
+              <img src={dataPrivacy3} alt="data-privacy-image" className="data-privacy-image" />
+              <div className="px-4 data-privacy-text-container">
+                <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">Confidentiality​</p>
+                <p className="data-privacy-text-para fs-18 fw-r">
+                  All data shared with researchers is de-identified (no names,
+                  addresses, phone numbers, etc.) so that the data cannot be
+                  connected back to an individual.​
+                </p>
+              </div>
         </div>
         <div className="footer-container">
           <Footer alignment="justify-content-start" />
