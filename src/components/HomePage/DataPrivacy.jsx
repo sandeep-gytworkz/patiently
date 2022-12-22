@@ -11,42 +11,60 @@ const DataPrivacy = () => {
   return (
     <div className="d-flex flex-column">
       <Header />
-      <div className="col-12 bg-pink px-5 py-4 mb-2 ">
-        <h1 className="p-l-3 fw-sb">Data Privacy</h1>
+      <div className="col-12 bg-pink px-sm-5 px-0 py-4 mb-2 d-flex flex-row justify-content-center ">
+        <h1 className="p-l-3 fw-sb col-sm-12 col-10">Data Privacy</h1>
       </div>
       <div className="data-privacy-main">
         <div className="data-container">
-              <img src={dataPrivacy1} alt="data-privacy-image" className="data-privacy-image" />
-              <div className="px-4 data-privacy-text-container">
-                <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">De-identification</p>
-                <p className="data-privacy-text-para fs-18 fw-r">
-                  All data shared with researchers is de-identified (no names,
-                  addresses, phone numbers, etc.) so that the data cannot be
-                  connected back to an individual.​
-                </p>
-              </div>
+          <img
+            src={dataPrivacy1}
+            alt="data-privacy-image"
+            className="data-privacy-image"
+          />
+          <div className="px-4 data-privacy-text-container">
+            <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">
+              De-identification
+            </p>
+            <p className="data-privacy-text-para fs-18 fw-r">
+              All data shared with researchers is de-identified (no names,
+              addresses, phone numbers, etc.) so that the data cannot be
+              connected back to an individual.​
+            </p>
+          </div>
         </div>
         <div className="data-container">
-              <img src={dataPrivacy2} alt="data-privacy-image" className="data-privacy-image" />
-              <div className="px-4 data-privacy-text-container">
-                <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">Encryption</p>
-                <p className="data-privacy-text-para fs-18 fw-r">
-                  All data shared with researchers is de-identified (no names,
-                  addresses, phone numbers, etc.) so that the data cannot be
-                  connected back to an individual.​
-                </p>
-              </div>
+          <img
+            src={dataPrivacy2}
+            alt="data-privacy-image"
+            className="data-privacy-image"
+          />
+          <div className="px-4 data-privacy-text-container">
+            <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">
+              Encryption
+            </p>
+            <p className="data-privacy-text-para fs-18 fw-r">
+              All data shared with researchers is de-identified (no names,
+              addresses, phone numbers, etc.) so that the data cannot be
+              connected back to an individual.​
+            </p>
+          </div>
         </div>
         <div className="data-container">
-              <img src={dataPrivacy3} alt="data-privacy-image" className="data-privacy-image" />
-              <div className="px-4 data-privacy-text-container">
-                <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">Confidentiality​</p>
-                <p className="data-privacy-text-para fs-18 fw-r">
-                  All data shared with researchers is de-identified (no names,
-                  addresses, phone numbers, etc.) so that the data cannot be
-                  connected back to an individual.​
-                </p>
-              </div>
+          <img
+            src={dataPrivacy3}
+            alt="data-privacy-image"
+            className="data-privacy-image"
+          />
+          <div className="px-4 data-privacy-text-container">
+            <p className="data-privacy-text-header fs-20 fw-sb mb-1 pt-2">
+              Confidentiality​
+            </p>
+            <p className="data-privacy-text-para fs-18 fw-r">
+              All data shared with researchers is de-identified (no names,
+              addresses, phone numbers, etc.) so that the data cannot be
+              connected back to an individual.​
+            </p>
+          </div>
         </div>
         <div className="footer-container">
           <Footer alignment="justify-content-start" />
