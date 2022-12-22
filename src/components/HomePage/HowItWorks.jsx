@@ -14,7 +14,7 @@ const HowItWorks = () => {
       </div>
 
       <div className="d-flex flex-column px-sm-5 ">
-        <div className="p-l-3 p-r-2 col-12 d-flex flex-column align-items-center">
+        <div className="p-l-3 p-r-2 col-12 d-flex flex-column align-items-center ">
           <p className="fs-16 fw-sb very-dark-gray col-sm-12 col-10">
             Getting involved is simple
           </p>
@@ -32,7 +32,7 @@ const HowItWorks = () => {
             dataset is being used to advance research.
           </p>
         </div>
-        <div className="p-l-3 p-r-2 col-12 d-flex flex-row justify-content-center">
+        <div className="p-l-3 p-r-2 col-12 d-flex flex-row justify-content-center justify-content-sm-start">
           <img
             src={howItWorks}
             alt="patiently -logo "
