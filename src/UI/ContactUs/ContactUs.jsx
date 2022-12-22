@@ -10,6 +10,7 @@ const ContactUs = () => {
       <div className="col-12 bg-pink px-sm-5 px-0 py-4 mb-2 d-flex flex-row justify-content-center">
         <h1 className="p-l-3 fw-sb col-sm-12 col-10">Contact Us</h1>
       </div>
+
       <div className="col-12 d-flex flex-row px-sm-5 px-0 flex-wrap justify-content-center">
         <div className="d-flex flex-column p-l-3 p-r-2 col-sm-7 col-10">
           <p className="fs-18 fw-m">
