@@ -1,0 +1,14 @@
+.login-underline {
+  position: relative;
+}
+
+.login-underline::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 86px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #f230bb;
+  content: "";
+}
