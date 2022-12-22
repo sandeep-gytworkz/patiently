@@ -25,6 +25,7 @@ import ParticipantProfile from "./components/Admin-UI/ParticipantProfile";
 import Participants from "./components/Admin-UI/Participants";
 import AccountManagement from "./components/Admin-UI/AccountManagement";
 import "./App.css";
+import AdminLogin from "./components/Admin-UI/AdminLogin";
 
 export const AppContext = createContext();
 // export const DashboardContext = createContext();
@@ -82,6 +83,7 @@ function App() {
         <Route exact path="/participate-now" element={<Participate />} />
         <Route exact path="/data-privacy" element={<DataPrivacy />} />
         <Route exact path="/login" element={<LoginPage />} />
+        <Route exact path="/admin-login" element={<AdminLogin />} />
         <Route exact path="/dashboard" element={<Dashboard />} />
         <Route exact path="/records" element={<Records />} />
         <Route
