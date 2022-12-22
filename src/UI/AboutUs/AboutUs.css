@@ -1,0 +1,15 @@
+@media screen and (max-width: 576px) {
+  .custom-img-size {
+    margin-top: 4rem;
+    height: 140px;
+    width: 50px;
+  }
+  .custom-content-fit {
+    margin-left: -90px;
+    margin-right: 1rem;
+    text-align: justify;
+  }
+  .text-align-justify {
+    text-align: justify;
+  }
+}
