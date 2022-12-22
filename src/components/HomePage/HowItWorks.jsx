@@ -9,9 +9,10 @@ const HowItWorks = () => {
   return (
     <div className="d-flex flex-column">
       <Header />
-      <div className="col-12 bg-blue px-sm-5 px-0  py-4  mb-2 d-flex flex-row justify-content-center ">
+      <div className="col-12 bg-blue px-sm-5 px-0 py-4 mb-2 d-flex flex-row justify-content-center ">
         <h1 className="p-l-3 fw-sb col-sm-12 col-10">How it Works</h1>
       </div>
+
       <div className="d-flex flex-column px-sm-5 ">
         <div className="p-l-3 p-r-2 col-12 d-flex flex-column align-items-center">
           <p className="fs-16 fw-sb very-dark-gray col-sm-12 col-10">
