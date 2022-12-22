@@ -7,7 +7,7 @@ const Question3 = (props) => {
     <WhiteCard>
       <div className="col-sm-8 col-10 d-flex flex-column align-items-center justify-content-evenly">
         <div className="py-2">
-          <h2 className="color-primary fs-24 fw-sb mb-2">QUESTION 3 </h2>
+          <h2 className="color-primary fs-24 fw-sb mb-2">Question 3 </h2>
         </div>
         <div className="py-2">
           <p className="fs-24 fw-r text-center">
