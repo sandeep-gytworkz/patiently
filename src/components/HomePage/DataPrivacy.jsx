@@ -15,6 +15,7 @@ const DataPrivacy = () => {
         <h1 className="p-l-3 fw-sb col-sm-12 col-10">Data Privacy</h1>
       </div>
       <div className="data-privacy-main">
+        <div className="upper-container">
         <div className="data-container">
           <img
             src={dataPrivacy1}
@@ -66,7 +67,8 @@ const DataPrivacy = () => {
             </p>
           </div>
         </div>
-        <div className="footer-container">
+        </div>
+        <div className="footer-container p-l-3 p-r-2">
           <Footer alignment="justify-content-start" />
         </div>
       </div>
