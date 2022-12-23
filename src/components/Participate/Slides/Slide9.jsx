@@ -4,8 +4,45 @@ import "./slide9.css";
 import { Link } from "react-router-dom";
 import personImg from "../../../assets/images/personImg.png";
 import { FileUploader } from "react-drag-drop-files";
+import styled from "styled-components";
+import { BsBell } from "react-icons/bs";
 
 const fileTypes = ["JPG", "PNG", "GIF"];
+
+const MainContainer = styled.div`
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+`
+
+const RecordsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+`
+
+const RecordsCard = styled.div`
+  background-color: white;
+  box-shadow: 0px 4px 6px #0000000f;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  height: 320px;
+  width: 250px;
+`
+
+const UploadContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+`
+
+const UploadCard = styled.div`
+  border: 1px solid red;
+  height: 320px;
+  width: 250px;
+  padding: 0 10px;
+`
 
 const Slide9 = () => {
   const [file, setFile] = useState(null);
@@ -26,6 +63,9 @@ const Slide9 = () => {
               />
             </Link>
           </div>
+          <div className="d-flex flex-row align-items-center">
+            <BsBell color="grey" className="me-3" role="button"/>
+          <div>
           <button
             className="navbar-toggler"
             type="button"
@@ -75,24 +115,31 @@ const Slide9 = () => {
               </ul>
             </div>
           </div>
+          </div>
+          </div>
         </div>
       </nav>
       <div className="pt-3 px-5">
         <p className="color-primary fs-36 fw-bold mb-0">Welcome John Doe</p>
-        <p className="color-primary"> You have 0 records</p>
+        <p className="color-primary fs-14"> You have 0 records</p>
       </div>
-      <div className="d-flex flex-row col-12 px-5">
-        <div className="col-2 record-container me-5 ">
-          <p className="col-12 text-center my-5">No Records</p>
-        </div>
-        <div className="col-2 file-uploader">
+      <MainContainer className="d-flex flex-row col-12 px-5">
+        <RecordsContainer>
+          <p className="fs-18 fw-semibold">My Records</p>
+          <RecordsCard className="col-2">
+            <p className="col-12 text-center my-5">No Records</p>
+          </RecordsCard>
+        </RecordsContainer>
+        <UploadContainer className="col-2">
+          <p className="fs-18 fw-semibold">Upload More</p>
           <FileUploader
+            className="col-2"
             handleChange={handleChange}
             name="file"
             types={fileTypes}
             classes="col-12"
           >
-            <div className="c-12 file-upload-label d-flex justify-content-center  ">
+            <UploadCard className="col-12 file-upload-label d-flex justify-content-center px-2 align-items-center">
               <div className="file-upload-label-main">
                 <p className="color-primary fs-16 fw-bold my-0 pt-5">
                   Drag here to upload
@@ -105,15 +152,15 @@ const Slide9 = () => {
                 </div>
                 <div className="mt-1">
                   <p className="fs-12 pt-3 ps-3">
-                    Supported formats are PDF, JPG, Word Document , Maximum file
+                    Supported formats are PDF, JPG, Word Document, Maximum file
                     size 10 MB
                   </p>
                 </div>
               </div>
-            </div>
+            </UploadCard>
           </FileUploader>
-        </div>
-      </div>
+        </UploadContainer>
+      </MainContainer>
     </div>
   );
 };
