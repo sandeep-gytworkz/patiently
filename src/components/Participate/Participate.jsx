@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./Participate.css";
-
+import { Link } from "react-router-dom";
 import Header from "../../UI/Header/Header";
 import Signup from "../Signup/Signup";
 import VerifyOtp from "./Slides/VerifyOtp";
@@ -12,6 +12,7 @@ import Question3 from "./Slides/Question3";
 import Question4 from "./Slides/Question4";
 import UploadRecords from "./Slides/UploadRecords";
 import Slide8 from "./Slides/Slide8";
+import patientlyLogo from "../../assets/images/patientlyLogo.png";
 
 const Participate = () => {
   const [slide, setSlide] = useState(1);
@@ -40,8 +41,14 @@ const Participate = () => {
             backgroundColor: "#FAFCFC",
           }}
         >
-          <Header hideRight={true} />
-
+          <div className="d-sm-none d-block">
+            <Header hideRight={true} />
+          </div>
+          <div className="d-sm-block d-none offset-1">
+            <Link to="/">
+              <img src={patientlyLogo} alt="patiently-logo" />
+            </Link>
+          </div>
           {slide === 3 ||
           slide === 4 ||
           slide === 5 ||
@@ -113,7 +120,7 @@ const Participate = () => {
               }}
             >
               <h3 className="text-center col-12 pt-3 fw-m mb-0">
-                Upload Records
+                {slide === 9 ? "Done" : "Upload Records"}
               </h3>
               <div
                 className="btn-group mx-auto"

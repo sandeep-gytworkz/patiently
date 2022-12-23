@@ -6,6 +6,7 @@ import Header from "../../../UI/Header/Header";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Footer from "../../../UI/Footer/Footer";
 import "./VerifyOtp.css";
+import rightWhiteArrow from "../../../assets/images/rightWhiteArrow.svg";
 
 const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
   const [otp, setOtp] = useState("");
@@ -94,7 +95,7 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                       {isForgotPassword
                         ? "Verify code"
                         : "Continue to Questions"}
-                      &nbsp; <AiOutlineArrowRight />
+                      &nbsp; <img src={rightWhiteArrow} alt="right-arrow" />
                     </button>
                   </div>
                 </div>

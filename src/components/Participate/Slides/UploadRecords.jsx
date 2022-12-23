@@ -46,13 +46,14 @@ const UploadRecords = ({ changeSlide }) => {
             onSizeError={(file) => {
               alert("File size should be less than 10mb");
             }}
+            multiple={true}
           >
             <div className="c-12 file-upload-label d-flex justify-content-center  ">
               <div className="file-upload-label-main">
                 <p className="color-primary fs-16 fw-m my-0">
                   Drag here to upload
                 </p>
-                <p className="color-primary fs-16 fw-m my-0">or</p>
+                <p className="color-primary fs-16 fw-m mt-0  ">or</p>
                 <button className="button-browse px-5 py-2 ">Browse</button>
                 <p className="fs-12 mt-3 mb-0 fw-m text-center">
                   Supported formats are PDF, JPG, Word Document , Maximum file
@@ -72,7 +73,7 @@ const UploadRecords = ({ changeSlide }) => {
         {files.length > 0 && (
           <div className="col-12 d-flex flex-column mb-2">
             <p className="mb-1 fs-16 fw-m">Uploaded Files</p>
-            <div className="col-12 d-flex flex-row overflow-auto flex-wrap">
+            <div className="col-12 d-flex flex-row overflow-auto flex-wrap flex-sm-nowrap">
               {files.map((item, index) => (
                 <UploadedFile file={item} onDelete={deleteFile} index={index} />
               ))}

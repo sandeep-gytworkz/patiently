@@ -11,6 +11,13 @@
 .p-r-2 {
   padding-right: 2.5rem;
 }
+
+.email-blue {
+  color: #1681f0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 576px) {
   .p-l-3 {
     padding-left: 0;
@@ -18,5 +25,11 @@
 
   .p-r-2 {
     padding-right: 0;
+  }
+
+  .email-blue {
+    color: #234bf5;
+    font-size: 14px;
+    font-weight: 500;
   }
 }

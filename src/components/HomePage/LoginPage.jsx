@@ -7,6 +7,7 @@ import Footer from "../../UI/Footer/Footer";
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../../App";
 import "./LoginPage.css";
+import rightWhiteArrow from "../../assets/images/rightWhiteArrow.svg";
 
 const LoginPage = () => {
   const navigate = useNavigate();
@@ -29,7 +30,7 @@ const LoginPage = () => {
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
                 <div className="py-3 d-flex flex-column col-sm-8 col-10">
-                  <p className="fs-20 fw-m login-underline">LOGIN</p>
+                  <p className="fs-20 fw-m user-login-underline">LOGIN</p>
                   <p className="fs-16 dim-gray fw-l">
                     Log in with details that you entered during your
                     registration
@@ -84,10 +85,10 @@ const LoginPage = () => {
                 </div>
                 <div className="py-1 col-sm-8  col-10">
                   <button
-                    className="button-green button-layout w-100"
+                    className="button-green button-layout w-100 fs-18 fw-m"
                     aria-current="page"
                   >
-                    Login &nbsp; <AiOutlineArrowRight />
+                    Login &nbsp; <img src={rightWhiteArrow} alt="right-arrow" />
                   </button>
                 </div>
                 <div className="py-1 col-sm-8  col-10">
@@ -95,7 +96,7 @@ const LoginPage = () => {
                     <p className="mb-0 py-2 fs-16 fw-r">Not Registered?</p>
                     <Link
                       to="/participate-now "
-                      className="button-secondary fs-16 fw-m px-0"
+                      className="a-tag-link fs-16 fw-m px-0"
                     >
                       &nbsp; Create an Account
                     </Link>

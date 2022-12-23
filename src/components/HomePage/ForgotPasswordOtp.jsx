@@ -5,7 +5,8 @@ import "../../styles/common/global.css";
 import { useNavigate } from "react-router-dom";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Footer from "../../UI/Footer/Footer";
-import './ForgotPasswordOtp.css'
+import "./ForgotPasswordOtp.css";
+import rightWhiteArrow from "../../assets/images/rightWhiteArrow.svg";
 
 const ForgotPasswordOtp = () => {
   const navigate = useNavigate();
@@ -26,7 +27,9 @@ const ForgotPasswordOtp = () => {
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
                 <div className=" d-flex flex-column col-sm-8 col-10">
-                  <p className="fs-20 fw-m forgot-password-underline">FORGOT PASSWORD</p>
+                  <p className="fs-20 fw-m forgot-password-underline">
+                    FORGOT PASSWORD
+                  </p>
                   <p className="fs-18 dim-gray fw-r">
                     Provide you account’s email for which you want to reset your
                     password
@@ -54,7 +57,8 @@ const ForgotPasswordOtp = () => {
                     className="button-green button-layout w-100"
                     aria-current="page"
                   >
-                    Send OTP &nbsp; <AiOutlineArrowRight />
+                    Send OTP &nbsp;
+                    <img src={rightWhiteArrow} alt="right-arrow" />
                   </button>
                 </div>
                 <Footer alignment="justify-content-center" />

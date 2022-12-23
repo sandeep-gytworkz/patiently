@@ -43,8 +43,8 @@ const ContactUs = () => {
                 className="form-select selection-form"
                 aria-label="Default select example"
               >
-                <option selected value="I have a question about participating">
-                  I have a question about participating
+                <option selected value="" diabled hidden>
+                  Select your question
                 </option>
 
                 <option value=" I no longer want to participate">
@@ -60,16 +60,24 @@ const ContactUs = () => {
               </select>
             </div>
 
-            <textarea className="col-12 msg-div my-2 " placeholder="Message" />
-            <div className="d-flex flex-row justify-content-end my-2">
-              <button className="button-layout button-green">Submit</button>
+            <textarea
+              className="col-12 msg-div my-2 p-2"
+              placeholder="Message"
+            />
+            <div className="d-flex flex-row justify-content-sm-end justify-content-center my-2 col-12">
+              <button className="button-layout button-green col-sm-4 col-10">
+                Submit
+              </button>
             </div>
           </form>
         </div>
         <div className="col-sm-5 col-12 d-flex flex-row justify-content-center mt-sm-0 mt-3">
-          <div className="col-sm-12 col-10">
-            <p className="fs-18 fw-m">Contact Email</p>
-            <a>info@patientlyhd.com</a>
+          <div className="col-sm-12 col-10 d-flex flex-sm-column flex-row justify-content-center justify-content-sm-start">
+            <p className="fs-18 fw-m">
+              Contact Email
+              <span className="d-inline d-sm-none">&nbsp;:&nbsp;</span>
+            </p>
+            <p className="email-blue">info@patientlyhd.com</p>
           </div>
         </div>
       </div>

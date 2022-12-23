@@ -8,7 +8,7 @@ const BackgroundCard = (props) => {
       className="d-flex flex-column "
       style={{ width: "100vw", height: "100vh" }}
     >
-      <Header hideRight={true} />
+      {/* <Header hideRight={true} /> */}
       <div
         className="d-flex justify-content-center align-items-center"
         style={{ height: "80%", backgroundColor: "#F8FEFB" }}

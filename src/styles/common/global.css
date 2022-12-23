@@ -172,12 +172,12 @@
   color: #04d976;
 }
 .a-tag-link {
-  color: #04d976;
+  color: #0fc6d9;
   text-decoration: none;
 }
 
 .a-tag-link:hover {
-  color: #04d976;
+  color: #0fc6d9;
 }
 
 .a-tag-white-btn {
@@ -405,6 +405,10 @@ input.form-control:focus {
 
   .fs-24 {
     font-size: 16px;
+  }
+
+  .fs-18 {
+    font-size: 14px;
   }
 
   .radio-btn {
