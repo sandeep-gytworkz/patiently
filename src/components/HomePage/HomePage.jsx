@@ -9,6 +9,7 @@ import "../../styles/common/global.css";
 import arrow from "../../assets/images/arrow.svg";
 import { Link } from "react-router-dom";
 import { BsArrowRight } from "react-icons/bs";
+import rightBlackArrow from "../../assets/images/rightBlackArrow.svg";
 
 const Homepage = () => {
   const [cookieState, setCookieState] = useState(false);
@@ -41,10 +42,10 @@ const Homepage = () => {
             </p>
             <Link
               to="/participate-now "
-              className="button-layout a-tag-white-btn "
+              className="button-layout a-tag-white-btn fs-18 fw-sb "
             >
               Participate Now &nbsp;
-              <BsArrowRight />
+              <img src={rightBlackArrow} alt="right-arrow" />
             </Link>
           </div>
         </div>
@@ -59,39 +60,43 @@ const Homepage = () => {
       </div>
 
       {!cookieState && (
-        <div className=" cookies-banner">
-          <div className="  cookies-banner-main d-flex  flex-row align-items-center justify-content-between">
+        <div className=" cookies-banner col-12">
+          <div className="  cookies-banner-main d-flex  flex-column offset-sm-1  ">
             <div>
               <p>We value your privacy</p>
-              <p>
+              <p className="text-align-justify">
                 We use cookies to enhance your browsing experience, serve
-                personalized ads or content, and analyze our traffic.
+                personalized ads or content, and analyze our traffic. By
+                clicking “Accept All”, you consent to our use of cookies.
               </p>
-              <p>
-                By clicking “Accept All”, you consent to our use of cookies.
-                Read More
+              <p className="mb-sm-0 mb-2">
+                <Link className="a-tag-white" to="/">
+                  Read More
+                </Link>
               </p>
             </div>
-            <div>
-              {/* <button className="button-layout button-outlined fs-16 me-2">
-                Manage
-              </button> */}
-              <button
-                className="button-layout button-outlined fs-16 me-2"
-                onClick={() => {
-                  setCookie(false);
-                }}
-              >
-                Reject All
-              </button>
-              <button
-                className="button-layout button-contained fs-16"
-                onClick={() => {
-                  setCookie(true);
-                }}
-              >
-                Accept All
-              </button>
+            <div className="d-flex flex-row justify-content-sm-end justify-content-center pe-sm-5 col-12 ">
+              <div className="col-sm-6 col-12 flex-wrap justify-content-sm-end d-flex flex-row">
+                <button className="button-layout cookie-reject-button fs-16 me-sm-2  order-1 mb-2 col-12 col-sm-3">
+                  Manage
+                </button>
+                <button
+                  className="button-layout cookie-reject-button fs-16 me-sm-2 order-2 mb-2 col-12 col-sm-3"
+                  onClick={() => {
+                    setCookie(false);
+                  }}
+                >
+                  Reject All
+                </button>
+                <button
+                  className="button-layout cookie-accept-button fs-16 order-3 col-12 col-sm-3"
+                  onClick={() => {
+                    setCookie(true);
+                  }}
+                >
+                  Accept All
+                </button>
+              </div>
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@
 .form-class {
   height: 100%;
   overflow: auto;
-  max-height: 450px;
+  max-height: 465px;
 }
 
 @media screen and (max-width: 576px) {
