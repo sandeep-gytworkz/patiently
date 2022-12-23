@@ -4,13 +4,24 @@ import aboutUsImg from "../../assets/images/aboutUsImg.png";
 import "../../styles/common/global.css";
 import Footer from "../Footer/Footer";
 import "./AboutUs.css";
+import whiteLeftArrow from "../../assets/images/whiteLeftArrow.svg";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
     <div className="d-flex flex-column">
-      <Header />
+      <div className="d-none d-sm-block">
+        <Header />
+      </div>
       <div className="col-12 bg-blue px-sm-5 px-0 py-4 mb-2 d-flex flex-row justify-content-center ">
-        <h1 className="p-l-3 fw-sb col-sm-12 col-10">About</h1>
+        <h1 className="p-l-3 fw-sb col-sm-12 col-10">
+          <span className="d-inline d-sm-none">
+            <Link to="/">
+              <img src={whiteLeftArrow} alt="back-arrow" className="me-3" />
+            </Link>
+          </span>
+          About
+        </h1>
       </div>
       <div className="d-flex flex-column px-sm-5 col-12 ">
         <div className=" d-flex flex-row justify-content-center justify-content-sm-start col-12">
@@ -33,7 +44,7 @@ const AboutUs = () => {
                 className="w-100 custom-img-size"
               />
             </div>
-            <div className="col-sm-9 col-6 ps-sm-5 ps-1">
+            <div className="col-sm-8 col-6 ps-sm-0 ps-1 offset-sm-1">
               <p className="fs-22 fw-sb mb-1">Patient-centricity</p>
               <p className="fs-18 fw-r text-align-justify ">
                 patients know their healthcare journey better than anyone. We
