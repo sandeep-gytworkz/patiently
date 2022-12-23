@@ -79,7 +79,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="text"
-                  className="form-control input-class rounded-corners"
+                  className="form-control input-class"
                   id="fullName"
                   placeholder="Full Name "
                   required
@@ -97,7 +97,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="email"
-                  className="form-control input-class rounded-corners"
+                  className="form-control input-class"
                   id="inputEmail"
                   placeholder="mail@website.com"
                   required
@@ -114,7 +114,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="text"
-                  className="form-control input-class rounded-corners"
+                  className="form-control input-class"
                   id="contactNumber"
                   placeholder="Phone Number"
                   value={phoneNumber}
@@ -142,7 +142,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="text"
-                  className="form-control input-class rounded-corners"
+                  className="form-control input-class"
                   id="password"
                   placeholder="Minimum 8 character"
                   value={passwordValue}
@@ -158,7 +158,7 @@ const Signup = ({ changeSlide }) => {
                 </label>
                 <input
                   type="text"
-                  className="form-control input-class rounded-corners"
+                  className="form-control input-class"
                   id="confirmPassword"
                   placeholder="Minimum 8 character"
                   required
@@ -200,7 +200,7 @@ const Signup = ({ changeSlide }) => {
               <div className="d-flex flex-column px-2 col-sm-10 col-12 mb-2">
                 <button
                   type="submit"
-                  className="button-layout button-green me-3 col-12 rounded-corners"
+                  className="button-layout button-green me-3 col-12"
                   disabled={
                     !(
                       fullName &&
