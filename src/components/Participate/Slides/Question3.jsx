@@ -52,7 +52,9 @@ const Question3 = (props) => {
             className="form-select selection-form"
             aria-label="Default select example"
           >
-            <option selected>Select</option>
+            <option selected hidden>
+              Select
+            </option>
             <option value=" 9 Meters Biopharma/Larazotide">
               9 Meters Biopharma/Larazotide
             </option>
