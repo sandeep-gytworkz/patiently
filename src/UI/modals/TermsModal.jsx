@@ -380,8 +380,7 @@ const TermsModal = (props) => {
               <button
                 type="button"
                 className={
-                  " button-secondary btn-accept px-5 " +
-                  (reachedBottom ? "active" : "")
+                  "  btn-accept px-5 " + (reachedBottom ? "active" : "")
                 }
                 data-bs-dismiss="modal"
                 onClick={(e) => checkTerms(e)}

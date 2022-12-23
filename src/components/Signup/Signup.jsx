@@ -9,6 +9,8 @@ import Header from "../../UI/Header/Header";
 import Footer from "../../UI/Footer/Footer";
 import { BsArrowRight } from "react-icons/bs";
 import "./Signup.css";
+import rightWhiteArrow from "../../assets/images/rightWhiteArrow.svg";
+import greyRightArrow from "../../assets/images/greyRightArrow.svg";
 
 const Signup = ({ changeSlide }) => {
   const [termsState, setTermsState] = useState(false);
@@ -189,7 +191,7 @@ const Signup = ({ changeSlide }) => {
                   }}
                 />
                 <a
-                  className="fs-14 a-tag-common fw-m"
+                  className="fs-16 a-tag-link fw-m"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModalLong"
                   href="#"
@@ -200,7 +202,7 @@ const Signup = ({ changeSlide }) => {
               <div className="d-flex flex-column px-2 col-sm-10 col-12 mb-2">
                 <button
                   type="submit"
-                  className="button-layout button-green me-3 col-12"
+                  className="button-layout button-green me-3 col-12 fs-18 fw-m button-signUp"
                   disabled={
                     !(
                       fullName &&
@@ -211,7 +213,8 @@ const Signup = ({ changeSlide }) => {
                     )
                   }
                 >
-                  Sign Up &nbsp; <BsArrowRight />
+                  Sign Up &nbsp;
+                  <img src={rightWhiteArrow} alt="right-arrow" />
                 </button>
                 <div className="text-center col-12">
                   <p className="mb-0 py-1 fw-r fs-16">
