@@ -55,7 +55,7 @@ const UploadRecords = ({ changeSlide }) => {
                 </p>
                 <p className="color-primary fs-16 fw-m mt-0  ">or</p>
                 <button className="button-browse px-5 py-2 ">Browse</button>
-                <p className="fs-12 mt-3 mb-0 fw-m text-center">
+                <p className="fs-12 mt-3 mb-0 fw-m text-center very-dark-gray">
                   Supported formats are PDF, JPG, Word Document , Maximum file
                   size 10 MB
                 </p>

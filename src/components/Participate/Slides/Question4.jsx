@@ -72,7 +72,7 @@ const Question4 = (props) => {
               props.changeSlide(8);
             }}
           >
-            Next
+            Continue
           </button>
         </div>
       </div>
