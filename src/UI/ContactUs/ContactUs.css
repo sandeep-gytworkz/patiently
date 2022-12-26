@@ -19,6 +19,17 @@
   text-decoration: none;
 }
 
+.contactUs-class:focus {
+  box-shadow: none;
+  border: 1px solid #0fc6d9;
+  outline: none;
+}
+
+.textarea-class:focus {
+  border: 1px solid #0fc6d9;
+  outline: none;
+}
+
 @media screen and (max-width: 576px) {
   .p-l-3 {
     padding-left: 0;

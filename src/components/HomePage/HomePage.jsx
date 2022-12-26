@@ -32,10 +32,10 @@ const Homepage = () => {
       <div className="bg-green row pt-sm-4 pt-3 h-100">
         <div className=" col-xs-12 col-sm-6 offset-sm-1 py-sm-5 ps-sm-1 pe-sm-5 py-3">
           <div className="px-4 px-sm-0 mb-5 mb-sm-0 ">
-            <p className="fs-64 fw-sb heading-shadow mb-sm-2 mb-4">
+            <p className="fs-64 fw-sb heading-shadow mb-sm-2 mb-4 lh-mainHeading">
               Bringing the Patient Journey to Life
             </p>
-            <p className="fs-32 fw-m mb-sm-4 mb-5">
+            <p className="fs-32 fw-m mb-sm-4 mb-5 lh-subHeading">
               Your celiac health journey is unique, but you are not alone. Join
               a community of fellow celiac patients, share your experience, be
               part of the solution.
@@ -44,8 +44,8 @@ const Homepage = () => {
               to="/participate-now "
               className="button-layout a-tag-white-btn fs-18 fw-sb "
             >
-              Participate Now &nbsp;
-              <img src={rightBlackArrow} alt="right-arrow" />
+              Participate Now
+              <img src={rightBlackArrow} alt="right-arrow" className="ps-4" />
             </Link>
           </div>
         </div>

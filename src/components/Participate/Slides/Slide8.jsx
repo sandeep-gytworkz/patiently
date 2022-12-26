@@ -31,7 +31,7 @@ const Slide8 = () => {
                 .
               </p>
             </div>
-            <div className="pt-sm-5 pt-2 mb-5 col-10">
+            <div className="pt-sm-0 pt-2 mb-5 col-10">
               <Link
                 className="button-green button-layout a-tag-common col-sm-4 col-12
             "

@@ -299,6 +299,10 @@
   background-color: #00cfe5;
   border-color: #00cfe5;
   box-shadow: none;
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
 }
 
 .participants-btn {
@@ -383,6 +387,10 @@
   background-color: transparent;
   border-radius: 0;
   height: 48px;
+}
+
+.input-class:focus {
+  color: #0fc6d9;
 }
 
 input.form-control:focus {

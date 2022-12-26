@@ -22,12 +22,12 @@ const ContactUs = () => {
               <input
                 placeholder="First Name"
                 type="text"
-                className="px-2 my-2 col-sm-5 col-12 py-1 input-class"
+                className="px-2 my-2 col-sm-5 col-12 py-1 input-class contactUs-class"
               />
               <input
                 placeholder="Last Name"
                 type="text"
-                className="px-2  my-2 col-sm-5 col-12 py-1 input-class "
+                className="px-2  my-2 col-sm-5 col-12 py-1 input-class contactUs-class "
               />
             </div>
             <div>
@@ -61,7 +61,7 @@ const ContactUs = () => {
             </div>
 
             <textarea
-              className="col-12 msg-div my-2 p-2"
+              className="col-12 msg-div my-2 p-2 textarea-class"
               placeholder="Message"
             />
             <div className="d-flex flex-row justify-content-sm-end justify-content-center my-2 col-12">

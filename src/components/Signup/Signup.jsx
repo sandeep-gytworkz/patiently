@@ -64,7 +64,7 @@ const Signup = ({ changeSlide }) => {
           <p className="color-primary  px-2  my-4 fw-m fs-20 signup-underline">
             SIGN UP
           </p>
-          <div className="d-flex flex-column align-items-center form-class">
+          <div className="d-flex flex-column align-items-center form-class ">
             <form
               onSubmit={(event) => {
                 event.preventDefault();
