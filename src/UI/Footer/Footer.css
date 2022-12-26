@@ -9,6 +9,10 @@
   bottom: 5px;
 }
 
+.footer .line-class {
+  color: #1681f034;
+}
+
 .footer-home {
   /* width: 50%; */
   background-color: transparent;
@@ -16,6 +20,10 @@
   padding-bottom: 4px;
   position: absolute;
   bottom: 5px;
+}
+
+.footer-home .line-class {
+  color: white;
 }
 
 .a-tag-white {
