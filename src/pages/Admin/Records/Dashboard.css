@@ -1,0 +1,11 @@
+.records-card {
+  min-height: 120px;
+  background-color: white;
+}
+
+.selection-menu {
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000000;
+}

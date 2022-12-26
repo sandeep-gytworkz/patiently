@@ -8,3 +8,10 @@
         participants: [],
         isLoading: false
     };
+
+    export const initRegState = {
+        firstName: "",
+        lastName: "",
+        email: "",
+        phoneNumber: "",
+    }

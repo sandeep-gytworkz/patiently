@@ -10,11 +10,15 @@ export const HttpMethod = {
 };
 
 const ApiRoutes = {
-  Patient: {
-    PatientDetails: {
+  Particpant: {
+    CreateParticipant: {
+      Endpoint: '/createParticipant',
+      Method: HttpMethod.Post
+    },
+    ParticipantDetails: {
       Endpoint: '',
       Method: HttpMethod.Post
-    }
+    },
   },
   Admin: {
     DashboardList: {
