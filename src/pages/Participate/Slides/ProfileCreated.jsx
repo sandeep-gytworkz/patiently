@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import checkListImg from "../../../assets/images/checkListImg.png";
 import WhiteCard from "../../../components/Card/WhiteCard";
-import "./Slide8.css";
+import "./ProfileCreated.css";
 
 const Slide8 = () => {
   return (

@@ -8,7 +8,7 @@ import LoginPage from "./pages/Login/Login";
 
 import Participate from "./pages/Participate/Participate";
 import Signup from "./pages/SignUp/Signup";
-import Slide9 from "./pages/Participate/Slides/Slide9";
+import Slide9 from "./pages/Profile/UserProfile";
 
 import VerifyOtp from "./pages/Login/VerifyOtp/VerifyOtp";
 import ResetPassword from "./pages/Login/ResetPassword/ResetPassword";

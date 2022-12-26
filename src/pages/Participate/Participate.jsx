@@ -11,7 +11,7 @@ import Question2 from "./Slides/Question2";
 import Question3 from "./Slides/Question3";
 import Question4 from "./Slides/Question4";
 import UploadRecords from "./Slides/UploadRecords";
-import Slide8 from "./Slides/Slide8";
+import ProfileCreated from "./Slides/ProfileCreated";
 import patientlyLogo from "../../assets/images/patientlyLogo.png";
 
 const Participate = () => {
@@ -153,7 +153,7 @@ const Participate = () => {
             {slide === 6 && <Question3 changeSlide={slideChangeHandler} />}
             {slide === 7 && <Question4 changeSlide={slideChangeHandler} />}
             {slide === 8 && <UploadRecords changeSlide={slideChangeHandler} />}
-            {slide === 9 && <Slide8 />}
+            {slide === 9 && <ProfileCreated />}
           </div>
         </div>
       )}

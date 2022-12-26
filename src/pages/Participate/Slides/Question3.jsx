@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import WhiteCard from "../../../components/Card/WhiteCard";
-import "./Question3.css";
 
 const Question3 = (props) => {
   return (

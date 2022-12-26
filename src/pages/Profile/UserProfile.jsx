@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import patientlyLogo from "../../../assets/images/patientlyLogo.png";
-import "./slide9.css";
+import patientlyLogo from "../../assets/images/patientlyLogo.png";
+import "./UserProfile.css";
 import { Link } from "react-router-dom";
-import personImg from "../../../assets/images/personImg.png";
+import personImg from "../../assets/images/personImg.png";
 import { FileUploader } from "react-drag-drop-files";
 import styled from "styled-components";
 import { BsBell } from "react-icons/bs";
@@ -38,7 +38,6 @@ const UploadContainer = styled.div`
 `
 
 const UploadCard = styled.div`
-  border: 1px solid red;
   height: 320px;
   width: 250px;
   padding: 0 10px;
@@ -106,9 +105,9 @@ const Slide9 = () => {
                     aria-labelledby="navbarDropdown"
                   >
                     <li>
-                      <a className="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="/">
                         Log out
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
