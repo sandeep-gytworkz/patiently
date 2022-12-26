@@ -47,14 +47,13 @@ const Question3 = (props) => {
             </label>
           </div>
         </div>
-        <div className="col-sm-9 col-12  ">
+        <div className="col-sm-9 col-12">
+          <p className="mb-1 fw-semibold">Select celiac disease</p>
           <select
             className="form-select selection-form"
             aria-label="Default select example"
           >
-            <option selected hidden>
-              Select
-            </option>
+            <option disabled selected hidden>Select</option>
             <option value=" 9 Meters Biopharma/Larazotide">
               9 Meters Biopharma/Larazotide
             </option>

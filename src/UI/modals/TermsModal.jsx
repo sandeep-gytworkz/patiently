@@ -34,9 +34,9 @@ const TermsModal = (props) => {
               <div className="col-8">
                 <h6 className="modal-title" id="exampleModalLongTitle">
                   {/* <img src={patientlyLogo} alt="logo" height="20" width="20" /> */}
-                  &nbsp; TERMS OF SERVICE AGREEMENT
+                  &nbsp; Terms & Conditions
                 </h6>
-                <p className="m-0">
+                <p className="modal-subtitle ms-1 mb-0">
                   &nbsp; Please scroll till the end of the page to accept all
                   terms and conditions
                 </p>
@@ -372,7 +372,7 @@ const TermsModal = (props) => {
             <div className="modal-footer">
               <button
                 type="button"
-                className=" button-layout btn-decline px-5"
+                className="button-layout btn-decline px-5"
                 data-bs-dismiss="modal"
               >
                 Decline
@@ -380,7 +380,8 @@ const TermsModal = (props) => {
               <button
                 type="button"
                 className={
-                  "  btn-accept px-5 " + (reachedBottom ? "active" : "")
+                  "btn-accept px-5 " +
+                  (reachedBottom ? "active" : "")
                 }
                 data-bs-dismiss="modal"
                 onClick={(e) => checkTerms(e)}
