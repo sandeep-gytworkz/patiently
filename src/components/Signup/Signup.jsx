@@ -214,7 +214,15 @@ const Signup = ({ changeSlide }) => {
                   }
                 >
                   Sign Up &nbsp;
-                  <img src={rightWhiteArrow} alt="right-arrow" />
+                  {fullName &&
+                  email &&
+                  phoneNumber &&
+                  passwordValue &&
+                  confirmPassword ? (
+                    <img src={rightWhiteArrow} alt="right-arrow" />
+                  ) : (
+                    <img src={greyRightArrow} alt="right-arrow" />
+                  )}
                 </button>
                 <div className="text-center col-12">
                   <p className="mb-0 py-1 fw-r fs-16">

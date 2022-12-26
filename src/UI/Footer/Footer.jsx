@@ -18,7 +18,7 @@ const Footer = (props) => {
         >
           Contact Us
         </Link>
-        <span className="mx-2 "> | </span>
+        <span className="mx-2 line-class"> | </span>
         <a
           className={`fs-16  fw-m a-tag-common ${
             props.home ? "a-tag-white" : " "

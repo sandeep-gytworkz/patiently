@@ -77,7 +77,9 @@ const ContactUs = () => {
               Contact Email
               <span className="d-inline d-sm-none">&nbsp;:&nbsp;</span>
             </p>
-            <p className="email-blue">info@patientlyhd.com</p>
+            <a className="email-blue" href="mailto:info@patientlyhd.com">
+              info@patientlyhd.com
+            </a>
           </div>
         </div>
       </div>
