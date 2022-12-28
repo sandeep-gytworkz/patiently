@@ -31,7 +31,7 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                 </p>
                 <p className="fs-18 dim-gray fw-r">
                   {isForgotPassword
-                    ? "We have sent you a 6 digit code"
+                    ? "Hi John, We have sent you a six digit verification code to provided email/contact number"
                     : "Hi John, We have sent you a six digit verification code to provided email/contact number"}
                 </p>
                 <p className="fs-18 dim-gray fw-r">
@@ -98,9 +98,17 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                         : "Continue to Questions"}
                       &nbsp;{" "}
                       {otp.length === 6 ? (
-                        <img src={rightWhiteArrow} alt="right-arrow" />
+                        <img
+                          src={rightWhiteArrow}
+                          alt="right-arrow"
+                          className="ps-2"
+                        />
                       ) : (
-                        <img src={greyRightArrow} alt="right-arrow" />
+                        <img
+                          src={greyRightArrow}
+                          alt="right-arrow"
+                          className="ps-2"
+                        />
                       )}
                     </button>
                   </div>

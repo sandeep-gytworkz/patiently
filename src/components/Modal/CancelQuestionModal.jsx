@@ -1,9 +1,12 @@
 import React from "react";
 import "../../styles/common/global.css";
 import question from "../../assets/images/question.svg";
-import { Link } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
 
 const CancelQuestionModal = () => {
+  const navigate = useNavigate();
+
   return (
     <div
       className="modal fade"
@@ -29,7 +32,10 @@ const CancelQuestionModal = () => {
                 Are you sure you want to exit? Your data will not be saved if
                 you exit now.
               </p>
-              <p className="fw-r fs-18 text-center">
+              <p
+                className="fw-r fs-18 text-center"
+                style={{ color: "#6C757D" }}
+              >
                 Press YES to continue and come back later to complete your
                 profile, or Cancel to stay on the current page
               </p>
@@ -42,12 +48,15 @@ const CancelQuestionModal = () => {
                   Cancel
                 </button>
 
-                <Link
+                <button
                   className="button-layout button-green mx-3 a-tag-green-btn"
-                  to="/"
+                  onClick={() => {
+                    navigate("/");
+                  }}
+                  data-bs-dismiss="modal"
                 >
                   Yes
-                </Link>
+                </button>
               </div>
             </div>
           </div>
