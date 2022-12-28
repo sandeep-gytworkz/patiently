@@ -44,7 +44,7 @@ const Participate = () => {
           <div className="d-sm-none d-block">
             <Header hideRight={true} />
           </div>
-          <div className="d-sm-block d-none offset-1">
+          <div className="d-sm-block d-none offset-1 pt-2">
             <Link to="/">
               <img src={patientlyLogo} alt="patiently-logo" />
             </Link>

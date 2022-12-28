@@ -4,11 +4,13 @@
   border-radius: 8px;
   height: auto;
   min-height: 90%;
-  max-height: 97%;
+  /* max-height: 97%; */
+  max-height: 100%;
 }
 
 @media screen and (max-width: 576px) {
   .white-card {
     max-height: fit-content;
+    margin-bottom: 20px;
   }
 }

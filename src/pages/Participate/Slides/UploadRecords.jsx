@@ -15,7 +15,7 @@ const UploadRecords = ({ changeSlide }) => {
     const currFiles = [...files, file];
     setFiles(currFiles);
 
-    // console.log(file);
+    console.log(file);
   };
 
   const deleteFile = (index) => {
@@ -28,7 +28,7 @@ const UploadRecords = ({ changeSlide }) => {
       <CancelQuestionModal />
       <WhiteCard>
         <div className="col-10 ">
-          <div className="d-flex flex-column mb-3 col-sm-4 col-12 mt-sm-0 mt-3">
+          <div className="d-flex flex-column mb-3 col-sm-4 col-12  mt-3">
             <label htmlFor="title" className="fs-12 color-primary fw-m">
               Enter Title
             </label>
@@ -49,7 +49,7 @@ const UploadRecords = ({ changeSlide }) => {
               onSizeError={(file) => {
                 alert("File size should be less than 10mb");
               }}
-              multiple={true}
+              // multiple={true}
             >
               <div className="c-12 file-upload-label d-flex justify-content-center  ">
                 <div className="file-upload-label-main">
