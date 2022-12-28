@@ -56,7 +56,7 @@ const Slide9 = () => {
   };
   return (
     <div className="full-page-container d-flex flex-column">
-      <nav className="navbar navbar-expand-lg navbar-light head-bar px-xs-0 px-sm-4 justify-content-center">
+      <nav className="navbar navbar-expand-lg navbar-light head-bar px-3 px-sm-4 justify-content-center">
         <div className="px-xs-0 px-sm-5 d-flex justify-content-between col-12 ">
           <div className="h-20">
             <Link className="navbar-brand" to="/">
@@ -67,73 +67,81 @@ const Slide9 = () => {
               />
             </Link>
           </div>
-          <div className="d-flex flex-row align-items-center">
-            <BsBell color="grey" className="me-3" role="button" />
-            <div>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-              <div className="d-flex flex-row justify-content-end username-div">
-                <div className="p-2">
-                  <img
-                    src={personImg}
-                    alt="person-logo"
-                    style={{ height: "30px" }}
-                  />
-                </div>
-                <div
-                  className="collapse navbar-collapse d-flex justify-content-end"
-                  id="navbarSupportedContent"
-                >
-                  <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item dropdown">
-                      <a
-                        className="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdown"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        John Doe
-                      </a>
-                      <ul
-                        className="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
-                      >
-                        <li>
-                          <Link className="dropdown-item" to="/">
-                            Log out
-                          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav ">
+              <li className="nav-item">
+                <div className="d-flex flex-row align-items-center ">
+                  <BsBell color="grey" className="me-3" role="button" />
+
+                  <div className="d-flex flex-row justify-content-end username-div">
+                    <div className="p-2">
+                      <img
+                        src={personImg}
+                        alt="person-logo"
+                        style={{ height: "30px" }}
+                      />
+                    </div>
+                    <div
+                      className="collapse navbar-collapse d-flex justify-content-end"
+                      id="navbarSupportedContent"
+                    >
+                      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item dropdown">
+                          <a
+                            className="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            John Doe
+                          </a>
+                          <ul
+                            className="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                          >
+                            <li>
+                              <Link className="dropdown-item" to="/">
+                                Log out
+                              </Link>
+                            </li>
+                          </ul>
                         </li>
                       </ul>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
-      <div className="pt-3 px-5">
+      <div className="pt-3 px-sm-5 px-2">
         <p className=" fs-36 fw-b mb-0 px-4">Welcome John Doe</p>
         <p className=" fs-14 px-4 fw-m"> You have 1 record</p>
       </div>
-      <MainContainer className="d-flex flex-row col-12 px-5">
-        <div className="px-4 d-flex flex-row">
-          <RecordsContainer>
+      <MainContainer className="d-flex flex-row col-12 px-sm-5 px-2 mb-4">
+        <div className="px-4 d-flex flex-row flex-wrap">
+          <RecordsContainer className="mb-4">
             <p className="fs-18 fw-m">My Records</p>
             <RecordsCard className="col-2">
-              <div className="col-10 d-flex flex-column align-items-center offset-sm-1">
-                <div className="col-12 d-flex flex-row justify-content-between mb-2">
+              <div className="col-10 d-flex flex-column align-items-center offset-1">
+                <div className="col-12 d-flex flex-row justify-content-between mb-3">
                   <img src={profileDocument} alt="profile-document" />
                   <img src={trash} alt="delete-button" />
                 </div>
@@ -149,14 +157,14 @@ const Slide9 = () => {
                   <p className="fw-m fs-18">September 20, 2022</p>
                 </div>
                 <div className="col-12">
-                  <button className="w-100 py-2 download-button">
+                  <button className="w-100 py-2 download-button fs-18">
                     Download
                   </button>
                 </div>
               </div>
             </RecordsCard>
           </RecordsContainer>
-          <UploadContainer className="col-2">
+          <UploadContainer className="col-2 mb-4">
             <p className="fs-18 fw-m">Upload More</p>
             <FileUploader
               className="col-2"
@@ -165,19 +173,19 @@ const Slide9 = () => {
               types={fileTypes}
               classes="col-12"
             >
-              <UploadCard className="col-12 file-upload-label d-flex justify-content-center px-2 align-items-center">
+              <UploadCard className="col-12 file-upload-label d-flex justify-content-center  align-items-center">
                 <div className="file-upload-label-main">
                   <p className="color-primary fs-16 fw-bold my-0 pt-5">
                     Drag here to upload
                   </p>
                   <p className="color-primary fs-16 fw-bold mt-0">or</p>
-                  <div className="pt-5">
-                    <button className="button-browse button-layout px-5">
+                  <div className="pt-5 w-100">
+                    <button className="button-browse button-layout px-5 w-100 fs-18">
                       Browse
                     </button>
                   </div>
                   <div className="mt-1">
-                    <p className="fs-12 pt-3 ps-3">
+                    <p className="fs-12 pt-3 text-center">
                       Supported formats are PDF, JPG, Word Document, Maximum
                       file size 10 MB
                     </p>
