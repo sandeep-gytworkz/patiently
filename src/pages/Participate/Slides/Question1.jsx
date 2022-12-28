@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../../../styles/common/global.css";
 import WhiteCard from "../../../components/Card/WhiteCard";
 import CancelQuestionModal from "../../../components/Modal/CancelQuestionModal";
@@ -57,6 +56,7 @@ const Question1 = (props) => {
               className="button-layout button-outlined mx-2 col-sm-3 col-12 order-3 mb-3 order-sm-1"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
+              data-backdrop="false"
             >
               Cancel
             </button>

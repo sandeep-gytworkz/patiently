@@ -7,7 +7,7 @@ const ContactUs = () => {
   return (
     <div className="d-flex flex-column">
       <Header />
-      <div className="col-12 bg-pink px-sm-5 px-0 py-4 mb-2 d-flex flex-row justify-content-center">
+      <div className="col-12 bg-pink px-sm-5 px-0 py-4 mb-3 d-flex flex-row justify-content-center">
         <h1 className="p-l-3 fw-sb col-sm-12 col-10">Contact Us</h1>
       </div>
 
@@ -19,22 +19,27 @@ const ContactUs = () => {
           </p>
           <form className="d-flex flex-column  ">
             <div className="d-flex flex -row col-12 justify-content-between flex-wrap">
-              <input
-                placeholder="First Name"
-                type="text"
-                className="px-2 my-2 col-sm-5 col-12 py-1 input-class contactUs-class"
-              />
-              <input
-                placeholder="Last Name"
-                type="text"
-                className="px-2  my-2 col-sm-5 col-12 py-1 input-class contactUs-class "
-              />
+              <div className="col-sm-6 col-12">
+                <input
+                  placeholder="First Name"
+                  type="text"
+                  className="px-2 my-2 col-sm-11
+                 col-12 py-1 input-class contactUs-class"
+                />
+              </div>
+              <div className="col-sm-6 col-12">
+                <input
+                  placeholder="Last Name"
+                  type="text"
+                  className="px-2  my-2 col-sm-11 offset-sm-1 col-12 py-1 input-class contactUs-class "
+                />
+              </div>
             </div>
-            <div>
+            <div className="col-sm-6 col-12">
               <input
                 placeholder="Email"
                 type="email"
-                className="px-2 my-2 col-sm-5 col-12 py-1 input-class form-control"
+                className="px-2 my-2 col-sm-11 col-12 py-1 input-class contactUs-class"
               />
             </div>
 
@@ -43,7 +48,13 @@ const ContactUs = () => {
                 className="form-select selection-form"
                 aria-label="Default select example"
               >
-                <option selected value="" diabled hidden>
+                <option
+                  selected
+                  value=""
+                  diabled
+                  hidden
+                  style={{ color: "#4B4B4B" }}
+                >
                   Select your question
                 </option>
 
@@ -61,8 +72,9 @@ const ContactUs = () => {
             </div>
 
             <textarea
-              className="col-12 msg-div my-2 p-2 textarea-class"
+              className="col-12 msg-div my-2 py-2 px-3 textarea-class"
               placeholder="Message"
+              style={{ resize: "none" }}
             />
             <div className="d-flex flex-row justify-content-sm-end justify-content-center my-2 col-12">
               <button className="button-layout button-green col-sm-4 col-10">

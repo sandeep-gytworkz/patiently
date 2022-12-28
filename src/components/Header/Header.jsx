@@ -41,23 +41,23 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav d-flex">
             <li className="nav-item px-3">
-              <Link className="nav-link fs-28 fw-sb" to="/how-it-works">
+              <Link className="nav-link fs-24 fw-sb" to="/how-it-works">
                 How it Works?
               </Link>
             </li>
             <li className="nav-item px-3">
-              <Link className="nav-link fs-28 fw-sb" to="/data-privacy">
+              <Link className="nav-link fs-24 fw-sb" to="/data-privacy">
                 Data Privacy
               </Link>
             </li>
             <li className="nav-item px-3 ">
-              <Link className="nav-link fs-28 fw-sb " to="/about">
+              <Link className="nav-link fs-24 fw-sb " to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item px-3">
               <Link
-                className="nav-link fs-28 fw-sb "
+                className="nav-link fs-24 fw-sb "
                 aria-current="page"
                 to="/login"
               >
@@ -66,7 +66,7 @@ const Header = () => {
             </li>
             <li className="nav-item participate-now px-3">
               <Link
-                className="nav-link fs-28 fw-sb signUp-btn px-4"
+                className="nav-link fs-24 fw-sb signUp-btn px-4"
                 to="/participate-now"
               >
                 Sign Up

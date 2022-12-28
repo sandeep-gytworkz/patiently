@@ -115,7 +115,7 @@
 }
 
 .fs-16 {
-  font-size: 1em;
+  font-size: 16px;
 }
 
 .fs-20 {
@@ -129,8 +129,9 @@
 .fs-24 {
   font-size: 24px;
 }
+
 .fs-28 {
-  font-size: 1.5em;
+  font-size: 28px;
 }
 
 .fs-32 {
@@ -409,6 +410,10 @@ input.form-control:focus {
 
   .fs-32 {
     font-size: 18px;
+  }
+
+  .fs-28 {
+    font-size: 16px;
   }
 
   .fs-24 {

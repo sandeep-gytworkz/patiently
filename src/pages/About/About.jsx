@@ -13,7 +13,7 @@ const AboutUs = () => {
       <div className="d-none d-sm-block">
         <Header />
       </div>
-      <div className="col-12 bg-blue px-sm-5 px-0 py-4 mb-2 d-flex flex-row justify-content-center ">
+      <div className="col-12 bg-blue px-sm-5 px-0 py-4 mb-sm-4 mb-3 d-flex flex-row justify-content-center ">
         <h1 className="p-l-3 fw-sb col-sm-12 col-10">
           <span className="d-inline d-sm-none">
             <Link to="/">
@@ -24,7 +24,10 @@ const AboutUs = () => {
         </h1>
       </div>
       <div className="d-flex flex-column px-sm-5 col-12 ">
-        <div className=" d-flex flex-row justify-content-center justify-content-sm-start col-12">
+        <div
+          className=" d-flex flex-row justify-content-center justify-content-sm-start col-12 mb-sm-4 mb-3
+        "
+        >
           <div className="p-l-3 p-r-2 col-10 col-sm-12 ">
             <p className="fs-18 fw-m text-align-justify">
               Patiently Health Data is a patient-driven, real-world data
