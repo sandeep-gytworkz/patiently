@@ -241,7 +241,12 @@ const Signup = ({ changeSlide }) => {
         </div>
 
         <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end d-none d-sm-block">
-          <img src={homePageCircle} alt="circles image" className=" col-8" />
+          <img
+            src={homePageCircle}
+            alt="circles image"
+            className=" col-8 w-100"
+            style={{ maxHeight: "575px" }}
+          />
         </div>
       </div>
     </div>

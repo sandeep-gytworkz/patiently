@@ -87,7 +87,7 @@ const Slide9 = () => {
                 <div className="d-flex flex-row align-items-center ">
                   <BsBell color="grey" className="me-3" role="button" />
 
-                  <div className="d-flex flex-row justify-content-end username-div">
+                  <div className="d-flex flex-row justify-content-end username-div pe-2">
                     <div className="p-2">
                       <img
                         src={personImg}
@@ -109,7 +109,7 @@ const Slide9 = () => {
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            John Doe
+                            <span className="pe-sm-3">John Doe</span>
                           </a>
                           <ul
                             className="dropdown-menu"

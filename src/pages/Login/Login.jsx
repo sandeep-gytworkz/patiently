@@ -110,7 +110,12 @@ const LoginPage = () => {
           </div>
 
           <div className=" d-flex flex-row d-none d-sm-block col-sm-6 right-half ps-5 bg-green justify-content-end">
-            <img src={homePageCircle} alt="circles image" className=" col-8" />
+            <img
+              src={homePageCircle}
+              alt="circles image"
+              className=" col-8 w-100"
+              style={{ maxHeight: "575px" }}
+            />
           </div>
           {/* <div className="py-3 px-2  d-flex justify-content-between">
               <button
