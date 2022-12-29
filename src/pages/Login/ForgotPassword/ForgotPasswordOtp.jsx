@@ -21,7 +21,7 @@ const ForgotPasswordOtp = () => {
       <div className="d-flex flex-column homePage-container">
         <Header />
 
-        <div className="row flex-grow-1">
+        <div className="row flex-grow-1 h-80">
           <div className="col-xs-12 col-sm-6 flex-column align-items-center py-5 px-sm-5">
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
@@ -65,12 +65,11 @@ const ForgotPasswordOtp = () => {
             </form>
             <div></div>
           </div>
-          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end d-none d-sm-block">
+          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end d-none d-sm-flex homepageCircle-div h-100">
             <img
               src={homePageCircle}
               alt="circles image"
-              className=" col-8 w-100"
-              style={{ maxHeight: "575px" }}
+              className="homepage-circle"
             />
           </div>
         </div>

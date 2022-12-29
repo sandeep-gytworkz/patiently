@@ -25,7 +25,7 @@ const LoginPage = () => {
       <div className="d-flex flex-column homePage-container">
         <Header />
 
-        <div className="row flex-grow-1">
+        <div className="row flex-grow-1 h-80">
           <div className=" col-xs-12 col-sm-6 flex-column align-items-center py-5 px-sm-5">
             <form onSubmit={onSubmitHandler}>
               <div className="d-flex flex-column align-items-center">
@@ -109,29 +109,13 @@ const LoginPage = () => {
             </form>
           </div>
 
-          <div className=" d-flex flex-row d-none d-sm-block col-sm-6 right-half ps-5 bg-green justify-content-end">
+          <div className=" d-flex flex-row d-none d-sm-flex col-sm-6 right-half ps-5 bg-green justify-content-end homepageCircle-div h-100">
             <img
               src={homePageCircle}
               alt="circles image"
-              className=" col-8 w-100"
-              style={{ maxHeight: "575px" }}
+              className="homepage-circle"
             />
           </div>
-          {/* <div className="py-3 px-2  d-flex justify-content-between">
-              <button
-                onClick={() => {}}
-                className="btn button-contained button-layout me-2"
-                aria-current="page"
-              >
-                Login
-              </button>
-              <div className="d-flex flex-row  align-items-center">
-                <p className="mb-0 py-2">New user?</p>
-                <Link to="/participate-now" className="a-tag">
-                  &nbsp; Register
-                </Link>
-              </div>
-            </div> */}
         </div>
       </div>
     </>

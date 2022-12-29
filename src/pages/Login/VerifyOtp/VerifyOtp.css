@@ -28,7 +28,7 @@
 }
 
 .has-value {
-  border: 1px solid #00cfe5;
+  border: 2px solid #00cfe5;
 }
 
 .has-value[value=""] {
@@ -36,6 +36,6 @@
 }
 
 .focus-style {
-  outline: 1px solid #00cfe5;
+  outline: 2px solid #00cfe5;
   border: none !important;
 }

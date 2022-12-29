@@ -6,7 +6,7 @@ import patientlyLogo from "../../assets/images/patientlyLogo.png";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg px-xs-0 px-sm-4 container-shadow">
+    <nav className="navbar navbar-expand-lg px-xs-0 px-sm-4 container-shadow h-20">
       <div className="col-sm-5 col-12 px-xs-0 px-sm-4 d-flex justify-content-between">
         <Link
           className="navbar-brand col-lg-6 col-xs-10 h-100 m-0 px-sm-5 px-3"

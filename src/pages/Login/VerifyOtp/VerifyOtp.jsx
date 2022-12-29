@@ -20,7 +20,7 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
       <div className="d-flex flex-column homePage-container">
         <Header />
 
-        <div className="row flex-grow-1">
+        <div className="row flex-grow-1 h-80">
           <div className="col-xs-12 col-sm-6 flex-column align-items-center py-5 px-sm-5">
             <div className="d-flex flex-column align-items-center">
               <div className="py-3 d-flex flex-column col-sm-9 col-10">
@@ -72,9 +72,11 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
                   />
                 </div>
 
-                <div className="d-flex justify-content-between col-12 ">
-                  <button className="button-a-tag fw-r">Resend Code</button>
-                  <p className="fs-14 mb-0 fw-r ">Code expires in 00.30s</p>
+                <div className="d-flex justify-content-between col-12 mt-2 ">
+                  <button className="button-a-tag fw-r fs-16">
+                    Resend Code
+                  </button>
+                  <p className=" mb-0 fw-r fs-16">Code expires in 00.30s</p>
                 </div>
                 <div className="d-flex flex-row mt-5 align-items-center justify-content-between flex-wrap-reverse">
                   <div className="col-sm-5 col-12 mb-3">
@@ -117,12 +119,11 @@ const VerifyOtp = ({ changeSlide, isForgotPassword = false }) => {
               <Footer />
             </div>
           </div>
-          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end d-none d-sm-block ">
+          <div className=" d-flex flex-row col-sm-12 col-md-6 right-half ps-5 bg-green justify-content-end d-none d-sm-flex homepageCircle-div h-100 ">
             <img
               src={homePageCircle}
               alt="circles image"
-              className=" col-8 w-100"
-              style={{ maxHeight: "575px" }}
+              className="homepage-circle"
             />
           </div>
         </div>

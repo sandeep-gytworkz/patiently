@@ -15,7 +15,7 @@ const UploadRecords = ({ changeSlide }) => {
     const currFiles = [...files, file];
     setFiles(currFiles);
 
-    console.log(file);
+    // console.log(file);
   };
 
   const deleteFile = (index) => {
