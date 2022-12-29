@@ -35,7 +35,7 @@
 
 .button-green:disabled {
   background-color: #e3e3e3;
-  color: #6c6c6c;
+  color: #9a9a9a;
 }
 
 .button-layout {
@@ -399,6 +399,35 @@ input.form-control:focus {
   border: 1px solid #0fc6d9;
 }
 
+.h-10 {
+  height: 10%;
+}
+
+.h-20 {
+  height: 20%;
+}
+
+.h-80 {
+  height: 80%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.homepage-circle {
+  padding-top: 70px;
+  /* min-height: 800px;
+  min-width: 730px; */
+  margin-right: -65px;
+  margin-bottom: -60px;
+}
+
+.homepageCircle-div {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 576px) {
   .fs-64 {
     font-size: 38px;
@@ -450,5 +479,25 @@ input.form-control:focus {
     border: 1px solid #c7c7c7;
     font-size: 14px;
     font-weight: 400;
+  }
+
+  .h-20 {
+    height: auto;
+  }
+
+  .h-10 {
+    height: auto;
+  }
+
+  .h-20 {
+    height: auto;
+  }
+
+  .h-80 {
+    height: 100%;
+  }
+
+  .h-90 {
+    height: auto;
   }
 }

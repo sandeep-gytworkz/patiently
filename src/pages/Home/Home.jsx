@@ -29,7 +29,7 @@ const Homepage = () => {
   return (
     <div className="d-flex flex-column homePage-container">
       <Header />
-      <div className="bg-green row pt-sm-4 pt-3 h-100">
+      <div className="bg-green row pt-sm-4 pt-3 h-80">
         <div className=" col-xs-12 col-sm-6 offset-sm-1 py-sm-5 ps-sm-1 pe-sm-5 py-5">
           <div className="px-4 px-sm-0 mb-5 mb-sm-0 ">
             <p className="fs-64 fw-sb heading-shadow mb-sm-4 mb-4 lh-mainHeading">
@@ -48,13 +48,16 @@ const Homepage = () => {
               <img src={rightBlackArrow} alt="right-arrow" className="ps-4" />
             </Link>
           </div>
+
+          <div className="px-0  col-12">
+            <Footer home={true} alignment="justify-content-start" />
+          </div>
         </div>
-        <div className=" col-xs-12 col-sm-5 d-none d-sm-block">
+        <div className=" col-xs-12 col-sm-5 d-none d-sm-flex homepageCircle-div h-100 ps-5 justify-content-end">
           <img
             src={homePageCircle}
             alt="home page circles image"
-            className="w-100"
-            style={{ maxHeight: "575px" }}
+            className="homepage-circle"
           />
         </div>
       </div>
@@ -101,11 +104,6 @@ const Homepage = () => {
           </div>
         </div>
       )}
-
-      <div className="offset-sm-1 col-12">
-        <Footer home={true} alignment="justify-content-start" />
-      </div>
-      {/* <PrivacyPolicy showPrivacyPolicy={showPrivacyPolicy} togglePrivacyPolicy={togglePrivacyPolicy} /> */}
     </div>
   );
 };

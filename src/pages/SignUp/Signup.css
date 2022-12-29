@@ -12,6 +12,25 @@
   height: 70%;
 }
 
+.left-div {
+  overflow: auto;
+}
+
+.left-div::-webkit-scrollbar {
+  /* width: 48px; */
+  width: 8px;
+}
+
+.left-div::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.left-div::-webkit-scrollbar-thumb {
+  background-color: #e6e6e6;
+  border-radius: 4px;
+  border: none;
+}
+
 .signup-underline {
   position: relative;
 }
@@ -27,16 +46,31 @@
   content: "";
 }
 
-.form-class {
+/* .form-class {
   height: 100%;
   overflow: auto;
   max-height: 465px;
-}
+  margin-bottom: 20px;
+} */
 
 @media screen and (max-width: 576px) {
   .form-class {
     height: 100%;
     overflow: unset;
+  }
+
+  .left-div::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .left-div::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  .left-div::-webkit-scrollbar-thumb {
+    background-color: #e6e6e6;
+    border-radius: 8px;
+    border: none;
   }
 }
 
